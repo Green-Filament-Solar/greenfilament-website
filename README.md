@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Green Filament — Official Website
+
+Official website for **Green Filament**, an Odisha-based solar energy company delivering high-performance solar solutions since 2018.
+
+🌐 **Live:** [greenfilament.com](https://greenfilament.com)
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4 + Inline Styles
+- **Deployment:** Vercel
+- **Version Control:** GitHub (Private)
+
+---
+
+## Project Structure
+green-filament/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Services.tsx
+│   │   ├── Products.tsx
+│   │   ├── Insight.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── CTABanner.tsx
+│   │   └── Footer.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   └── images/
+│       ├── hero/
+│       ├── products/
+│       ├── projects/
+│       └── certifications/
+└── README.md
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/green-filament.git
+
+# Navigate to project
+cd green-filament
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project is deployed on **Vercel**. Every push to the `main` branch triggers an automatic redeployment.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Push changes
+git add .
+git commit -m "your message"
+git push
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Brand Guidelines
 
-## Deploy on Vercel
+| Element | Value |
+|--------|-------|
+| Primary Amber | `#FDB92E` |
+| Gold | `#F5A000` |
+| Dark | `#0a0a0a` |
+| Hero Green | `#0d1a0d` |
+| Ivory | `#F7F2E9` |
+| Text | `#1a1a1a` |
+| Muted | `#777777` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+**Green Filament**
+628/1333, Lane 1, Tankapani Rd, Laxmi Vihar, Bhubaneswar, Odisha 751018
+
+📞 +91 93372 56398
+📧 connect@greenfilament.com
+🌐 [greenfilament.com](https://greenfilament.com)
+
+---
+
+*Built with ☀️ for a cleaner, smarter, energy-independent tomorrow.*
