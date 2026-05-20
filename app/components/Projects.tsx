@@ -1,110 +1,32 @@
 "use client";
 
 /* ============================================================
-   PROJECTS SECTION
+   PROJECTS SECTION — Homepage
    - Full width story slider
    - Photo + stats on left, story on right
    - Challenge → Solution → Result format
    - Arrows + dots centered below text
    - Fade animation on story change
+   - Data imported from app/data/projects.ts
    - Fully responsive
    ============================================================ */
 
 import { useState } from "react";
 import NextImage from "next/image";
-
-/* ============================================================
-   PROJECT STORIES DATA
-   Add / edit stories here
-   ============================================================ */
-const projects = [
-  {
-    category: "Rooftop Solar",
-    name: "PGCIL Angul",
-    location: "Angul, Odisha · 2023",
-    image: "/images/projects/pgcil-angul.jpg",
-    stats: [
-      { value: "90kWp", label: "Capacity" },
-      { value: "₹8L", label: "Savings/yr" },
-      { value: "25yr", label: "Lifespan" },
-    ],
-    title: "From high bills to clean energy independence",
-    challenge: "Rising electricity costs were significantly impacting PGCIL's operational efficiency and energy budget.",
-    solution: "Designed and installed a 90kWp grid-tied rooftop solar system with net metering and full DISCOM approval.",
-    result: "₹8 lakh annual savings, 25-year clean energy supply, and zero grid dependency during peak hours.",
-  },
-  {
-    category: "Solar Pump",
-    name: "Khordha GP",
-    location: "Khordha, Odisha · 2022",
-    image: "/images/projects/khordha-pump.jpg",
-    stats: [
-      { value: "5HP", label: "Pump Capacity" },
-      { value: "50+", label: "Farmers" },
-      { value: "90%", label: "Subsidy" },
-    ],
-    title: "Eliminating diesel dependency for 50 farmers",
-    challenge: "Farmers were spending heavily on diesel for irrigation, cutting into their already thin margins.",
-    solution: "Installed a 5HP KUSUM-eligible solar pump with 90% government subsidy — zero upfront cost for farmers.",
-    result: "50+ farmers now enjoy free, reliable irrigation year-round with zero diesel costs.",
-  },
-  {
-    category: "Street Lighting",
-    name: "Dhenkanal GP",
-    location: "Dhenkanal, Odisha · 2023",
-    image: "/images/projects/dhenkanal-lights.jpg",
-    stats: [
-      { value: "20", label: "Street Lights" },
-      { value: "₹0", label: "Electricity Bill" },
-      { value: "10yr", label: "Warranty" },
-    ],
-    title: "Lighting up a village with zero electricity bill",
-    challenge: "The gram panchayat struggled with high electricity bills for street lighting and frequent outages.",
-    solution: "Installed 20 all-in-one solar street lights with lithium-ion backup and dusk-to-dawn automation.",
-    result: "Complete village lighting with zero electricity cost for the GP and uninterrupted operation.",
-  },
-  {
-    category: "Solar Cooking",
-    name: "Cuttack School",
-    location: "Cuttack, Odisha · 2024",
-    image: "/images/projects/cuttack-school.jpg",
-    stats: [
-      { value: "300", label: "Students" },
-      { value: "0 LPG", label: "Dependency" },
-      { value: "200+", label: "Meals/Day" },
-    ],
-    title: "Clean cooking for 300 students every day",
-    challenge: "The school's mid-day meal program was heavily dependent on LPG — costly and unsafe for children.",
-    solution: "Installed our licensed solar cooking system — 500Wp × 6 panels with 1500W coil heating technology.",
-    result: "300 students get clean, smoke-free meals daily at zero fuel cost. LPG completely eliminated.",
-  },
-  {
-    category: "High Mast",
-    name: "Industrial Zone Puri",
-    location: "Puri, Odisha · 2023",
-    image: "/images/projects/puri-highmast.jpg",
-    stats: [
-      { value: "4", label: "High Masts" },
-      { value: "30m", label: "Height" },
-      { value: "₹0", label: "Running Cost" },
-    ],
-    title: "Illuminating an industrial zone without the grid",
-    challenge: "A large industrial zone needed powerful lighting but grid connection was expensive and unreliable.",
-    solution: "Installed 4 solar high mast lights with MPPT controllers and high-capacity battery banks.",
-    result: "Powerful, consistent illumination across the entire zone — completely off-grid, zero running cost.",
-  },
-];
+import Link from "next/link";
+import { homepageProjects } from "../data/projects";
 
 export default function Projects() {
+
   /* --- Current story index --- */
   const [current, setCurrent] = useState(0);
 
   /* --- Navigate between stories --- */
   function navigate(dir: number) {
-    setCurrent((prev) => (prev + dir + projects.length) % projects.length);
+    setCurrent((prev) => (prev + dir + homepageProjects.length) % homepageProjects.length);
   }
 
-  const project = projects[current];
+  const project = homepageProjects[current];
 
   return (
     <>
@@ -180,7 +102,7 @@ export default function Projects() {
 
       <section id="projects" style={{
         background: "#ffffff",
-        padding: "clamp(24px, 5vw, 0px) 0",
+        padding: "clamp(60px, 8vw, 100px) 0",
       }}>
         <div style={{
           maxWidth: "1400px",
@@ -226,7 +148,7 @@ export default function Projects() {
               margin: "0 auto",
               lineHeight: 1.7,
             }}>
-              Real projects. Real impact. Delivered across Odisha.
+              Real projects. Real impact. Delivered across Odisha and beyond.
             </p>
 
           </div>
@@ -260,19 +182,20 @@ export default function Projects() {
                 {/* --- Project photo --- */}
                 <NextImage
                   src={project.image}
-                  alt={project.name}
+                  alt={project.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
                 />
 
-                {/* --- Dark gradient overlay for text readability --- */}
+                {/* --- Dark gradient overlay --- */}
                 <div style={{
                   position: "absolute",
                   inset: 0,
                   background: "linear-gradient(to top, rgba(0,0,0,0.78) 0%, transparent 55%)",
                 }} />
 
-                {/* --- Photo content — badge, name, location, stats --- */}
+                {/* --- Photo content --- */}
                 <div style={{
                   position: "absolute",
                   bottom: 0,
@@ -296,14 +219,14 @@ export default function Projects() {
                     {project.category}
                   </div>
 
-                  {/* Project name */}
+                  {/* Project title */}
                   <div style={{
-                    fontSize: "clamp(18px, 2.5vw, 24px)",
+                    fontSize: "clamp(16px, 2vw, 22px)",
                     fontWeight: 700,
                     color: "#fff",
                     marginBottom: "4px",
                   }}>
-                    {project.name}
+                    {project.title}
                   </div>
 
                   {/* Location */}
@@ -312,7 +235,7 @@ export default function Projects() {
                     color: "rgba(255,255,255,0.75)",
                     marginBottom: "18px",
                   }}>
-                    {project.location}
+                    📍 {project.location} · {project.year}
                   </div>
 
                   {/* Stats row */}
@@ -381,14 +304,12 @@ export default function Projects() {
                     marginBottom: "24px",
                     lineHeight: 1.35,
                   }}>
-                    {project.title}
+                    {project.storyTitle}
                   </div>
 
                   {/* --- The Challenge --- */}
                   <div className="story-step">
-                    <div className="step-icon" style={{ background: "#ffe4e6", color: "#be123c" }}>
-                      ⚡
-                    </div>
+                    <div className="step-icon" style={{ background: "#ffe4e6", color: "#be123c" }}>⚡</div>
                     <div>
                       <div style={{ fontSize: "11px", fontWeight: 700, color: "#be123c", marginBottom: "4px" }}>
                         The Challenge
@@ -401,9 +322,7 @@ export default function Projects() {
 
                   {/* --- Our Solution --- */}
                   <div className="story-step">
-                    <div className="step-icon" style={{ background: "#FFF3D6", color: "#854F0B" }}>
-                      ☀
-                    </div>
+                    <div className="step-icon" style={{ background: "#FFF3D6", color: "#854F0B" }}>☀</div>
                     <div>
                       <div style={{ fontSize: "11px", fontWeight: 700, color: "#854F0B", marginBottom: "4px" }}>
                         Our Solution
@@ -416,9 +335,7 @@ export default function Projects() {
 
                   {/* --- The Result --- */}
                   <div className="story-step">
-                    <div className="step-icon" style={{ background: "#d1fae5", color: "#065f46" }}>
-                      ✓
-                    </div>
+                    <div className="step-icon" style={{ background: "#d1fae5", color: "#065f46" }}>✓</div>
                     <div>
                       <div style={{ fontSize: "11px", fontWeight: 700, color: "#065f46", marginBottom: "4px" }}>
                         The Result
@@ -432,7 +349,7 @@ export default function Projects() {
                 </div>
 
                 {/* ============================================================
-                    NAVIGATION — arrows + dots centered below story
+                    NAVIGATION — arrows + dots
                     ============================================================ */}
                 <div style={{
                   display: "flex",
@@ -445,11 +362,7 @@ export default function Projects() {
                 }}>
 
                   {/* --- Left arrow --- */}
-                  <button
-                    className="p-arrow"
-                    onClick={() => navigate(-1)}
-                    aria-label="Previous project"
-                  >
+                  <button className="p-arrow" onClick={() => navigate(-1)} aria-label="Previous project">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>
@@ -457,7 +370,7 @@ export default function Projects() {
 
                   {/* --- Dots --- */}
                   <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
-                    {projects.map((_, i) => (
+                    {homepageProjects.map((_, i) => (
                       <button
                         key={i}
                         onClick={() => setCurrent(i)}
@@ -477,11 +390,7 @@ export default function Projects() {
                   </div>
 
                   {/* --- Right arrow --- */}
-                  <button
-                    className="p-arrow"
-                    onClick={() => navigate(1)}
-                    aria-label="Next project"
-                  >
+                  <button className="p-arrow" onClick={() => navigate(1)} aria-label="Next project">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -497,7 +406,7 @@ export default function Projects() {
               VIEW ALL PROJECTS CTA
               ============================================================ */}
           <div style={{ textAlign: "center", marginTop: "28px" }}>
-            <a href="/projects" style={{
+            <Link href="/projects" style={{
               display: "inline-block",
               border: "1.5px solid #FDB92E",
               color: "#854F0B",
@@ -508,7 +417,7 @@ export default function Projects() {
               textDecoration: "none",
             }}>
               View All Projects →
-            </a>
+            </Link>
           </div>
 
         </div>

@@ -67,12 +67,12 @@ const secondaryProducts = [
     href: "#",
   },
   {
-    title: "Solar Dryers",
-    desc: "Agro drying for fruits, grains, vegetables, and spices.",
-    image: "/images/products/solar-dryer.jpg",
-    category: "Solar Dryer",
-    href: "#",
-  },
+  title: "Solar Drinking Water",
+  desc: "Clean, solar-powered drinking water systems for villages and communities.",
+  image: "/images/products/drinking-water.jpg",
+  category: "Solar Water",
+  href: "#",
+},
   {
     title: "Solar Cold Storage",
     desc: "Solar-powered cold storage for perishable goods.",
@@ -309,6 +309,8 @@ export default function Products() {
                     src={product.image}
                     alt={product.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    loading="eager"
                     style={{ objectFit: "cover" }}
                   />
 
@@ -457,6 +459,8 @@ export default function Products() {
                     src={product.image}
                     alt={product.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    loading="eager"
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -533,6 +537,8 @@ export default function Products() {
                   src={currentProduct.image}
                   alt={currentProduct.title}
                   fill
+                  sizes="(max-width: 768px) 90vw, 25vw"
+                  loading="eager"
                   style={{ objectFit: "cover" }}
                 />
                 {/* Category badge */}

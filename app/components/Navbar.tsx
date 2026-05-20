@@ -19,12 +19,12 @@ export default function Navbar() {
 
     /* --- Nav links data --- */
     const links = [
-        { label: "About", href: "#about" },
-        { label: "Products", href: "#products" },
-        { label: "Services", href: "#services" },
-        { label: "Projects", href: "#projects" },
-        { label: "Schemes", href: "#schemes" },
-        { label: "Blog", href: "#blog" },
+        { label: "About", href: "/about" },
+        { label: "Products", href: "/products" },
+        { label: "Services", href: "/services" },
+        { label: "Projects", href: "/projects" },
+        { label: "Schemes", href: "/schemes" },
+        { label: "Blog", href: "/blog" },
     ];
 
     return (
@@ -152,7 +152,7 @@ export default function Navbar() {
                             color: "#1a1a1a",
                             marginRight: "10px",
                         }}>
-                            Connect Us
+                            Let's Connect
                         </span>
                         {/* --- Arrow circle — rotates on hover --- */}
                         <div
@@ -259,7 +259,7 @@ export default function Navbar() {
                                     display: "block",
                                 }}
                             >
-                                Connect Us
+                                Let's Connect
                             </Link>
 
                             {/* --- WhatsApp button --- */}
