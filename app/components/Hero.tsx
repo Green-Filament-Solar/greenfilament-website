@@ -18,30 +18,35 @@ const slides = [
     title: "Solar Cooking System",
     desc: "A revolutionary solar-powered cooking solution. Smoke-free, cost-free, and completely LPG independent.",
     bg: "/images/products/solar-cooking.jpg",
+    href: "/products/solar-cooking",
   },
   {
     sub: "Villages, Roads and Campuses",
     title: "Solar Street Lights",
     desc: "All-in-one and split solar street lights. Long backup, weatherproof, low maintenance.",
     bg: "/images/hero/streetlights.jpg",
+    href: "/products/solar-street-lighting",
   },
   {
     sub: "Residential and Commercial",
     title: "Rooftop Solar Power Plant",
     desc: "No matter what your solar needs are, we have the right option for every home and business.",
     bg: "/images/hero/rooftop.jpg",
+    href: "/products/rooftop-solar",
   },
   {
     sub: "Agriculture and Drinking Water",
     title: "Solar Pumps",
     desc: "AC and DC solar pumps for farmers across Odisha. KUSUM scheme eligible — up to 90% subsidy.",
     bg: "/images/hero/pumps.jpg",
+    href: "/products/solar-cooking",
   },
   {
     sub: "Energy Planning and Advisory",
     title: "Solar Consultancy",
     desc: "Unsure which system fits your needs? Our experts guide you from assessment to commissioning.",
     bg: "/images/hero/consultancy.jpg",
+    href: "/services",
   },
 ];
 
@@ -194,7 +199,7 @@ export default function Hero() {
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
 
             {/* Know More */}
-            <Link href="#about" style={{
+            <Link href={slides[active].href} style={{
               padding: "10px 22px",
               background: "#ffffff",
               color: "#7a3a00",
@@ -208,7 +213,7 @@ export default function Hero() {
             </Link>
 
             {/* Enquire Now */}
-            <Link href="#contact" style={{
+            <Link href="/connect" style={{
               padding: "10px 22px",
               border: "2px solid rgba(255,255,255,0.85)",
               color: "#ffffff",

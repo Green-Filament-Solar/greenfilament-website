@@ -30,7 +30,7 @@ const primaryProducts = [
       "1500W Coil Heating Technology",
       "Portable & Scalable Design",
     ],
-    href: "#",
+    href: "/products/solar-cooking",
   },
   {
     title: "Solar Street Lighting",
@@ -46,7 +46,7 @@ const primaryProducts = [
       "Lithium-Ion Long Backup",
       "Corrosion-Resistant Poles",
     ],
-    href: "#",
+    href: "/products/solar-street-lighting",
   },
 ];
 
@@ -57,28 +57,28 @@ const secondaryProducts = [
     desc: "KUSUM eligible solar pumps for irrigation and drinking water.",
     image: "/images/products/agri-pump.jpg",
     category: "Solar Pump",
-    href: "#",
+    href: "/connect",
   },
   {
     title: "High Mast Lighting",
     desc: "For ports, stadiums, highways, and industrial yards.",
     image: "/images/products/high-mast.jpg",
     category: "High Mast",
-    href: "#",
+    href: "/connect",
   },
   {
   title: "Solar Drinking Water",
   desc: "Clean, solar-powered drinking water systems for villages and communities.",
   image: "/images/products/drinking-water.jpg",
   category: "Solar Water",
-  href: "#",
+  href: "/connect",
 },
   {
     title: "Solar Cold Storage",
     desc: "Solar-powered cold storage for perishable goods.",
     image: "/images/products/cold-storage.jpg",
     category: "Cold Storage",
-    href: "#",
+    href: "/connect",
   },
 ];
 
@@ -410,7 +410,7 @@ export default function Products() {
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </Link>
-                    <Link href="#contact" className="btn-outline">
+                    <Link href="/connect" className="btn-outline">
                       Enquire
                     </Link>
                   </div>

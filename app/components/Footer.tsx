@@ -18,25 +18,22 @@ import NextImage from "next/image";
 /* --- Quick links data --- */
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "#about" },
-  { label: "Products", href: "#products" },
-  { label: "Projects", href: "#projects" },
-  { label: "Schemes", href: "#schemes" },
-  { label: "Blog", href: "/blog" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Schemes", href: "/schemes" },
+  { label: "Blogs", href: "/blogs" },
   { label: "Connect", href: "/connect" },
 ];
 
-/* --- Services links data --- */
-const serviceLinks = [
-  { label: "Site Assessment", href: "#services" },
-  { label: "System Design", href: "#services" },
-  { label: "Energy Audit", href: "#services" },
-  { label: "Energy Management", href: "#services" },
-  { label: "Net Metering", href: "#services" },
-  { label: "Subsidy Advisory", href: "#services" },
-  { label: "AMC & Support", href: "#services" },
-  { label: "Turnkey Execution", href: "#services" },
-  { label: "Preventive Maintenance", href: "#services" },
+/* --- Products links data --- */
+const productLinks = [
+  { label: "Solar Cooking System", href: "/products/solar-cooking" },
+  { label: "Solar Street Lighting", href: "/products/solar-street-lighting" },
+  { label: "Agriculture Pumps", href: "/connect" },
+  { label: "High Mast Lighting", href: "/connect" },
+  { label: "Solar Drinking Water", href: "/connect" },
+  { label: "Solar Cold Storage", href: "/connect" },
 ];
 
 /* ============================================================
@@ -286,10 +283,10 @@ export default function Footer() {
                 ))}
               </div>
 
-              {/* Column 2: Our Services */}
+              {/* Column 2: Our Products */}
               <div>
-                <div className="f-col-title">Our Services</div>
-                {serviceLinks.map((link) => (
+                <div className="f-col-title">Our Products</div>
+                {productLinks.map((link) => (
                   <Link key={link.label} href={link.href} className="f-link">{link.label}</Link>
                 ))}
               </div>
@@ -392,9 +389,9 @@ export default function Footer() {
               ))}
             </AccordionItem>
 
-            {/* --- Our Services accordion --- */}
-            <AccordionItem title="Our Services">
-              {serviceLinks.map((link) => (
+            {/* --- Our Product accordion --- */}
+            <AccordionItem title="Our Products">
+              {productLinks.map((link) => (
                 <Link key={link.label} href={link.href} className="f-link">{link.label}</Link>
               ))}
             </AccordionItem>

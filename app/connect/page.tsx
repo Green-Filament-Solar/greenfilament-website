@@ -71,32 +71,65 @@ export default function ConnectPage() {
 
         `}</style>
 
-                {/* ============================================================
-            HEADER — amber gradient
-            ============================================================ */}
+    {/* ============================================================
+    HERO — muted amber + dot grid + glow
+    ============================================================ */}
                 <div style={{
-                    background: "linear-gradient(135deg, #F5A000 0%, #FDB92E 50%, #e07b00 100%)",
+                    background: "linear-gradient(135deg, #c97200 0%, #d4820a 50%, #b36200 100%)",
                     padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)",
                     textAlign: "center",
                     position: "relative",
                     overflow: "hidden",
                 }}>
 
-                    {/* Solar grid pattern */}
-                    <div style={{ position: "absolute", inset: 0, opacity: 0.1 }}>
+                    {/* --- Dot grid --- */}
+                    <div style={{ position: "absolute", inset: 0, opacity: 0.1, pointerEvents: "none" }}>
                         <svg width="100%" height="100%">
                             <defs>
-                                <pattern id="connect-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
+                                <pattern id="about-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+                                    <circle cx="12" cy="12" r="1.5" fill="white" />
                                 </pattern>
                             </defs>
-                            <rect width="100%" height="100%" fill="url(#connect-grid)" />
+                            <rect width="100%" height="100%" fill="url(#about-dots)" />
                         </svg>
                     </div>
 
-                    {/* Glow circles */}
-                    <div style={{ position: "absolute", right: "8%", top: "-30%", width: "300px", height: "300px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", pointerEvents: "none" }} />
-                    <div style={{ position: "absolute", left: "5%", bottom: "-20%", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(255,255,255,0.08)", pointerEvents: "none" }} />
+                    {/* --- Center glow --- */}
+                    <div style={{
+                        position: "absolute",
+                        left: "50%",
+                        top: "50%",
+                        transform: "translate(-50%,-50%)",
+                        width: "500px",
+                        height: "500px",
+                        borderRadius: "50%",
+                        background: "radial-gradient(circle,rgba(255,255,255,0.08) 0%,transparent 70%)",
+                        pointerEvents: "none",
+                    }} />
+
+                    {/* --- Top right glow circle --- */}
+                    <div style={{
+                        position: "absolute",
+                        right: "-60px",
+                        top: "-60px",
+                        width: "280px",
+                        height: "280px",
+                        borderRadius: "50%",
+                        background: "rgba(255,255,255,0.06)",
+                        pointerEvents: "none",
+                    }} />
+
+                    {/* --- Bottom left glow circle --- */}
+                    <div style={{
+                        position: "absolute",
+                        left: "-40px",
+                        bottom: "-40px",
+                        width: "200px",
+                        height: "200px",
+                        borderRadius: "50%",
+                        background: "rgba(255,255,255,0.04)",
+                        pointerEvents: "none",
+                    }} />
 
                     {/* Content */}
                     <div style={{ position: "relative", zIndex: 1 }}>
