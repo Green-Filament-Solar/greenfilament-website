@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "On-Grid, Off-Grid & Hybrid rooftop solar for homes and businesses. 500+ installations. Free site assessment.",
   },
   alternates: {
-    canonical: "https://greenfilament.com/products/rooftop-solar",
+    canonical: "https://greenfilament.com/rooftop-solar",
   },
 };
 

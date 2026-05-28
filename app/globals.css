@@ -65,3 +65,28 @@ body {
 .nav-cta {
   transition: all 0.2s;
 }
+
+.cta-btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .cta-btn-wrapper {
+    justify-content: center;
+  }
+}
+
+.custom-order-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .custom-order-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

@@ -28,9 +28,10 @@ const quickLinks = [
 
 /* --- Products links data --- */
 const productLinks = [
-  { label: "Solar Cooking System", href: "/products/solar-cooking" },
-  { label: "Solar Street Lighting", href: "/products/solar-street-lighting" },
-  { label: "Agriculture Pumps", href: "/connect" },
+  { label: "Solar Cooking System", href: "/solar-cooking" },
+  { label: "Solar Street Lighting", href: "/solar-street-lighting" },
+  { label: "Rooftop Solar", href: "/rooftop-solar" },
+  { label: "Agriculture Pumps", href: "/solar-water-pump" },
   { label: "High Mast Lighting", href: "/connect" },
   { label: "Solar Drinking Water", href: "/connect" },
   { label: "Solar Cold Storage", href: "/connect" },

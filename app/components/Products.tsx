@@ -30,7 +30,7 @@ const primaryProducts = [
       "1500W Coil Heating Technology",
       "Portable & Scalable Design",
     ],
-    href: "/products/solar-cooking",
+    href: "/solar-cooking",
   },
   {
     title: "Solar Street Lighting",
@@ -46,7 +46,7 @@ const primaryProducts = [
       "Lithium-Ion Long Backup",
       "Corrosion-Resistant Poles",
     ],
-    href: "/products/solar-street-lighting",
+    href: "/solar-street-lighting",
   },
 ];
 

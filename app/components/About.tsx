@@ -9,6 +9,7 @@
    ============================================================ */
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -267,7 +268,7 @@ export default function About() {
 
                             {/* --- CTA buttons --- */}
                             <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-                                <Link href="#contact" style={{
+                                <Link href="/about" style={{
                                     background: "#FDB92E",
                                     color: "#412402",
                                     fontSize: "13px",
@@ -279,7 +280,7 @@ export default function About() {
                                 }}>
                                     Know More
                                 </Link>
-                                <Link href="#projects" style={{
+                                <Link href="/projects" style={{
                                     border: "1.5px solid #FDB92E",
                                     color: "#854F0B",
                                     fontSize: "13px",
@@ -310,9 +311,41 @@ export default function About() {
                                             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.85)", lineHeight: 1.5 }}>Recognized by Govt. of India</div>
                                         </div>
                                     </div>
-                                    <div className="flip-back" style={{ background: "#bf6a00", borderBottom: "6px solid #a05500", borderRight: "6px solid #a05500" }}>
-                                        {/* <NextImage src="/images/certifications/startup-india.png" alt="Start-up India" width={120} height={50} style={{ objectFit: "contain" }} /> */}
-                                        <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.6)" }}>[ Start-up India Logo ]</div>
+                                    <div
+                                        className="flip-back"
+                                        style={{
+                                            background: "linear-gradient(135deg, #c97300 0%, #a05500 100%)",
+                                            borderBottom: "6px solid #8a4700",
+                                            borderRight: "6px solid #8a4700",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "14px",
+                                            padding: "24px",
+                                        }}
+                                    >
+                                        {/* White premium logo card */}
+                                        <div
+                                            style={{
+                                                background: "rgba(255,255,255,0.98)",
+                                                padding: "16px 24px",
+                                                borderRadius: "18px",
+                                                boxShadow: "0 10px 25px rgba(0,0,0,0.18)",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backdropFilter: "blur(10px)",
+                                            }}
+                                        >
+                                            <Image
+                                                src="/images/certifications/startup-india.png"
+                                                alt="Start-up India"
+                                                width={120}
+                                                height={50}
+                                                style={{ objectFit: "contain" }}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -327,10 +360,44 @@ export default function About() {
                                             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.85)", lineHeight: 1.5 }}>Recognized by Govt. of Odisha</div>
                                         </div>
                                     </div>
-                                    <div className="flip-back" style={{ background: "#b85e00", borderBottom: "6px solid #8a4500", borderRight: "6px solid #8a4500" }}>
-                                        {/* <NextImage src="/images/certifications/startup-odisha.png" alt="Start-up Odisha" width={120} height={50} style={{ objectFit: "contain" }} /> */}
-                                        <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.6)" }}>[ Start-up Odisha Logo ]</div>
+
+                                    <div
+                                        className="flip-back"
+                                        style={{
+                                            background: "linear-gradient(135deg, #c97300 0%, #a05500 100%)",
+                                            borderBottom: "6px solid #8a4700",
+                                            borderRight: "6px solid #8a4700",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "14px",
+                                            padding: "24px",
+                                        }}
+                                    >
+                                        {/* White premium logo card */}
+                                        <div
+                                            style={{
+                                                background: "rgba(255,255,255,0.98)",
+                                                padding: "16px 24px",
+                                                borderRadius: "18px",
+                                                boxShadow: "0 10px 25px rgba(0,0,0,0.18)",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backdropFilter: "blur(10px)",
+                                            }}
+                                        >
+                                            <Image
+                                                src="/images/certifications/startup-odisha.png"
+                                                alt="Start-up India"
+                                                width={120}
+                                                height={50}
+                                                style={{ objectFit: "contain" }}
+                                            />
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -344,10 +411,44 @@ export default function About() {
                                             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.85)", lineHeight: 1.5 }}>National Small Industries Corp.</div>
                                         </div>
                                     </div>
-                                    <div className="flip-back" style={{ background: "#1e4d1e", borderBottom: "6px solid #123012", borderRight: "6px solid #123012" }}>
-                                        {/* <NextImage src="/images/certifications/nsic.png" alt="NSIC" width={100} height={50} style={{ objectFit: "contain" }} /> */}
-                                        <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.6)" }}>[ NSIC Logo ]</div>
+
+                                    <div
+                                        className="flip-back"
+                                        style={{
+                                            background: "linear-gradient(135deg, #c97300 0%, #a05500 100%)",
+                                            borderBottom: "6px solid #8a4700",
+                                            borderRight: "6px solid #8a4700",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "14px",
+                                            padding: "24px",
+                                        }}
+                                    >
+                                        {/* White premium logo card */}
+                                        <div
+                                            style={{
+                                                background: "rgba(255,255,255,0.98)",
+                                                padding: "16px 24px",
+                                                borderRadius: "18px",
+                                                boxShadow: "0 10px 25px rgba(0,0,0,0.18)",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backdropFilter: "blur(10px)",
+                                            }}
+                                        >
+                                            <Image
+                                                src="/images/certifications/nsic.png"
+                                                alt="Start-up India"
+                                                width={120}
+                                                height={50}
+                                                style={{ objectFit: "contain" }}
+                                            />
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -361,10 +462,45 @@ export default function About() {
                                             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.85)", lineHeight: 1.5 }}>Application in progress</div>
                                         </div>
                                     </div>
-                                    <div className="flip-back" style={{ background: "#123a54", borderBottom: "6px solid #0a2438", borderRight: "6px solid #0a2438" }}>
-                                        {/* <NextImage src="/images/certifications/iso.png" alt="ISO" width={80} height={50} style={{ objectFit: "contain" }} /> */}
-                                        <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.6)" }}>[ ISO Logo ]</div>
+                                    
+<div
+                                        className="flip-back"
+                                        style={{
+                                            background: "linear-gradient(135deg, #c97300 0%, #a05500 100%)",
+                                            borderBottom: "6px solid #8a4700",
+                                            borderRight: "6px solid #8a4700",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "14px",
+                                            padding: "24px",
+                                        }}
+                                    >
+                                        {/* White premium logo card */}
+                                        <div
+                                            style={{
+                                                background: "rgba(255,255,255,0.98)",
+                                                padding: "16px 24px",
+                                                borderRadius: "18px",
+                                                boxShadow: "0 10px 25px rgba(0,0,0,0.18)",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backdropFilter: "blur(10px)",
+                                            }}
+                                        >
+                                            <Image
+                                                src="/images/certifications/iso.png"
+                                                alt="Start-up India"
+                                                width={120}
+                                                height={50}
+                                                style={{ objectFit: "contain" }}
+                                            />
+                                        </div>
                                     </div>
+
+
                                 </div>
                             </div>
 

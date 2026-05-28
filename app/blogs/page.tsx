@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Solar Energy Blog | Green Filament",
     description: "Expert insights on solar energy, government schemes, and clean energy projects across Odisha.",
-    url: "https://greenfilament.com/blog",
+    url: "https://greenfilament.com/blogs",
     siteName: "Green Filament",
     locale: "en_IN",
     type: "website",
   },
   alternates: {
-    canonical: "https://greenfilament.com/blog",
+    canonical: "https://greenfilament.com/blogs",
   },
 };
 

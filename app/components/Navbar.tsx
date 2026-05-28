@@ -17,8 +17,10 @@ import NextImage from "next/image";
 
 /* --- Products dropdown items --- */
 const productDropdown = [
-    { label: "Solar Cooking System", href: "/products/solar-cooking" },
-    { label: "Solar Street Lighting", href: "/products/solar-street-lighting" },
+    { label: "Solar Cooking System", href: "/solar-cooking" },
+    { label: "Solar Street Lighting", href: "/solar-street-lighting" },
+    { label: "Rooftop Solar", href: "/rooftop-solar" },
+    { label: "Solar Water Pump", href: "/solar-water-pump" },
 ];
 
 /* --- Nav links data --- */

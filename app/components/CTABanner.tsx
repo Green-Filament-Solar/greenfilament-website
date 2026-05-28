@@ -145,7 +145,7 @@ export default function CTABanner() {
                             }}>
 
                                 {/* --- Primary CTA --- */}
-                                <Link href="#connect" className="cta-pill">
+                                <Link href="/connect" className="cta-pill">
                                     <span style={{
                                         fontSize: "14px",
                                         fontWeight: 700,

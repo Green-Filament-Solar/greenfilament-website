@@ -16,8 +16,8 @@
 import type { Metadata } from "next";
 import NextImage from "next/image";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 /* ============================================================
    SEO METADATA
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     images: ["/images/products/solar-cooking.jpg"],
   },
   alternates: {
-    canonical: "https://greenfilament.com/products/solar-cooking",
+    canonical: "https://greenfilament.com/solar-cooking",
   },
 };
 

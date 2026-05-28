@@ -350,7 +350,7 @@ export default function Insight() {
                 }}>
                   The best time to go solar is right now.
                 </div>
-                <Link href="#contact" style={{
+                <Link href="/connect" style={{
                   display: "inline-block",
                   background: "#FDB92E",
                   color: "#412402",
