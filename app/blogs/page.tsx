@@ -17,26 +17,40 @@ import { blogPosts, blogCategories } from "../data/blog";
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-  title: "Solar Energy Blog — Tips, Guides & Projects | Green Filament",
-  description: "Expert insights on solar energy, government schemes, rooftop solar, street lighting, and clean cooking. Real projects. Real impact. From Green Filament, Odisha.",
+  title: "Solar Energy Blog — Tips, Guides & Insights | Green Filament",
+  description:
+    "Expert insights on rooftop solar, solar pumps, street lighting, solar cooking, and government schemes in Odisha. Real projects. Practical guides. From Green Filament.",
   keywords: [
     "solar energy blog Odisha",
-    "solar tips India",
-    "rooftop solar guide",
-    "solar street light",
-    "government solar schemes",
+    "rooftop solar guide India",
+    "solar tips Bhubaneswar",
+    "solar street light guide",
+    "government solar schemes Odisha",
+    "PM Surya Ghar guide",
+    "KUSUM scheme guide",
+    "solar pump guide Odisha",
+    "clean energy blog India",
     "Green Filament blog",
   ],
+  alternates: {
+    canonical: "https://greenfilament.com/blogs",
+  },
   openGraph: {
-    title: "Solar Energy Blog | Green Filament",
-    description: "Expert insights on solar energy, government schemes, and clean energy projects across Odisha.",
+    title: "Solar Energy Blog — Tips, Guides & Insights | Green Filament",
+    description:
+      "Expert insights on rooftop solar, solar pumps, street lighting, and government schemes in Odisha. Real projects. Practical guides.",
     url: "https://greenfilament.com/blogs",
     siteName: "Green Filament",
     locale: "en_IN",
     type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Green Filament Solar Energy Blog Odisha" }],
   },
-  alternates: {
-    canonical: "https://greenfilament.com/blogs",
+  twitter: {
+    card: "summary_large_image",
+    title: "Solar Energy Blog | Green Filament Odisha",
+    description:
+      "Rooftop solar, pumps, street lights, schemes — practical guides from 7+ years of solar installations.",
+    images: ["/images/og-image.jpg"],
   },
 };
 

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Solar Water Pump Installation | Green Filament",
         description: "Efficient solar water pump solutions for agriculture, borewell, irrigation, and water supply in Odisha. Expert installation and after-sales support.",
-        url: "https://greenfilament.com/products/solar-water-pump",
+        url: "https://greenfilament.com/solar-water-pump",
         siteName: "Green Filament",
         images: [
             {

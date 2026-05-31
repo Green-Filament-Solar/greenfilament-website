@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Solar Street Lights — 10,000+ Installed | Green Filament",
         description: "10,000+ solar street lights installed across Odisha. Zero complaints. Non-integrated and semi-integrated options. Custom orders welcome.",
-        url: "https://greenfilament.com/products/solar-street-lighting",
+        url: "https://greenfilament.com/solar-street-lighting",
         siteName: "Green Filament",
         images: [
             {

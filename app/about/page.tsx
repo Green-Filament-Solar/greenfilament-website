@@ -18,8 +18,41 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Us",
-    description: "Green Filament is an Odisha-based clean energy brand engineering next-generation solar solutions for homes, farms, roads, and communities since 2018.",
+  title: "About Us | Green Filament Solar Energy Company Odisha",
+  description:
+    "Green Filament is an Odisha-based solar energy company founded in 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts in Bhubaneswar and beyond.",
+  keywords: [
+    "about Green Filament",
+    "solar company Odisha",
+    "solar energy Bhubaneswar",
+    "NSIC registered solar company",
+    "Start-up India solar",
+    "solar installation Odisha",
+    "renewable energy company Odisha",
+    "solar energy since 2018",
+    "clean energy Odisha",
+    "solar brand India",
+  ],
+  alternates: {
+    canonical: "https://greenfilament.com/about",
+  },
+  openGraph: {
+    title: "About Us | Green Filament Solar Energy Company Odisha",
+    description:
+      "Odisha-based solar energy company since 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts.",
+    url: "https://greenfilament.com/about",
+    siteName: "Green Filament",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "About Green Filament Solar Energy Company Odisha" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Green Filament Solar Energy Company Odisha",
+    description:
+      "Odisha-based solar energy company since 2018. 500+ projects. NSIC Registered. Start-up India recognized.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 /* --- Why Choose Us data --- */

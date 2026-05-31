@@ -10,8 +10,28 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Privacy Policy for M/s Green Filament — Solar Energy Company, Bhubaneswar, Odisha.",
+  title: "Privacy Policy | Green Filament Solar Energy Odisha",
+  description:
+    "Privacy Policy for M/s Green Filament — solar energy company in Bhubaneswar, Odisha. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "https://greenfilament.com/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy | Green Filament Solar Energy Odisha",
+    description:
+      "Privacy Policy for M/s Green Filament — solar energy company in Bhubaneswar, Odisha.",
+    url: "https://greenfilament.com/privacy",
+    siteName: "Green Filament",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Green Filament Privacy Policy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Green Filament",
+    description: "How M/s Green Filament collects, uses, and protects your personal information.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function PrivacyPage() {

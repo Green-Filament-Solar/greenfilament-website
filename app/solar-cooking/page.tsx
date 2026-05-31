@@ -1,5 +1,5 @@
 /* ============================================================
-   SOLAR COOKING PRODUCT PAGE — /products/solar-cooking
+   SOLAR COOKING PRODUCT PAGE — /solar-cooking
    - Single file, no client component needed
    - Clean SEO: title, description, openGraph, twitter, keywords
    - Hero: amber gradient + patent badge + dot grid
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Solar Cooking System — Patent-Granted Clean Cooking Solution | Green Filament",
     description: "India's patent-granted solar-powered cooking system. Zero LPG, zero smoke, zero fuel cost. 200+ installations across India.",
-    url: "https://greenfilament.com/products/solar-cooking",
+    url: "https://greenfilament.com/solar-cooking",
     siteName: "Green Filament",
     images: [
       {

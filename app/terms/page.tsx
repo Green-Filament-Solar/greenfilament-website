@@ -10,8 +10,28 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
-  description: "Terms and Conditions for M/s Green Filament — Solar Energy Company, Bhubaneswar, Odisha.",
+  title: "Terms & Conditions | Green Filament Solar Energy Odisha",
+  description:
+    "Terms and Conditions for M/s Green Filament — solar energy company in Bhubaneswar, Odisha. Read our service terms, payment policy, warranty, and legal information.",
+  alternates: {
+    canonical: "https://greenfilament.com/terms",
+  },
+  openGraph: {
+    title: "Terms & Conditions | Green Filament Solar Energy Odisha",
+    description:
+      "Terms and Conditions for M/s Green Filament — solar energy company in Bhubaneswar, Odisha.",
+    url: "https://greenfilament.com/terms",
+    siteName: "Green Filament",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Green Filament Terms and Conditions" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | Green Filament",
+    description: "Service terms, payment policy, warranty and legal information for Green Filament Solar Energy.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function TermsPage() {

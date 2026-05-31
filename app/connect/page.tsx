@@ -10,8 +10,41 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Connect With Us",
-    description: "Get in touch with Green Filament — call, email, WhatsApp or visit us at our office in Bhubaneswar, Odisha.",
+  title: "Contact Us | Solar Company in Bhubaneswar, Odisha | Green Filament",
+  description:
+    "Contact Green Filament — Odisha's trusted solar energy company. Call, WhatsApp, or email us for free site assessment, solar installation, and subsidy guidance in Bhubaneswar.",
+  keywords: [
+    "contact Green Filament",
+    "solar company Bhubaneswar contact",
+    "solar installation enquiry Odisha",
+    "solar quote Bhubaneswar",
+    "Green Filament phone number",
+    "solar energy contact Odisha",
+    "free solar assessment Odisha",
+    "solar consultant Bhubaneswar",
+    "WhatsApp solar Odisha",
+    "solar company address Bhubaneswar",
+  ],
+  alternates: {
+    canonical: "https://greenfilament.com/connect",
+  },
+  openGraph: {
+    title: "Contact Us | Solar Company in Bhubaneswar, Odisha | Green Filament",
+    description:
+      "Call, WhatsApp, or email Green Filament for free site assessment and solar installation in Bhubaneswar, Odisha.",
+    url: "https://greenfilament.com/connect",
+    siteName: "Green Filament",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Contact Green Filament Solar Energy Bhubaneswar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Green Filament | Solar Company Bhubaneswar",
+    description:
+      "Call, WhatsApp, or email us for free solar assessment and installation in Odisha.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function ConnectPage() {

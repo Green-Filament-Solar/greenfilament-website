@@ -8,5 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ["/api/", "/_next/"],
     },
     sitemap: "https://greenfilament.com/sitemap.xml",
+    host: "https://greenfilament.com",
   };
 }

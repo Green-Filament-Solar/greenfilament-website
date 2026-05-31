@@ -1,5 +1,5 @@
 /* ============================================================
-   ROOFTOP SOLAR PAGE — /products/rooftop-solar
+   ROOFTOP SOLAR PAGE — /rooftop-solar
    - Server component for SEO metadata
    - Renders RooftopSolarClient for full UI
    ============================================================ */
@@ -9,7 +9,8 @@ import RooftopSolarClient from "./RooftopSolarClient";
 
 export const metadata: Metadata = {
   title: "Rooftop Solar Systems — On-Grid, Off-Grid & Hybrid | Green Filament",
-  description: "Rooftop solar systems for homes, businesses and industries in Odisha. On-Grid, Off-Grid and Hybrid options. 500+ installations. Get up to ₹1,38,000 subsidy. Free site assessment.",
+  description:
+    "Rooftop solar systems for homes, businesses and industries in Odisha. On-Grid, Off-Grid and Hybrid options. 500+ installations. Get up to ₹1,38,000 subsidy. Free site assessment.",
   keywords: [
     "rooftop solar Odisha",
     "solar panel installation Odisha",
@@ -22,21 +23,25 @@ export const metadata: Metadata = {
     "reduce electricity bill solar",
     "Green Filament rooftop solar",
   ],
+  alternates: {
+    canonical: "https://greenfilament.com/rooftop-solar",
+  },
   openGraph: {
     title: "Rooftop Solar Systems — On-Grid, Off-Grid & Hybrid | Green Filament",
-    description: "500+ rooftop solar installations across Odisha. On-Grid, Off-Grid and Hybrid systems for homes and businesses. Free site assessment.",
-    url: "https://greenfilament.com/products/rooftop-solar",
+    description:
+      "500+ rooftop solar installations across Odisha. On-Grid, Off-Grid and Hybrid systems for homes and businesses. Free site assessment.",
+    url: "https://greenfilament.com/rooftop-solar",
     siteName: "Green Filament",
     locale: "en_IN",
     type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Rooftop Solar Systems Odisha - Green Filament" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rooftop Solar Systems | Green Filament Odisha",
-    description: "On-Grid, Off-Grid & Hybrid rooftop solar for homes and businesses. 500+ installations. Free site assessment.",
-  },
-  alternates: {
-    canonical: "https://greenfilament.com/rooftop-solar",
+    description:
+      "On-Grid, Off-Grid & Hybrid rooftop solar for homes and businesses. 500+ installations. Free site assessment.",
+    images: ["/images/og-image.jpg"],
   },
 };
 
