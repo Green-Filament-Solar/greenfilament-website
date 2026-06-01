@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "solar company Odisha",
     "solar panels Bhubaneswar",
     "solar pump Odisha",
+    "KUSUM scheme",
     "KUSUM scheme Odisha",
     "solar street light Odisha",
     "solar cooking system",
