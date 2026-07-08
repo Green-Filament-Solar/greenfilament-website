@@ -10,17 +10,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/schemes",   lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
 
     // Product pages
-    { url: "https://greenfilament.com/rooftop-solar",        lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://greenfilament.com/rooftop-solar",         lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: "https://greenfilament.com/solar-street-lighting", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: "https://greenfilament.com/solar-water-pump",     lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: "https://greenfilament.com/solar-cooking",        lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://greenfilament.com/solar-water-pump",      lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://greenfilament.com/solar-cooking",         lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
 
     // Blog listing + posts
-    { url: "https://greenfilament.com/blogs",                          lastModified: new Date(), changeFrequency: "weekly",  priority: 0.7 },
-    { url: "https://greenfilament.com/blogs/solar-street-lights",      lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: "https://greenfilament.com/blogs/rooftop-solar",            lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: "https://greenfilament.com/blogs/solar-water",              lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: "https://greenfilament.com/blogs/solar-cooking",            lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs",                                          lastModified: new Date(), changeFrequency: "weekly",  priority: 0.7 },
+    { url: "https://greenfilament.com/blogs/solar-street-lights-rural-india",          lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/rooftop-solar-vs-electricity-bills-2026",  lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/solar-water-systems-rural-villages",       lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/future-of-solar-cooking-battery-free",     lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
 
     // Legal
     { url: "https://greenfilament.com/terms",   lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
