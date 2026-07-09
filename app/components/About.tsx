@@ -256,7 +256,7 @@ export default function About() {
                                     { value: "500+", label: "Successful Projects" },
                                     { value: "1MW+", label: "Solar Capacity Installed" },
                                     { value: "25 Year", label: "System Performance Life" },
-                                    { value: "7+ Years", label: "Industry Experience." },
+                                    { value: "8+ Years", label: "Industry Experience." },
                                 ].map((stat, i, arr) => (
                                     <div key={stat.label} style={{
                                         flex: 1,

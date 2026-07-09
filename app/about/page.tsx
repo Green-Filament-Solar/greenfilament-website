@@ -18,41 +18,41 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Green Filament Solar Energy Company Odisha",
-  description:
-    "Green Filament is an Odisha-based solar energy company founded in 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts in Bhubaneswar and beyond.",
-  keywords: [
-    "about Green Filament",
-    "solar company Odisha",
-    "solar energy Bhubaneswar",
-    "NSIC registered solar company",
-    "Start-up India solar",
-    "solar installation Odisha",
-    "renewable energy company Odisha",
-    "solar energy since 2018",
-    "clean energy Odisha",
-    "solar brand India",
-  ],
-  alternates: {
-    canonical: "https://greenfilament.com/about",
-  },
-  openGraph: {
     title: "About Us | Green Filament Solar Energy Company Odisha",
     description:
-      "Odisha-based solar energy company since 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts.",
-    url: "https://greenfilament.com/about",
-    siteName: "Green Filament",
-    locale: "en_IN",
-    type: "website",
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "About Green Filament Solar Energy Company Odisha" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Us | Green Filament Solar Energy Company Odisha",
-    description:
-      "Odisha-based solar energy company since 2018. 500+ projects. NSIC Registered. Start-up India recognized.",
-    images: ["/images/og-image.jpg"],
-  },
+        "Green Filament is an Odisha-based solar energy company founded in 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts in Bhubaneswar and beyond.",
+    keywords: [
+        "about Green Filament",
+        "solar company Odisha",
+        "solar energy Bhubaneswar",
+        "NSIC registered solar company",
+        "Start-up India solar",
+        "solar installation Odisha",
+        "renewable energy company Odisha",
+        "solar energy since 2018",
+        "clean energy Odisha",
+        "solar brand India",
+    ],
+    alternates: {
+        canonical: "https://greenfilament.com/about",
+    },
+    openGraph: {
+        title: "About Us | Green Filament Solar Energy Company Odisha",
+        description:
+            "Odisha-based solar energy company since 2018. NSIC Registered, Start-up India recognized. 500+ projects across 12+ districts.",
+        url: "https://greenfilament.com/about",
+        siteName: "Green Filament",
+        locale: "en_IN",
+        type: "website",
+        images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "About Green Filament Solar Energy Company Odisha" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Us | Green Filament Solar Energy Company Odisha",
+        description:
+            "Odisha-based solar energy company since 2018. 500+ projects. NSIC Registered. Start-up India recognized.",
+        images: ["/images/og-image.jpg"],
+    },
 };
 
 /* --- Why Choose Us data --- */
@@ -144,7 +144,7 @@ const stats = [
     { value: "500+", label: "Projects Completed" },
     { value: "1MW+", label: "Solar Capacity" },
     { value: "12+", label: "Districts Covered" },
-    { value: "7+", label: "Years of Excellence" },
+    { value: "8+", label: "Years of Excellence" },
 ];
 
 /* --- Certifications data --- */
@@ -375,11 +375,20 @@ export default function AboutPage() {
                                 <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.85, marginBottom: "14px", textAlign: "justify" }}>
                                     What started in 2018 as a mission to make renewable energy more accessible has evolved into a growing clean energy brand trusted across Odisha for quality, performance, and long-term impact.
                                 </p>
+                                
                                 <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.85, marginBottom: "14px", textAlign: "justify" }}>
                                     From high-performance solar street lighting to next-generation solar cooking technology, our products are engineered to solve real-world energy challenges with reliability and sustainability at the core.
                                 </p>
+                                
                                 <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.85, textAlign: "justify" }}>
                                     Today, Green Filament powers homes, farms, roads, institutions, and communities with a strong focus on smart design, durability, and practical innovation built for Indian conditions.
+                                </p>
+                                
+                                <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.85, marginTop: "14px", textAlign: "justify" }}>
+                                    To read the full story of how we started, what we learned, and how we built trust across Odisha,{" "}
+                                    <Link href="/solar-company-odisha" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "none" }}>
+                                        read our complete company story here.
+                                    </Link>
                                 </p>
                             </div>
 

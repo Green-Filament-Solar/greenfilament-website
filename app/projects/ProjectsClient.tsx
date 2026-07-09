@@ -245,7 +245,7 @@ export default function ProjectsClients() {
                                 { value: "500+", label: "Projects Completed" },
                                 { value: "12+", label: "Districts Covered" },
                                 { value: "1MW+", label: "Solar Capacity" },
-                                { value: "7+", label: "Years of Excellence" },
+                                { value: "8+", label: "Years of Excellence" },
                             ].map((stat, i) => (
                                 <div key={stat.label} style={{
                                     textAlign: "center",
