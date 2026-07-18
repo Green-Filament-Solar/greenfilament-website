@@ -13,7 +13,10 @@ export type Section =
   | { type: "p"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "highlight"; text: string }
-  | { type: "project"; label: string; title: string; desc: string };
+  | { type: "project"; label: string; title: string; desc: string }
+  | { type: "formula"; formula: string; where: string[] }
+  | { type: "calculation"; step: string; formula: string; result: string; explanation: string }
+  | { type: "deficitbox"; items: { label: string; value: string; color: string }[]; message: string };
 
 export type BlogPost = {
   slug: string;
@@ -524,6 +527,250 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  /* ============================================================
+     POST 5 — Solar Street Light 2am Problem
+     ============================================================ */
+  {
+    slug: "why-solar-street-light-stops-working-at-night",
+    title: "Why Does Your Solar Street Light Switch Off at 2am?",
+    date: "2026-07-18",
+    category: "Street Lighting",
+    excerpt: "Your solar street light was working at 7pm, still on at 10pm, but completely off by 2am. No damage. No broken wire. So what happened? Let us explain with real numbers and simple formulas.",
+    image: "/images/projects/hill-temple.jpg",
+    readTime: "8 min read",
+    keywords: [
+      "solar street light not working at night",
+      "solar street light stops working",
+      "solar street light battery problem",
+      "solar street light maintenance Odisha",
+      "solar street light problem solution",
+      "why solar light turns off at night",
+    ],
+    sections: [
+      {
+        type: "p",
+        text: "Let me ask you something first. Have you ever had a situation where your solar street light was working fine at 7pm, still on at 10pm, but completely off by 2am? And in the morning someone calls and says light kaam nahi kar raha. You go and check. The light is physically fine. No damage. No broken wire. Everything looks okay. But it switched off at night. What happened? Let me explain this in the simplest way possible.",
+      },
+      {
+        type: "h2",
+        text: "The Water Tank Story",
+      },
+      {
+        type: "p",
+        text: "You have seen a water tank on a rooftop. Every morning water fills in. Every night your family uses that water. If your family uses more water than what filled in during the day, the tank becomes empty before morning. Simple right? Your solar street light works exactly like that water tank. The solar panel fills water during the day. The battery is your tank. The LED light uses that water at night. And the controller is like a sensor that watches the tank level. The moment the tank reaches a minimum level, it shuts the tap automatically. Not to trouble you. But to protect the tank from permanent damage.",
+      },
+      {
+        type: "h2",
+        text: "The Two Formulas You Need",
+      },
+      {
+        type: "p",
+        text: "Do not worry. If you studied Class 9 science, you already know everything you need. There are only two formulas in this entire explanation.",
+      },
+      {
+        type: "formula",
+        formula: "P = V × I",
+        where: [
+          "P = Power (measured in Watts)",
+          "V = Voltage (measured in Volts)",
+          "I = Current (measured in Amperes)",
+        ],
+      },
+      {
+        type: "formula",
+        formula: "E = P × T",
+        where: [
+          "E = Energy (measured in Watt-hours)",
+          "P = Power (measured in Watts)",
+          "T = Time (measured in Hours)",
+        ],
+      },
+      {
+        type: "p",
+        text: "Energy is simply Power used over time. That is it. Two formulas. That is all we need for this entire calculation. Now let us apply this to a real street light.",
+      },
+      {
+        type: "h2",
+        text: "The System We Are Talking About",
+      },
+      {
+        type: "p",
+        text: "This is a standard 24W semi-integrated solar street light. The kind commonly used in government projects and gram panchayat roads across Odisha. Solar Panel is 60 Watts. Battery is 24Ah LiFePO4 at 12 Volts. LED is 24 Watts. This is what is written on paper. Now let us see what actually happens in the field.",
+      },
+      {
+        type: "h2",
+        text: "Step 1. How Much Energy Does the Panel Generate in One Day?",
+      },
+      {
+        type: "calculation",
+        step: "Step 1 — Panel energy per day",
+        formula: "E = P × T = 60 × 5",
+        result: "E = 300 Watt-hours",
+        explanation: "300 glasses of water being poured into your battery tank every sunny day. Odisha gets about 5 hours of good usable sunlight per day on average.",
+      },
+      {
+        type: "h2",
+        text: "Step 2. How Much Energy Does the Battery Actually Hold?",
+      },
+      {
+        type: "calculation",
+        step: "Step 2 — Total battery capacity",
+        formula: "E = V × Ah = 12 × 24",
+        result: "E = 288 Watt-hours (total)",
+        explanation: "Your battery tank can hold 288 glasses of water when it is 100% full. But here is something important that nobody tells you when they sell you the light.",
+      },
+      {
+        type: "p",
+        text: "A LiFePO4 battery should never be discharged below 20% of its capacity. If it goes below that level, the battery gets permanently damaged. So the controller is programmed to cut the power to the LED when the battery reaches 20% remaining. This is called Low Voltage Disconnect or LVD in short.",
+      },
+      {
+        type: "calculation",
+        step: "Step 2b — Usable battery capacity after LVD protection",
+        formula: "Usable = 288 × 80%",
+        result: "Usable = 230 Watt-hours only",
+        explanation: "Your tank holds 288 glasses total. But you can only use 230 of them. The remaining 58 glasses are locked at the bottom to protect the tank from permanent damage.",
+      },
+      {
+        type: "h2",
+        text: "Step 3. How Much Energy Does the LED Use in One Night?",
+      },
+      {
+        type: "calculation",
+        step: "Step 3 — LED consumption per night",
+        formula: "E = P × T = 24 × 10",
+        result: "E = 240 Watt-hours",
+        explanation: "Every night your light drinks 240 glasses of water from the tank. The LED runs from 7pm to 5am which is 10 hours.",
+      },
+      {
+        type: "h2",
+        text: "Step 4. Does the System Balance?",
+      },
+      {
+        type: "deficitbox",
+        items: [
+          { label: "FILLED IN PER DAY", value: "300 Wh", color: "#2d6a2d" },
+          { label: "USABLE TANK", value: "230 Wh", color: "#1a4a8a" },
+          { label: "NEEDED PER NIGHT", value: "240 Wh", color: "#E24B4A" },
+        ],
+        message: "230 available. 240 needed. Already a deficit of 10 Watt-hours on a perfect sunny day. But wait. It gets worse.",
+      },
+      {
+        type: "h2",
+        text: "What Actually Happens in the Field",
+      },
+      {
+        type: "p",
+        text: "Your 60W panel does not give you 60W in real conditions. Never. Here is why.",
+      },
+      {
+        type: "calculation",
+        step: "Reason 1 — Dust on the panel (30% loss)",
+        formula: "Real output = 60 × 70% × 5",
+        result: "E = 210 Watt-hours only",
+        explanation: "Odisha roads are dusty. A thin layer of dust reduces panel output by 20 to 30%. You are putting 210 glasses into a tank that needs 240 every night. Every single night you are 30 glasses short.",
+      },
+      {
+        type: "calculation",
+        step: "Reason 2 — Heat in Odisha summer",
+        formula: "Loss = (42 - 25) × 0.4% = 6.8%",
+        result: "Additional 6.8% efficiency lost",
+        explanation: "Odisha summer crosses 42 degrees Celsius. For every degree above 25 degrees C, a standard panel loses about 0.4% of its output. On a hot dusty day your 60W panel might actually give you 35 to 38 Watts of real output.",
+      },
+      {
+        type: "calculation",
+        step: "Reason 3 — Battery aging after 18 months",
+        formula: "New usable = 12 × 20 × 80%",
+        result: "E = 192 Watt-hours only",
+        explanation: "After 18 months your 24Ah battery may only hold 20Ah effectively. Your tank that used to hold 230 usable glasses now only holds 192 glasses. But the LED still needs 240 every night.",
+      },
+      {
+        type: "calculation",
+        step: "Reason 4 — Monsoon cloudy days",
+        formula: "E = 60 × 35% × 5",
+        result: "E = 105 Watt-hours only",
+        explanation: "On a heavily cloudy day your panel may generate only 30 to 40% of its rated output. After 2 consecutive cloudy days the battery is at 40 to 50% charge. By 2am the controller cuts power to protect it. The light goes off.",
+      },
+      {
+        type: "h2",
+        text: "The Controller Is Not the Villain",
+      },
+      {
+        type: "p",
+        text: "Many people blame the controller when the light goes off. Some even replace it thinking it is faulty. The controller is actually protecting your battery. When the battery voltage drops to the LVD threshold, the controller cuts power to the LED. If it did not do this, the battery would get deep discharged and permanently fail within a few months. Blaming the controller is like blaming the sensor in your water tank for alerting you that the tank is empty. The sensor is fine. There just was not enough water.",
+      },
+      {
+        type: "h2",
+        text: "The Right Way to Size a Solar Street Light",
+      },
+      {
+        type: "p",
+        text: "The panel and battery must be sized for real Odisha conditions. Not for a lab in Germany. Here is a simple rule of thumb.",
+      },
+      {
+        type: "calculation",
+        step: "Correct panel size for a 24W LED system",
+        formula: "Panel needed = (24 × 10 × 1.5) / 5",
+        result: "Minimum 72W panel required",
+        explanation: "Your panel should generate at least 1.5 times what your LED consumes per night. So a 24W LED system needs at least a 75W panel. Not 60W.",
+      },
+      {
+        type: "calculation",
+        step: "Correct battery size for a 24W LED system",
+        formula: "Ah = (240 × 1.5) / (12 × 0.8)",
+        result: "Minimum 37.5Ah battery required",
+        explanation: "Your battery should store at least 1.5 times the nightly consumption. So a 24W LED system needs at least a 36 to 40Ah battery. Not 24Ah.",
+      },
+      {
+        type: "highlight",
+        text: "Most suppliers spec the panel and battery just barely enough for ideal conditions. Because it keeps the cost low and the tender price competitive. But the light fails in the field within one monsoon season.",
+      },
+      {
+        type: "h2",
+        text: "What Should You Check Right Now?",
+      },
+      {
+        type: "p",
+        text: "If your street light is switching off before morning, check these four things in this order. One, clean the solar panel. Wipe it with a clean damp cloth early morning before sunrise. Check if performance improves over the next 2 to 3 days. This costs nothing and fixes about 30% of complaints. Two, check how old the battery is. If it is more than 2 years old, the capacity has reduced significantly. Replacing the battery usually fixes the problem completely. Three, check if anything is shading the panel during the day. A tree branch, a wall, or a nearby building casting shadow even for 1 to 2 hours can cut your charging by 30 to 50%. Four, check the controller LVD setting. Some controllers have an adjustable Low Voltage Disconnect threshold. If it is set too high, it cuts power too early. A qualified technician can check and correct this in 15 minutes.",
+      },
+      {
+        type: "h2",
+        text: "One Last Thing",
+      },
+      {
+        type: "p",
+        text: "When we design solar street lights at Green Filament, we calculate for Odisha conditions. Not lab conditions. Dust, heat, monsoon clouds and battery aging are all factored into our specifications before we size the panel and battery. This is why our lights installed in mining areas in Jharsuguda and dusty village roads in Mayurbhanj are running for 2 to 3 years without complaints. The math was done right before the first installation. If you are buying solar street lights for a government project or gram panchayat, ask the supplier one simple question. Show me your energy calculation. If they cannot show you the math, they have not done the math.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Why does my solar street light work for a few hours and then switch off?",
+        a: "The most common reason is that the battery runs out of charge before morning. This happens when the panel is too small for the LED wattage, the battery has aged and lost capacity, or consecutive cloudy days have reduced charging. The controller switches off the light to protect the battery from permanent damage.",
+      },
+      {
+        q: "What is Low Voltage Disconnect in a solar street light?",
+        a: "Low Voltage Disconnect or LVD is a protection feature in the charge controller. When the battery voltage drops below a set threshold, the controller automatically cuts power to the LED light. This protects the battery from deep discharge which would permanently damage it. The controller is working correctly when it does this. The real problem is insufficient charging.",
+      },
+      {
+        q: "How do I fix a solar street light that turns off at midnight?",
+        a: "Start by cleaning the solar panel. Dust alone causes 20 to 30% power loss. Next check the battery age. If it is more than 2 years old, replace it. Check for shade on the panel during the day. Finally ask a technician to check the controller LVD setting. These four steps fix over 90% of cases.",
+      },
+      {
+        q: "What size solar panel do I need for a 24W street light?",
+        a: "For reliable all-night operation in Odisha conditions, a 24W LED street light needs at least a 75W solar panel. Most budget systems come with 60W panels which are undersized for real conditions involving dust, heat and cloudy days.",
+      },
+      {
+        q: "What battery capacity is needed for a solar street light to last all night?",
+        a: "For a 24W LED running 10 hours per night, you need at least a 36 to 40Ah LiFePO4 battery. Systems sold with 24Ah batteries are undersized and will fail to last the full night after a few months of use or during monsoon.",
+      },
+      {
+        q: "Does cleaning the solar panel actually help?",
+        a: "Yes significantly. A dusty panel in Odisha can lose 20 to 30% of its output. Cleaning the panel with a damp cloth once a month can restore full charging capacity and extend the light duration by 2 to 3 hours per night. It is the easiest and cheapest fix available.",
+      },
+    ],
+  },
+
+  
 
 ];
 

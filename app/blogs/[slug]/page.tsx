@@ -4,7 +4,8 @@
    BLOG POST PAGE — /blogs/[slug]
    - Dynamic route — renders any post from blog.ts
    - Clean article layout
-   - Structured sections: h2, p, ul, highlight, project
+   - Structured sections: h2, p, ul, highlight, project,
+     formula, calculation, deficitbox
    - FAQ section
    - Related posts
    - Fully responsive
@@ -32,6 +33,9 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       <Navbar />
       <main>
 
+        {/* ============================================================
+            STYLES
+            ============================================================ */}
         <style>{`
           .article-h2 { font-size: clamp(18px, 2.5vw, 24px); font-weight: 700; color: #1a1a1a; margin: 32px 0 14px; line-height: 1.3; }
           .article-p { font-size: 15px; color: #444; line-height: 1.9; margin: 0 0 18px; text-align: justify; }
@@ -40,11 +44,29 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           .article-ul-dot { width: 6px; height: 6px; border-radius: 50%; background: #FDB92E; flex-shrink: 0; margin-top: 7px; }
           .article-highlight { background: #FFF3D6; border-left: 4px solid #FDB92E; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 24px 0; font-size: 15px; font-weight: 600; color: #854F0B; line-height: 1.7; }
           .article-project { background: #fff; border-radius: 12px; border: 0.5px solid #E8E2D8; border-left: 4px solid #FDB92E; padding: 20px; margin: 24px 0; }
+          .article-formula { background: #FFF3D6; border-left: 4px solid #FDB92E; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 24px 0; }
+          .article-formula-text { font-family: monospace; font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
+          .article-formula-where { font-size: 13px; color: #555; line-height: 2; }
+          .article-calculation { border: 0.5px solid #E8E2D8; border-radius: 12px; overflow: hidden; margin: 16px 0; }
+          .article-calculation-header { background: #FFF3D6; padding: 10px 16px; font-size: 12px; font-weight: 700; color: #854F0B; }
+          .article-calculation-body { padding: 16px; }
+          .article-calculation-formula { font-family: monospace; font-size: 14px; color: #555; margin-bottom: 6px; }
+          .article-calculation-result { font-family: monospace; font-size: 18px; font-weight: 700; color: #F5A000; margin-bottom: 10px; }
+          .article-calculation-explanation { font-size: 13px; color: #777; line-height: 1.75; }
+          .article-deficitbox { background: #FCEBEB; border: 0.5px solid #F7C1C1; border-radius: 12px; padding: 20px; margin: 24px 0; }
+          .article-deficitbox-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+          .article-deficitbox-item { background: #fff; border-radius: 8px; padding: 12px; text-align: center; }
+          .article-deficitbox-label { font-size: 10px; color: #aaa; margin-bottom: 4px; }
+          .article-deficitbox-value { font-size: 18px; font-weight: 700; }
+          .article-deficitbox-message { font-size: 13px; font-weight: 700; color: #A32D2D; }
           .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
           @media (max-width: 768px) {
             .related-grid { grid-template-columns: 1fr; }
             .article-p { font-size: 14px; }
             .article-h2 { margin-top: 24px; }
+            .article-deficitbox-grid { grid-template-columns: 1fr; }
+            .article-formula-text { font-size: 16px; }
+            .article-calculation-result { font-size: 15px; }
           }
         `}</style>
 
@@ -56,20 +78,24 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)" }} />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "clamp(20px, 4vw, 40px) clamp(24px, 5vw, 80px)" }}>
             <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+
               {/* Breadcrumb */}
               <div style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "12px" }}>
                 <Link href="/blogs" style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>Blog</Link>
                 <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>›</span>
                 <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)" }}>{post.category}</span>
               </div>
+
               {/* Category badge */}
               <div style={{ display: "inline-block", background: "#FDB92E", color: "#412402", fontSize: "10px", fontWeight: 700, padding: "3px 12px", borderRadius: "20px", marginBottom: "10px" }}>
                 {post.category}
               </div>
+
               {/* Title */}
               <h1 style={{ fontSize: "clamp(20px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginBottom: "10px" }}>
                 {post.title}
               </h1>
+
               {/* Meta */}
               <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
                 <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)" }}>
@@ -78,6 +104,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                 <span style={{ width: "3px", height: "3px", borderRadius: "50%", background: "rgba(255,255,255,0.4)", display: "inline-block" }} />
                 <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)" }}>{post.readTime}</span>
               </div>
+
             </div>
           </div>
         </div>
@@ -96,10 +123,22 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                 {post.excerpt}
               </p>
 
-              {/* Render sections */}
+              {/* ============================================================
+                  RENDER SECTIONS
+                  ============================================================ */}
               {post.sections.map((section, i) => {
-                if (section.type === "h2") return <h2 key={i} className="article-h2">{section.text}</h2>;
-                if (section.type === "p") return <p key={i} className="article-p">{section.text}</p>;
+
+                /* --- h2 --- */
+                if (section.type === "h2") return (
+                  <h2 key={i} className="article-h2">{section.text}</h2>
+                );
+
+                /* --- p --- */
+                if (section.type === "p") return (
+                  <p key={i} className="article-p">{section.text}</p>
+                );
+
+                /* --- ul --- */
                 if (section.type === "ul") return (
                   <ul key={i} className="article-ul">
                     {section.items.map((item, j) => (
@@ -107,7 +146,13 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                     ))}
                   </ul>
                 );
-                if (section.type === "highlight") return <div key={i} className="article-highlight">{section.text}</div>;
+
+                /* --- highlight --- */
+                if (section.type === "highlight") return (
+                  <div key={i} className="article-highlight">{section.text}</div>
+                );
+
+                /* --- project --- */
                 if (section.type === "project") return (
                   <div key={i} className="article-project">
                     <div style={{ fontSize: "10px", fontWeight: 700, color: "#F5A000", letterSpacing: "1px", marginBottom: "6px" }}>{section.label.toUpperCase()}</div>
@@ -115,6 +160,47 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                     <div style={{ fontSize: "13px", color: "#555", lineHeight: 1.8, textAlign: "justify" }}>{section.desc}</div>
                   </div>
                 );
+
+                /* --- formula --- */
+                if (section.type === "formula") return (
+                  <div key={i} className="article-formula">
+                    <div className="article-formula-text">{section.formula}</div>
+                    <div className="article-formula-where">
+                      Where,<br />
+                      {section.where.map((w, j) => (
+                        <span key={j}>{w}<br /></span>
+                      ))}
+                    </div>
+                  </div>
+                );
+
+                /* --- calculation --- */
+                if (section.type === "calculation") return (
+                  <div key={i} className="article-calculation">
+                    <div className="article-calculation-header">{section.step}</div>
+                    <div className="article-calculation-body">
+                      <div className="article-calculation-formula">{section.formula}</div>
+                      <div className="article-calculation-result">{section.result}</div>
+                      <div className="article-calculation-explanation">{section.explanation}</div>
+                    </div>
+                  </div>
+                );
+
+                /* --- deficitbox --- */
+                if (section.type === "deficitbox") return (
+                  <div key={i} className="article-deficitbox">
+                    <div className="article-deficitbox-grid">
+                      {section.items.map((item, j) => (
+                        <div key={j} className="article-deficitbox-item">
+                          <div className="article-deficitbox-label">{item.label}</div>
+                          <div className="article-deficitbox-value" style={{ color: item.color }}>{item.value}</div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="article-deficitbox-message">{section.message}</div>
+                  </div>
+                );
+
                 return null;
               })}
 
