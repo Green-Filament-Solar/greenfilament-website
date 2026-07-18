@@ -87,8 +87,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body>{children}</body>
-    </html>
-  );
+  <html lang="en" data-scroll-behavior="smooth">
+    <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6299WY2N0C" />
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6299WY2N0C');
+        `
+      }} />
+    </head>
+    <body>{children}</body>
+  </html>
+);
 }
