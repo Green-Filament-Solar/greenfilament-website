@@ -6,6 +6,18 @@
 
 import type { Metadata } from "next";
 import SolarWaterPumpClient from "./SolarWaterPumpClient";
+import FaqSchema from "../components/FaqSchema";
+
+const waterPumpFaqs = [
+  { q: "How does a solar water pump work?", a: "A solar water pump uses electricity generated from solar panels to operate the pump motor and lift water from a borewell, pond, or any water source." },
+  { q: "Can a solar pump work without electricity?", a: "Yes. Solar pumps run using sunlight and do not require grid electricity. Some systems can also be connected with hybrid power options for backup." },
+  { q: "Which is better: surface pump or submersible pump?", a: "A surface pump is suitable for shallow water sources like ponds and tanks. A submersible pump is ideal for deep borewells and underground water extraction." },
+  { q: "How much water can a solar pump provide?", a: "Water output depends on pump capacity, bore depth, sunlight availability, and system size. Our team will calculate the right capacity for your requirement." },
+  { q: "Does a solar water pump work on cloudy days?", a: "Yes, but with reduced performance due to lower sunlight intensity. Systems can be designed with battery backup or hybrid options for consistent supply." },
+  { q: "What maintenance is required?", a: "Solar pumps require minimal maintenance. Regular cleaning of solar panels and periodic system checks are generally sufficient." },
+  { q: "Is subsidy available for solar pumps?", a: "Government subsidy availability depends on scheme eligibility and state policies. Our team can guide you on current applicable schemes in Odisha." },
+  { q: "How do I choose the right solar pump?", a: "The right pump depends on water depth, daily water requirement, land size, and application. Our team conducts a full site assessment to recommend the best option." },
+];
 
 /* ============================================================
    SEO METADATA
@@ -58,5 +70,10 @@ export const metadata: Metadata = {
    PAGE
    ============================================================ */
 export default function Page() {
-    return <SolarWaterPumpClient />;
+    return (
+        <>
+            <FaqSchema faqs={waterPumpFaqs} />
+            <SolarWaterPumpClient />
+        </>
+    );
 }

@@ -10,6 +10,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import FaqSchema from "../components/FaqSchema";
+
+const solarCompanyFaqs = [
+  { q: "How much will my electricity bill reduce with solar?", a: "For a typical household in Bhubaneswar using 250 to 400 units per month, a 3kW system reduces the bill by 70 to 90%. Some months it drops to near zero through net metering credits." },
+  { q: "Is solar worth it in 2026 in Odisha?", a: "Electricity tariffs in Odisha have been rising every year. Solar panel costs have fallen by more than 60% since 2001. The payback period today is 3 to 5 years. After that you generate free electricity for 20 plus more years. Yes, it is worth it." },
+  { q: "Do you serve districts outside Bhubaneswar?", a: "Yes. We have delivered projects in Mayurbhanj, Dhenkanal, Ganjam, Khordha, Cuttack, Jharsuguda and 12 plus districts across Odisha. We also work in Jharkhand. If you are in Odisha, we can reach you." },
+  { q: "Which solar panel brands do you use?", a: "For panels we work with Tata Power Solar, Waaree, Luminous, Amaze and Exide. For inverters we use Tata, Waaree, Luminous, Amaze, Exide and Amaron. All mounting structures are GI hot-dip galvanized steel." },
+  { q: "How long does solar installation take?", a: "A residential rooftop system takes 1 to 2 days. Commercial systems take 3 to 5 days. Government and large projects take 5 to 10 days depending on scope and size." },
+  { q: "What happens if something stops working after installation?", a: "For our manufactured products like solar street lights and solar cooking systems, we target a 48-hour response time for any complaint. For rooftop solar with branded components, manufacturer warranties apply and we support the claim process. We do not disappear after installation." },
+  { q: "Can farmers in Odisha get solar pumps affordably?", a: "Under PM KUSUM scheme, farmers typically pay only 10% of the solar pump cost directly. The remaining amount is covered through a combination of central subsidy, state subsidy and a subsidised bank loan. Odisha also has the Soura Jalanidhi Yojana with similar benefits for small and marginal farmers. Scheme terms change from time to time so we recommend verifying current details before applying. We help you identify the right scheme and handle the complete application process." },
+  { q: "What is the warranty on solar panels and systems?", a: "Quality solar panels from Tata and Waaree carry a 25-year performance warranty. Inverters carry 5-year warranty. Our street lights carry 2 to 5 year warranty depending on the model and application." },
+];
 
 /* ============================================================
    SEO METADATA
@@ -58,6 +70,7 @@ export const metadata: Metadata = {
 export default function SolarCompanyOdishaPage() {
   return (
     <>
+      <FaqSchema faqs={solarCompanyFaqs} />
       <Navbar />
       <main>
 

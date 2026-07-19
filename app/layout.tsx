@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SchemaOrg from "./components/SchemaOrg";
 
 export const metadata: Metadata = {
 
@@ -89,6 +90,7 @@ export default function RootLayout({
   return (
   <html lang="en" data-scroll-behavior="smooth">
     <head>
+      <SchemaOrg />
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-6299WY2N0C" />
       <script dangerouslySetInnerHTML={{
         __html: `

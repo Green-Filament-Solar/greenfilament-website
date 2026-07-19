@@ -6,6 +6,15 @@
 
 import type { Metadata } from "next";
 import RooftopSolarClient from "./RooftopSolarClient";
+import FaqSchema from "../components/FaqSchema";
+
+const rooftopFaqs = [
+  { q: "Does rooftop solar work during cloudy weather?", a: "Yes. Solar panels continue generating electricity even during cloudy conditions, though generation may temporarily reduce by 20-50% depending on cloud density." },
+  { q: "How long do solar panels last?", a: "Most solar panels are designed to operate efficiently for 25 years or more. Quality panels lose less than 0.5% efficiency per year, so they continue producing significant power well beyond the warranty period." },
+  { q: "Can rooftop solar run air conditioners?", a: "Yes. A properly designed system accounts for AC load. A 2-3 tonne AC typically requires a 3-5kW system to run efficiently during peak solar hours." },
+  { q: "Is subsidy available for rooftop solar in Odisha?", a: "Yes. Residential rooftop solar installations qualify for PM Surya Ghar Muft Bijli Yojana (up to ₹78,000) and Odisha state additional subsidy (up to ₹60,000) — combined up to ₹1,38,000 for a 3kW system." },
+  { q: "What is net metering?", a: "Net metering allows excess solar electricity generated during the day to be exported to the grid. Your DISCOM credits this against your nighttime consumption, reducing your monthly bill to near zero in many cases." },
+];
 
 export const metadata: Metadata = {
   title: "Rooftop Solar Systems — On-Grid, Off-Grid & Hybrid | Green Filament",
@@ -46,5 +55,10 @@ export const metadata: Metadata = {
 };
 
 export default function RooftopSolarPage() {
-  return <RooftopSolarClient />;
+  return (
+    <>
+      <FaqSchema faqs={rooftopFaqs} />
+      <RooftopSolarClient />
+    </>
+  );
 }
