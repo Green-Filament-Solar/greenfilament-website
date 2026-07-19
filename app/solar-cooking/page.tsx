@@ -23,8 +23,8 @@ import Footer from "../components/Footer";
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-  title: "Solar Cooking System — Patent-Granted Clean Cooking Solution | Green Filament",
-  description: "India's patent-granted solar-powered cooking system. Zero LPG, zero smoke, zero fuel cost. Designed for homes, anganwadis, schools, and community kitchens in Odisha. 200+ installations across India.",
+  title: "Solar Cooking System - Authorised Manufacturer of Patent-Granted Clean Cooking Solution | Green Filament",
+  description: "We are the authorised manufacturer of a patent-granted solar-powered cooking system. Zero LPG, zero smoke, zero fuel cost. Designed for homes, anganwadis, schools, and community kitchens in Odisha. 200+ installations across India.",
   keywords: [
     "solar cooking system",
     "solar powered cooking",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "solar stove India",
     "solar cooking Odisha",
     "zero LPG cooking",
-    "patent granted solar cooking",
+    "authorised manufacturer solar cooking",
     "Green Filament solar cooking",
     "solar energy cooking system",
     "smoke free cooking",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "solar cooking anganwadi",
   ],
   openGraph: {
-    title: "Solar Cooking System — Patent-Granted Clean Cooking Solution | Green Filament",
-    description: "India's patent-granted solar-powered cooking system. Zero LPG, zero smoke, zero fuel cost. 200+ installations across India.",
+    title: "Solar Cooking System — Authorised Manufacturer of a Patent-Granted Cooking Solution | Green Filament",
+    description: "We are the authorised manufacturer of a patent-granted solar-powered cooking system. Zero LPG, zero smoke, zero fuel cost. 200+ installations across India.",
     url: "https://greenfilament.com/solar-cooking",
     siteName: "Green Filament",
     images: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/images/products/solar-cooking.jpg",
         width: 1200,
         height: 630,
-        alt: "Green Filament Solar Cooking System — Patent-Granted Clean Energy Cooking",
+        alt: "Green Filament Solar Cooking System — Authorised Manufacturer of a Patent-Granted Clean Energy Cooking Solution",
       },
     ],
     locale: "en_IN",
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Cooking System — Patent-Granted | Green Filament",
-    description: "Zero LPG. Zero Smoke. Zero Fuel Cost. India's patent-granted solar cooking system by Green Filament.",
+    title: "Solar Cooking System — Authorised Manufacturer | Green Filament",
+    description: "Zero LPG. Zero Smoke. Zero Fuel Cost. We are the authorised manufacturer of this patent-granted solar cooking system.",
     images: ["/images/products/solar-cooking.jpg"],
   },
   alternates: {
@@ -77,7 +77,7 @@ const specs = [
   { label: "Fuel Cost", value: "Zero" },
   { label: "Compatible With", value: "Standard Cooking Pots" },
   { label: "Installation", value: "Portable & Easy" },
-  { label: "Patent Status", value: "Patent Granted" },
+  { label: "Patent Status", value: "Patent Granted (Authorised Manufacturer)" },
 ];
 
 /* ============================================================
@@ -124,7 +124,7 @@ export default function SolarCookingPage() {
             {/* Patent badge */}
             <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "rgba(255,255,255,0.15)", border: "0.5px solid rgba(255,255,255,0.35)", color: "#fff", fontSize: "11px", fontWeight: 600, padding: "5px 14px", borderRadius: "20px", marginBottom: "14px", letterSpacing: "0.5px" }}>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" /></svg>
-              PATENT-GRANTED INNOVATION
+              AUTHORISED MANUFACTURER — PATENT-GRANTED TECH
             </div>
             <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.75)", letterSpacing: "1.5px", marginBottom: "10px", fontWeight: 600 }}>SOLAR COOKING SYSTEM</p>
             <h1 style={{ fontSize: "clamp(28px, 4.5vw, 52px)", fontWeight: 700, color: "#fff", marginBottom: "14px", lineHeight: 1.15 }}>
@@ -157,8 +157,8 @@ export default function SolarCookingPage() {
           <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
             <div className="overview-grid">
               <div style={{ borderRadius: "16px", overflow: "hidden", border: "0.5px solid #E8E2D8", aspectRatio: "4/3", position: "relative", background: "#e0e0e0" }}>
-                <NextImage src="/images/products/solar-cooking.jpg" alt="Solar Cooking System by Green Filament — Patent-Granted Clean Energy Cooking Solution" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
-                <div style={{ position: "absolute", top: "16px", left: "16px", background: "#FDB92E", color: "#412402", fontSize: "10px", fontWeight: 700, padding: "4px 12px", borderRadius: "20px", zIndex: 1 }}>✦ Patent Granted</div>
+                <NextImage src="/images/products/solar-cooking.jpg" alt="Solar Cooking System by Green Filament, Authorised Manufacturer of a Patent-Granted Clean Energy Cooking Solution" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+                <div style={{ position: "absolute", top: "16px", left: "16px", background: "#FDB92E", color: "#412402", fontSize: "10px", fontWeight: 700, padding: "4px 12px", borderRadius: "20px", zIndex: 1 }}>✦ Authorised Manufacturer</div>
                 <div style={{ position: "absolute", bottom: "16px", right: "16px", background: "rgba(0,0,0,0.55)", color: "#fff", fontSize: "10px", fontWeight: 600, padding: "4px 12px", borderRadius: "20px", zIndex: 1 }}>200+ Installed</div>
               </div>
               <div>

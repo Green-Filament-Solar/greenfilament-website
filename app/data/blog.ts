@@ -403,7 +403,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Future of Cooking Could Be Solar — And Battery-Free",
     date: "2026-02-18",
     category: "Solar Cooking",
-    excerpt: "LPG prices keep rising. Firewood causes respiratory illness. Induction needs grid electricity. Green Filament's patent-granted solar cooking system offers a battery-free alternative — powered entirely by sunlight.",
+    excerpt: "LPG prices keep rising. Firewood causes respiratory illness. Induction needs grid electricity. As the authorised manufacturer of a patent-granted solar cooking system, Green Filament offers a battery-free alternative powered entirely by sunlight.",
     image: "/images/products/solar-cooking.jpg",
     readTime: "7 min read",
     keywords: ["solar cooking system India", "battery free solar cooking", "renewable cooking technology", "solar powered cooking"],
@@ -440,15 +440,15 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h2",
-        text: "Green Filament's Patent-Granted Solar Cooking System",
+        text: "Green Filament, Authorised Manufacturer of a Patent-Granted Solar Cooking System",
       },
       {
         type: "p",
-        text: "Green Filament has developed and received a patent grant for a solar-powered cooking system that works fundamentally differently from traditional solar cookers. Instead of concentrating sunlight directly, it uses solar panels to generate DC electricity which powers a high-efficiency coil heater — similar to an induction stove, but running on direct solar power without any battery storage.",
+        text: "Green Filament is the authorised manufacturer of a patent-granted solar-powered cooking system that works fundamentally differently from traditional solar cookers. Instead of concentrating sunlight directly, it uses solar panels to generate DC electricity which powers a high-efficiency coil heater, similar to an induction stove, but running on direct solar power without any battery storage.",
       },
       {
         type: "highlight",
-        text: "No battery. No LPG. No grid electricity. Just sunlight powering a coil heater that cooks your food — patent-granted technology by Green Filament.",
+        text: "No battery. No LPG. No grid electricity. Just sunlight powering a coil heater that cooks your food. This is patent-granted technology, and Green Filament is the authorised manufacturer.",
       },
       {
         type: "h2",
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "With over 200 installations across India and a granted patent, Green Filament's solar cooking system is not a concept — it is a proven, field-tested technology. The future of clean cooking in rural India does not require waiting for better batteries or cheaper induction stoves. It is here today, powered by the most abundant and free energy source available — the sun.",
+        text: "With over 200 installations across India, this solar cooking system is not a concept. It is a proven, field-tested technology, and Green Filament is proud to be its authorised manufacturer. The future of clean cooking in rural India does not require waiting for better batteries or cheaper induction stoves. It is here today, powered by the most abundant and free energy source available, the sun.",
       },
     ],
     faqs: [
