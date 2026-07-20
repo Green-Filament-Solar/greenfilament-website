@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/blogs/solar-water-systems-rural-villages", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/future-of-solar-cooking-battery-free", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/why-solar-street-light-stops-working-at-night", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/3kw-solar-price-odisha-after-subsidy-2026", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
 
     // Location pages
     { url: "https://greenfilament.com/solar-company-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },

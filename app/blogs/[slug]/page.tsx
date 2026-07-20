@@ -18,6 +18,30 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { blogPosts } from "../../data/blog";
 import { use } from "react";
+import FaqSchema from "../../components/FaqSchema";
+
+/* ============================================================
+   INLINE LINK PARSER
+   - Lets blog paragraph text carry internal links using
+     simple markdown-style syntax: [visible text](/path)
+   - Keeps blog.ts as plain data (no JSX) while still allowing
+     links to product/scheme pages inside body paragraphs
+   ============================================================ */
+function renderTextWithLinks(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (match) {
+      const [, label, href] = match;
+      return (
+        <Link key={i} href={href} style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>
+          {label}
+        </Link>
+      );
+    }
+    return part;
+  });
+}
 
 export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
@@ -30,6 +54,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
 
   return (
     <>
+      <FaqSchema faqs={post.faqs} />
       <Navbar />
       <main>
 
@@ -135,7 +160,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
 
                 /* --- p --- */
                 if (section.type === "p") return (
-                  <p key={i} className="article-p">{section.text}</p>
+                  <p key={i} className="article-p">{renderTextWithLinks(section.text)}</p>
                 );
 
                 /* --- ul --- */

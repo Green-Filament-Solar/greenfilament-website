@@ -160,6 +160,8 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 
+  /* --- end of blog-1 --- */
+
   /* ============================================================
      POST 2 — Rooftop Solar vs Electricity Bills
      ============================================================ */
@@ -278,6 +280,8 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 
+  /* --- end of blog-2 --- */
+
   /* ============================================================
      POST 3 — Solar Water Systems
      ============================================================ */
@@ -394,6 +398,8 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  /* --- end of blog-3 --- */
 
   /* ============================================================
      POST 4 — Future of Solar Cooking
@@ -527,6 +533,8 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  /* --- end of blog-4 --- */
 
   /* ============================================================
      POST 5 — Solar Street Light 2am Problem
@@ -770,7 +778,117 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 
-  
+  /* --- end of blog-5 --- */
+
+  /* ============================================================
+     POST 6 — 3kW Solar Price Odisha After Subsidy 2026
+     ============================================================ */
+  {
+    slug: "3kw-solar-price-odisha-after-subsidy-2026",
+    title: "3kW Solar Price in Odisha After Subsidy: What You Actually Pay in 2026",
+    date: "2026-07-21",
+    category: "Rooftop Solar",
+    excerpt: "People ask us this every week. How much does a 3kW solar system really cost in Odisha, after subsidy. Here is the simple answer, with real numbers.",
+    image: "/images/projects/rooftop-dhanbad.jpg",
+    readTime: "6 min read",
+    keywords: ["3kW solar price Odisha", "solar subsidy 2026", "PM Surya Ghar Odisha", "solar cost after subsidy", "rooftop solar Bhubaneswar price"],
+    sections: [
+      {
+        type: "p",
+        text: "People ask us this every week. How much does a 3kW solar system really cost in Odisha, after subsidy. Here is the direct answer. Most families end up paying between 80,000 and 1,20,000 rupees for a 3kW [rooftop solar](/rooftop-solar) system in 2026, after government subsidy is applied. Below is exactly how that number is calculated.",
+      },
+      {
+        type: "h2",
+        text: "What you pay before subsidy",
+      },
+      {
+        type: "p",
+        text: "A 3kW rooftop solar system in Odisha usually costs between 2.2 lakh and 2.6 lakh rupees before any subsidy is applied. This price depends mainly on the panel brand you choose and the type of mounting structure your roof needs.",
+      },
+      {
+        type: "h2",
+        text: "How much subsidy you get",
+      },
+      {
+        type: "p",
+        text: "There are two subsidies for a 3kW system, and both come from different governments. The central government gives 78,000 rupees through the PM Surya Ghar scheme. The Odisha state government adds another 60,000 rupees on top of that. You can see the full list of active [government schemes](/schemes) we help customers apply for. Put together, this comes to 1,38,000 rupees in total subsidy for a 3kW system.",
+      },
+      {
+        type: "deficitbox",
+        items: [
+          { label: "SYSTEM COST", value: "₹2.2L - ₹2.6L", color: "#412402" },
+          { label: "TOTAL SUBSIDY", value: "₹1,38,000", color: "#2d6a2d" },
+          { label: "YOU PAY", value: "₹80,000 - ₹1,20,000", color: "#1a4a8a" },
+        ],
+        message: "This is the net amount most families in Odisha actually pay for a 3kW rooftop solar system in 2026.",
+      },
+      {
+        type: "h2",
+        text: "What you actually pay",
+      },
+      {
+        type: "p",
+        text: "After both subsidies are applied, most families end up paying between 80,000 and 1,20,000 rupees for a 3kW system. This is roughly half of the original price. The subsidy amount is credited directly to your bank account after your DISCOM inspects and approves the installation, so you do not need to arrange it separately.",
+      },
+      {
+        type: "h2",
+        text: "How much you save every month",
+      },
+      {
+        type: "p",
+        text: "A 3kW system in Odisha generates around 12 to 14 units of electricity every day on average. At current TPCODL tariff rates, this brings down a typical monthly bill by 2,500 to 3,500 rupees. For most homes, the system pays for itself in 3 to 5 years through these savings alone. After that, the electricity is essentially free for the next 20 plus years, since panels come with a 25 year performance warranty.",
+      },
+      {
+        type: "highlight",
+        text: "Net cost after subsidy: 80,000 to 1,20,000 rupees. Most homes recover this in 3 to 5 years through bill savings alone.",
+      },
+      {
+        type: "h2",
+        text: "A real project in Bhubaneswar",
+      },
+      {
+        type: "project",
+        label: "Green Filament Project",
+        title: "3kW Rooftop Solar under PM Surya Ghar, Bhubaneswar",
+        desc: "A family home in Bhubaneswar installed a 3kW system under the PM Surya Ghar scheme. Green Filament handled the full subsidy application on their behalf. Once the system was commissioned and the subsidy arrived, the family's monthly electricity bill dropped to nearly zero.",
+      },
+      {
+        type: "h2",
+        text: "Should you wait or install now",
+      },
+      {
+        type: "p",
+        text: "The PM Surya Ghar scheme is officially set to run until 31 March 2027, or until 1 crore homes across India are covered, whichever happens first. Once either of these is reached, the central subsidy under this scheme closes. If you want to check what a system would cost for your specific home, you can read more on our [solar company in Odisha](/solar-company-odisha) page or reach out directly.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What papers do I need to apply for the subsidy?",
+        a: "Your electricity bill, Aadhaar card, and bank account details.",
+      },
+      {
+        q: "Can I get the subsidy if I live on rent?",
+        a: "No. The subsidy is only for homeowners, since the system is fixed to the roof.",
+      },
+      {
+        q: "What if my roof is small?",
+        a: "A 3kW system needs about 300 to 350 square feet of shadow-free roof space. If your roof is smaller, a 1kW or 2kW system may suit you better.",
+      },
+      {
+        q: "How long does the subsidy take to reach my bank account?",
+        a: "Usually 30 to 45 days after your DISCOM inspects and approves the installation.",
+      },
+      {
+        q: "Do I need a special type of solar panel to get the subsidy?",
+        a: "Yes, the panels must be made in India. Not all panels sold in the market qualify, so it is worth confirming this before you install.",
+      },
+      {
+        q: "Can I take a loan for the solar system?",
+        a: "Yes. Connect with your bank for more details like rate of interest and tenure.",
+      },
+    ],
+  },
+  /* --- end of blog-6 --- */
 
 ];
 
