@@ -17,6 +17,22 @@ import NextImage from "next/image";
 /* --- Primary products --- */
 const primaryProducts = [
   {
+    title: "Rooftop Solar",
+    subtitle: "Cut Your Electricity Bill. Own Your Power.",
+    desc: "Grid-tied rooftop solar systems for homes and businesses across Odisha. PM Surya Ghar subsidy handled end to end, from application to net metering.",
+    image: "/images/projects/rooftop-dhanbad.jpg",
+    badge: "☀ Flagship Service",
+    badgeStyle: { background: "#FDB92E", color: "#412402" },
+    count: "500+ Projects",
+    label: "ROOFTOP SOLAR",
+    specs: [
+      "1kW to 25kW+ Systems",
+      "Subsidy Application Handled Free",
+      "25-Year Panel Performance Warranty",
+    ],
+    href: "/rooftop-solar",
+  },
+  {
     title: "Solar Cooking System",
     subtitle: "Clean Energy Cooking. Zero LPG.",
     desc: "A revolutionary solar-powered cooking solution. Smoke-free, cost-efficient, built for homes, anganwadis, schools, and community kitchens across Odisha.",
@@ -57,7 +73,7 @@ const secondaryProducts = [
     desc: "KUSUM eligible solar pumps for irrigation and drinking water.",
     image: "/images/products/agri-pump.jpg",
     category: "Solar Pump",
-    href: "/connect",
+    href: "/solar-water-pump",
   },
   {
     title: "High Mast Lighting",
@@ -71,7 +87,7 @@ const secondaryProducts = [
   desc: "Clean, solar-powered drinking water systems for villages and communities.",
   image: "/images/products/drinking-water.jpg",
   category: "Solar Water",
-  href: "/connect",
+  href: "/solar-water-pump",
 },
   {
     title: "Solar Cold Storage",
@@ -185,7 +201,7 @@ export default function Products() {
         /* ── Primary grid ── */
         .primary-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: repeat(3, 1fr);
           gap: 16px;
           margin-bottom: 16px;
         }
@@ -230,6 +246,9 @@ export default function Products() {
         }
 
         /* ── Responsive ── */
+        @media (max-width: 1024px) {
+          .primary-grid { grid-template-columns: 1fr 1fr; }
+        }
         @media (max-width: 768px) {
           .primary-grid { grid-template-columns: 1fr; }
           .secondary-grid-desktop { display: none !important; }
