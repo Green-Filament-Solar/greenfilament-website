@@ -76,6 +76,7 @@ export default function SolarStreetLightingClient() {
 
     /* State for use cases mobile swiper */
     const [useCaseStep, setUseCaseStep] = useState(0);
+    const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     return (
         <>
@@ -179,7 +180,7 @@ export default function SolarStreetLightingClient() {
                             <div className="stats-grid">
                                 {[
                                     { value: "10,000+", label: "Units Installed" },
-                                    { value: "Zero",    label: "Complaints (Non-Int.)", green: true },
+                                    { value: "Zero", label: "Complaints (Non-Int.)", green: true },
                                     { value: "2 Types", label: "Available" },
                                     { value: "Dusk\u2013Dawn", label: "Auto Operation" },
                                 ].map((stat, i) => (
@@ -228,11 +229,11 @@ export default function SolarStreetLightingClient() {
                                         <div className="product-specs-grid">
                                             {[
                                                 { label: "Wattage Options", value: "30W \u00b7 45W \u00b7 60W \u00b7 90W" },
-                                                { label: "Battery Type",    value: "SMF" },
-                                                { label: "Pole Height",     value: "6 Metres" },
-                                                { label: "Operation",       value: "Dusk to Dawn" },
-                                                { label: "For",             value: "Villages, GPs, Govt, Private" },
-                                                { label: "Maintenance",     value: "Component-level" },
+                                                { label: "Battery Type", value: "SMF" },
+                                                { label: "Pole Height", value: "6 Metres" },
+                                                { label: "Operation", value: "Dusk to Dawn" },
+                                                { label: "For", value: "Villages, GPs, Govt, Private" },
+                                                { label: "Maintenance", value: "Component-level" },
                                             ].map((spec) => (
                                                 <div key={spec.label} style={{ paddingBottom: "8px", borderBottom: "0.5px solid #F0EBE0" }}>
                                                     <div style={{ fontSize: "10px", color: "#aaa", marginBottom: "2px" }}>{spec.label}</div>
@@ -277,11 +278,11 @@ export default function SolarStreetLightingClient() {
                                         <div className="product-specs-grid">
                                             {[
                                                 { label: "Wattage Options", value: "20W \u00b7 24W \u00b7 30W \u00b7 45W \u00b7 60W \u00b7 90W" },
-                                                { label: "Battery Type",    value: "LiFePO4 (Lithium)" },
-                                                { label: "Pole Height",     value: "6 Metres" },
-                                                { label: "Operation",       value: "Dusk to Dawn" },
-                                                { label: "For",             value: "Villages, Gram Panchayats" },
-                                                { label: "Design",          value: "Compact All-in-one" },
+                                                { label: "Battery Type", value: "LiFePO4 (Lithium)" },
+                                                { label: "Pole Height", value: "6 Metres" },
+                                                { label: "Operation", value: "Dusk to Dawn" },
+                                                { label: "For", value: "Villages, Gram Panchayats" },
+                                                { label: "Design", value: "Compact All-in-one" },
                                             ].map((spec) => (
                                                 <div key={spec.label} style={{ paddingBottom: "8px", borderBottom: "0.5px solid #F0EBE0" }}>
                                                     <div style={{ fontSize: "10px", color: "#aaa", marginBottom: "2px" }}>{spec.label}</div>
@@ -488,6 +489,47 @@ export default function SolarStreetLightingClient() {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
+
+                {/* ============================================================
+                    FAQ
+                    ============================================================ */}
+                <div style={{ background: "#ffffff", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
+                    <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+
+                        {/* ── Section header: pill badge + title ── */}
+                        <div style={{ textAlign: "center", marginBottom: "36px" }}>
+                            <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>FAQ</div>
+                            <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>Frequently Asked Questions</h2>
+                        </div>
+
+                        {/* ── Accordion list ── */}
+                        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                            {[
+                                { q: "How long does a solar street light run on a single charge?", a: "Most units run 10 to 12 hours nightly, from dusk to dawn, even after 2-3 cloudy days, thanks to battery backup sized for autonomy." },
+                                { q: "What is the difference between integrated and non-integrated solar street lights?", a: "Integrated lights have the panel, battery and LED built into one unit. Non-integrated lights have a separate panel and pole-mounted battery box, giving better airflow and a longer battery life." },
+                                { q: "Which battery type is better: SMF or LiFePO4?", a: "SMF is cost-effective and reliable for standard use. LiFePO4 lasts longer, 5 plus years versus 2 to 3 years, handles heat better, and suits high-usage or harsh-climate installations." },
+                                { q: "Can solar street lights work during monsoon season?", a: "Yes. Panels are sized with backup days built in, so lights keep working through several consecutive cloudy or rainy days." },
+                                { q: "Do you provide solar street lights for government and gram panchayat projects?", a: "Yes. We have installed 10,000+ units across Odisha for village, gram panchayat and government schemes, with custom wattage and specifications per tender requirements." },
+                                { q: "What wattage options are available?", a: "30W, 45W, 60W and 90W, chosen based on road width, pole height and lighting requirement." },
+                            ].map((faq, i) => (
+                                <div key={i} style={{ background: "#FAFAFA", borderRadius: "10px", border: "0.5px solid #E8E2D8", overflow: "hidden" }}>
+
+                                    {/* Question row — click to expand/collapse */}
+                                    <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", background: "none", border: "none", cursor: "pointer", textAlign: "left", gap: "16px" }}>
+                                        <span style={{ fontSize: "14px", fontWeight: 700, color: "#1a1a1a" }}>{faq.q}</span>
+                                        <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: "#FFF3D6", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, transition: "transform 0.25s", transform: openFaq === i ? "rotate(180deg)" : "rotate(0deg)" }}>
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+                                        </div>
+                                    </button>
+
+                                    {/* Answer — only rendered when open */}
+                                    {openFaq === i && <div style={{ padding: "0 20px 16px", fontSize: "13px", color: "#555", lineHeight: 1.8 }}>{faq.a}</div>}
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </div>
 

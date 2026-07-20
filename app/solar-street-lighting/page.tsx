@@ -6,6 +6,19 @@
 
 import type { Metadata } from "next";
 import SolarStreetLightingClient from "./SolarStreetLightingClient";
+import FaqSchema from "../components/FaqSchema";
+
+/* ============================================================
+   FAQ DATA — must match the FAQ text shown in SolarStreetLightingClient.tsx
+   ============================================================ */
+const streetLightingFaqs = [
+  { q: "How long does a solar street light run on a single charge?", a: "Most units run 10 to 12 hours nightly, from dusk to dawn, even after 2-3 cloudy days, thanks to battery backup sized for autonomy." },
+  { q: "What is the difference between integrated and non-integrated solar street lights?", a: "Integrated lights have the panel, battery and LED built into one unit. Non-integrated lights have a separate panel and pole-mounted battery box, giving better airflow and a longer battery life." },
+  { q: "Which battery type is better: SMF or LiFePO4?", a: "SMF is cost-effective and reliable for standard use. LiFePO4 lasts longer, 5 plus years versus 2 to 3 years, handles heat better, and suits high-usage or harsh-climate installations." },
+  { q: "Can solar street lights work during monsoon season?", a: "Yes. Panels are sized with backup days built in, so lights keep working through several consecutive cloudy or rainy days." },
+  { q: "Do you provide solar street lights for government and gram panchayat projects?", a: "Yes. We have installed 10,000+ units across Odisha for village, gram panchayat and government schemes, with custom wattage and specifications per tender requirements." },
+  { q: "What wattage options are available?", a: "30W, 45W, 60W and 90W, chosen based on road width, pole height and lighting requirement." },
+];
 
 /* ============================================================
    SEO METADATA
@@ -58,5 +71,10 @@ export const metadata: Metadata = {
    PAGE
    ============================================================ */
 export default function Page() {
-    return <SolarStreetLightingClient />;
+    return (
+        <>
+            <FaqSchema faqs={streetLightingFaqs} />
+            <SolarStreetLightingClient />
+        </>
+    );
 }

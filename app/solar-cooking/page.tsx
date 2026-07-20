@@ -18,6 +18,20 @@ import NextImage from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import FaqAccordion from "../components/FaqAccordion";
+import FaqSchema from "../components/FaqSchema";
+
+/* ============================================================
+   FAQ DATA — must match the FAQ text rendered by FaqAccordion below
+   ============================================================ */
+const solarCookingFaqs = [
+  { q: "How does the solar cooking system work without a battery?", a: "Solar panels generate DC electricity directly during the day, which powers a coil heater similar to an induction stove. No battery storage, no LPG, no smoke." },
+  { q: "Can it cook on cloudy days?", a: "Cooking is best done during sunny hours since there is no battery backup. On cloudy days, output reduces, so cooking may take longer or need to be timed around available sunlight." },
+  { q: "Is Green Filament the patent holder?", a: "No. Green Filament is the authorised manufacturer of this patent-granted technology, not the patent holder." },
+  { q: "Who is this system suited for?", a: "Homes, anganwadis, schools and community kitchens looking to cut LPG costs and cooking smoke exposure." },
+  { q: "How many units are installed so far?", a: "Over 200 units are running across India." },
+  { q: "What is the expected lifespan of the system?", a: "The coil-based design is similar to conventional coil heaters, built for long-term daily use with minimal maintenance." },
+];
 
 /* ============================================================
    SEO METADATA
@@ -355,6 +369,12 @@ export default function SolarCookingPage() {
             </div>
           </div>
         </div>
+
+        {/* ============================================================
+            FAQ
+            ============================================================ */}
+        <FaqSchema faqs={solarCookingFaqs} />
+        <FaqAccordion faqs={solarCookingFaqs} />
 
         {/* ============================================================
             CTA BANNER
