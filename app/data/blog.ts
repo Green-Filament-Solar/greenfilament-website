@@ -850,7 +850,7 @@ export const blogPosts: BlogPost[] = [
         type: "project",
         label: "Green Filament Project",
         title: "3kW Rooftop Solar under PM Surya Ghar, Bhubaneswar",
-        desc: "A family home in Bhubaneswar installed a 3kW system under the PM Surya Ghar scheme. Green Filament handled the full subsidy application on their behalf. Once the system was commissioned and the subsidy arrived, the family's monthly electricity bill dropped to nearly zero.",
+        desc: "A family home in Bhubaneswar installed a 3kW system under the PM Surya Ghar scheme. Green Filament handled the full subsidy application on their behalf. Once the system was commissioned and the subsidy arrived, the family's monthly electricity bill reduced by around 50 percent.",
       },
       {
         type: "h2",

@@ -20,6 +20,8 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Solar Company in Odisha", href: "/solar-company-odisha" },
+  { label: "Rooftop Solar Bhubaneswar", href: "/rooftop-solar-bhubaneswar" },
+  { label: "Rooftop Solar Cuttack", href: "/rooftop-solar-cuttack" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Schemes", href: "/schemes" },

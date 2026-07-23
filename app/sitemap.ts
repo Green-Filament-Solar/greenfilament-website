@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Location pages
     { url: "https://greenfilament.com/solar-company-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://greenfilament.com/rooftop-solar-bhubaneswar", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://greenfilament.com/rooftop-solar-cuttack", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
 
     // Legal
     { url: "https://greenfilament.com/terms", lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
