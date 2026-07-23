@@ -4,6 +4,9 @@
    PM SURYA GHAR ODISHA — CLIENT COMPONENT
    - All visual content + FAQ accordion + auto-advancing
      project carousel (Bhubaneswar + Cuttack)
+   - Subsidy table: 4-column table on desktop, stacked cards
+     on mobile, since "up to" values conflicted with earlier
+     fixed figures and needed correction after verification
    - Mobile responsive, matches site pattern
    ============================================================ */
 
@@ -22,6 +25,15 @@ const pmSuryaGharFaqs = [
   { q: "Do I need to buy a specific brand of solar panel?", a: "The panel does not need to be a specific brand, but it must be manufactured in India and listed under the government's approved list." },
   { q: "Is there a separate application for the Odisha state subsidy?", a: "No, the state subsidy is processed alongside the central subsidy once your system is registered." },
   { q: "What if my application gets rejected?", a: "Common reasons are incorrect bank details or non-approved panels. We double check all documentation before submission to avoid this." },
+];
+
+/* ============================================================
+   SUBSIDY TABLE DATA
+   ============================================================ */
+const subsidyTiers = [
+  { size: "1 kW", central: "₹30,000", state: "₹25,000", total: "₹55,000", highlight: false },
+  { size: "2 kW", central: "₹60,000", state: "Up to ₹40,000", total: "Up to ₹1,00,000", highlight: false },
+  { size: "3 kW", central: "₹78,000", state: "Up to ₹60,000", total: "Up to ₹1,38,000", highlight: true },
 ];
 
 /* ============================================================
@@ -67,11 +79,6 @@ export default function PmSuryaGharClient() {
             PAGE STYLES
             ============================================================ */}
         <style>{`
-          .psg-subsidy-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-          }
           .psg-cost-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -87,15 +94,18 @@ export default function PmSuryaGharClient() {
             grid-template-columns: 1fr 1fr;
             gap: 14px;
           }
+          .psg-subsidy-table-desktop { display: block; }
+          .psg-subsidy-cards-mobile { display: none; }
           @media (max-width: 1024px) {
             .psg-cost-grid { grid-template-columns: repeat(2, 1fr); }
             .psg-steps-grid { grid-template-columns: repeat(2, 1fr); }
           }
           @media (max-width: 768px) {
-            .psg-subsidy-grid { grid-template-columns: 1fr; }
             .psg-cost-grid { grid-template-columns: 1fr; }
             .psg-steps-grid { grid-template-columns: 1fr; }
             .psg-faq-grid { grid-template-columns: 1fr; }
+            .psg-subsidy-table-desktop { display: none; }
+            .psg-subsidy-cards-mobile { display: flex; }
           }
         `}</style>
 
@@ -156,21 +166,43 @@ export default function PmSuryaGharClient() {
               Subsidy Amount by System Size
             </h2>
             <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, marginBottom: "24px", textAlign: "justify" }}>
-              The central subsidy increases with system size up to 3kW, after which it stays capped at ₹78,000. Odisha adds a further state top-up at every tier too, from ₹25,000 for 1kW up to ₹60,000 for 3kW and above.
+              The central subsidy increases with system size up to 3kW, after which it stays capped at ₹78,000. Odisha adds a further state subsidy on top of the central amount, at every tier.
             </p>
-            <div className="psg-subsidy-grid">
-              <div style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
-                <div style={{ fontSize: "13px", color: "#777", marginBottom: "6px" }}>1 kW SYSTEM</div>
-                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹55,000</div>
+
+            {/* Desktop table */}
+            <div className="psg-subsidy-table-desktop" style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", overflow: "hidden" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", background: "#FFF3D6", padding: "14px 16px" }}>
+                <div style={{ fontSize: "12px", fontWeight: 700, color: "#854F0B" }}>SYSTEM CAPACITY</div>
+                <div style={{ fontSize: "12px", fontWeight: 700, color: "#854F0B" }}>CENTRAL SUBSIDY</div>
+                <div style={{ fontSize: "12px", fontWeight: 700, color: "#854F0B" }}>STATE SUBSIDY (ODISHA)</div>
+                <div style={{ fontSize: "12px", fontWeight: 700, color: "#854F0B" }}>TOTAL BENEFIT</div>
               </div>
-              <div style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
-                <div style={{ fontSize: "13px", color: "#777", marginBottom: "6px" }}>2 kW SYSTEM</div>
-                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹1,10,000</div>
-              </div>
-              <div style={{ background: "#fff", border: "0.5px solid #FDB92E", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
-                <div style={{ fontSize: "13px", color: "#854F0B", marginBottom: "6px", fontWeight: 700 }}>3 kW+ (WITH ODISHA TOP-UP)</div>
-                <div style={{ fontSize: "20px", fontWeight: 800, color: "#2d6a2d" }}>₹1,38,000</div>
-              </div>
+              {subsidyTiers.map((tier) => (
+                <div key={tier.size} style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", padding: "16px", borderTop: "0.5px solid #E8E2D8", background: tier.highlight ? "#FAFAFA" : "#fff" }}>
+                  <div style={{ fontSize: "14px", fontWeight: 700, color: "#1a1a1a" }}>{tier.size}</div>
+                  <div style={{ fontSize: "14px", color: "#555" }}>{tier.central}</div>
+                  <div style={{ fontSize: "14px", color: "#555" }}>{tier.state}</div>
+                  <div style={{ fontSize: "14px", fontWeight: 700, color: "#2d6a2d" }}>{tier.total}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile stacked cards */}
+            <div className="psg-subsidy-cards-mobile" style={{ flexDirection: "column", gap: "10px" }}>
+              {subsidyTiers.map((tier) => (
+                <div key={tier.size} style={{ background: tier.highlight ? "#FAFAFA" : "#fff", border: tier.highlight ? "0.5px solid #FDB92E" : "0.5px solid #E8E2D8", borderRadius: "12px", padding: "14px 16px" }}>
+                  <div style={{ fontSize: "15px", fontWeight: 800, color: "#1a1a1a", marginBottom: "10px" }}>{tier.size} System</div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", color: "#555", padding: "6px 0", borderBottom: "0.5px solid #f0f0f0" }}>
+                    <span>Central Subsidy</span><span style={{ fontWeight: 600, color: "#333" }}>{tier.central}</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", color: "#555", padding: "6px 0", borderBottom: "0.5px solid #f0f0f0" }}>
+                    <span>State Subsidy (Odisha)</span><span style={{ fontWeight: 600, color: "#333" }}>{tier.state}</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", paddingTop: "8px" }}>
+                    <span style={{ fontWeight: 700, color: "#854F0B" }}>Total Benefit</span><span style={{ fontWeight: 800, color: "#2d6a2d" }}>{tier.total}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -191,9 +223,9 @@ export default function PmSuryaGharClient() {
             <div className="psg-cost-grid">
               {[
                 { size: "1 kW", before: "₹70k - 90k", subsidy: "₹55,000", net: "₹15k - 35k" },
-                { size: "2 kW", before: "₹1.4L - 1.7L", subsidy: "₹1,10,000", net: "₹30k - 60k" },
-                { size: "3 kW", before: "₹2.2L - 2.6L", subsidy: "₹1,38,000", net: "₹80k - 1.2L" },
-                { size: "5 kW", before: "₹3.5L - 4L", subsidy: "₹1,38,000", net: "₹2.12L - 2.62L" },
+                { size: "2 kW", before: "₹1.4L - 1.7L", subsidy: "Up to ₹1,00,000", net: "₹40k - 70k" },
+                { size: "3 kW", before: "₹2.2L - 2.6L", subsidy: "Up to ₹1,38,000", net: "₹82k - 1.22L" },
+                { size: "5 kW", before: "₹3.5L - 4L", subsidy: "Up to ₹1,38,000", net: "₹2.12L - 2.62L" },
               ].map((row) => (
                 <div key={row.size} style={{ background: "#FAFAFA", border: "0.5px solid #E8E2D8", borderTop: "3px solid #FDB92E", borderRadius: "14px", padding: "18px" }}>
                   <div style={{ fontSize: "16px", fontWeight: 800, color: "#1a1a1a", marginBottom: "10px" }}>{row.size}</div>
@@ -207,7 +239,7 @@ export default function PmSuryaGharClient() {
               ))}
             </div>
             <p style={{ fontSize: "12px", color: "#999", marginTop: "16px", textAlign: "center" }}>
-              Both the central and Odisha state subsidy are capped at their 3kW rate. Systems above 3kW still receive the same maximum combined subsidy of ₹1,38,000.
+              Both the central and Odisha state subsidy are capped at their 3kW rate. Systems above 3kW still receive the same maximum combined subsidy of up to ₹1,38,000.
             </p>
           </div>
         </div>
