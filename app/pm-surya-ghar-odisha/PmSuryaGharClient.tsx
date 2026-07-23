@@ -156,16 +156,16 @@ export default function PmSuryaGharClient() {
               Subsidy Amount by System Size
             </h2>
             <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, marginBottom: "24px", textAlign: "justify" }}>
-              The central subsidy increases with system size up to 3kW, after which it stays capped. Odisha adds a further state subsidy on top of the central amount for 3kW systems and above.
+              The central subsidy increases with system size up to 3kW, after which it stays capped at ₹78,000. Odisha adds a further state top-up at every tier too, from ₹25,000 for 1kW up to ₹60,000 for 3kW and above.
             </p>
             <div className="psg-subsidy-grid">
               <div style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
                 <div style={{ fontSize: "13px", color: "#777", marginBottom: "6px" }}>1 kW SYSTEM</div>
-                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹30,000</div>
+                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹55,000</div>
               </div>
               <div style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
                 <div style={{ fontSize: "13px", color: "#777", marginBottom: "6px" }}>2 kW SYSTEM</div>
-                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹60,000</div>
+                <div style={{ fontSize: "20px", fontWeight: 800, color: "#412402" }}>₹1,10,000</div>
               </div>
               <div style={{ background: "#fff", border: "0.5px solid #FDB92E", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
                 <div style={{ fontSize: "13px", color: "#854F0B", marginBottom: "6px", fontWeight: 700 }}>3 kW+ (WITH ODISHA TOP-UP)</div>
@@ -190,10 +190,10 @@ export default function PmSuryaGharClient() {
             </div>
             <div className="psg-cost-grid">
               {[
-                { size: "1 kW", before: "₹70k - 90k", subsidy: "₹30,000", net: "₹40k - 60k" },
-                { size: "2 kW", before: "₹1.4L - 1.7L", subsidy: "₹60,000", net: "₹80k - 1.1L" },
+                { size: "1 kW", before: "₹70k - 90k", subsidy: "₹55,000", net: "₹15k - 35k" },
+                { size: "2 kW", before: "₹1.4L - 1.7L", subsidy: "₹1,10,000", net: "₹30k - 60k" },
                 { size: "3 kW", before: "₹2.2L - 2.6L", subsidy: "₹1,38,000", net: "₹80k - 1.2L" },
-                { size: "5 kW", before: "₹3.5L - 4L", subsidy: "₹78,000", net: "₹2.7L - 3.2L" },
+                { size: "5 kW", before: "₹3.5L - 4L", subsidy: "₹1,38,000", net: "₹2.12L - 2.62L" },
               ].map((row) => (
                 <div key={row.size} style={{ background: "#FAFAFA", border: "0.5px solid #E8E2D8", borderTop: "3px solid #FDB92E", borderRadius: "14px", padding: "18px" }}>
                   <div style={{ fontSize: "16px", fontWeight: 800, color: "#1a1a1a", marginBottom: "10px" }}>{row.size}</div>
@@ -207,7 +207,7 @@ export default function PmSuryaGharClient() {
               ))}
             </div>
             <p style={{ fontSize: "12px", color: "#999", marginTop: "16px", textAlign: "center" }}>
-              5kW and above receives the maximum central subsidy of ₹78,000 only. The Odisha state top-up applies specifically to 3kW systems.
+              Both the central and Odisha state subsidy are capped at their 3kW rate. Systems above 3kW still receive the same maximum combined subsidy of ₹1,38,000.
             </p>
           </div>
         </div>
