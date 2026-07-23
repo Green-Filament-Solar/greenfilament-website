@@ -22,6 +22,7 @@ const quickLinks = [
   { label: "Solar Company in Odisha", href: "/solar-company-odisha" },
   { label: "Rooftop Solar Bhubaneswar", href: "/rooftop-solar-bhubaneswar" },
   { label: "Rooftop Solar Cuttack", href: "/rooftop-solar-cuttack" },
+  { label: "PM Surya Ghar Odisha", href: "/pm-surya-ghar-odisha" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Schemes", href: "/schemes" },
