@@ -23,12 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/blogs/future-of-solar-cooking-battery-free", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/why-solar-street-light-stops-working-at-night", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/3kw-solar-price-odisha-after-subsidy-2026", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/tpcodl-net-metering-process-2026", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
 
     // Location pages
     { url: "https://greenfilament.com/solar-company-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: "https://greenfilament.com/rooftop-solar-bhubaneswar", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: "https://greenfilament.com/rooftop-solar-cuttack", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: "https://greenfilament.com/pm-surya-ghar-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://greenfilament.com/pm-kusum-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
 
     // Legal
     { url: "https://greenfilament.com/terms", lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },

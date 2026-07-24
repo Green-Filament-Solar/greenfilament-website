@@ -33,6 +33,14 @@ function renderTextWithLinks(text: string) {
     const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (match) {
       const [, label, href] = match;
+      const isExternal = href.startsWith("http");
+      if (isExternal) {
+        return (
+          <a key={i} href={href} target="_blank" rel="noopener noreferrer" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>
+            {label}
+          </a>
+        );
+      }
       return (
         <Link key={i} href={href} style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>
           {label}

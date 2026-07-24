@@ -23,6 +23,7 @@ const quickLinks = [
   { label: "Rooftop Solar Bhubaneswar", href: "/rooftop-solar-bhubaneswar" },
   { label: "Rooftop Solar Cuttack", href: "/rooftop-solar-cuttack" },
   { label: "PM Surya Ghar Odisha", href: "/pm-surya-ghar-odisha" },
+  { label: "PM Kusum Odisha", href: "/pm-kusum-odisha" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Schemes", href: "/schemes" },

@@ -890,6 +890,142 @@ export const blogPosts: BlogPost[] = [
   },
   /* --- end of blog-6 --- */
 
+  /* ============================================================
+     POST 7 — TPCODL Net Metering Process 2026
+     ============================================================ */
+  {
+    slug: "tpcodl-net-metering-process-2026",
+    title: "TPCODL Net Metering Process in 2026: What's Changed",
+    date: "2026-07-24",
+    category: "Rooftop Solar",
+    excerpt: "TPCODL has waived the net metering processing fee and removed the feasibility study requirement for systems up to 10kW. Here is exactly what changed and how the process works now.",
+    image: "/images/projects/rooftop-bhubaneswar-jagmohan-nagar.jpg",
+    readTime: "8 min read",
+    keywords: ["TPCODL net metering", "net metering process Odisha", "TPCODL rooftop solar", "net metering fee waiver", "bidirectional meter Odisha"],
+    sections: [
+      {
+        type: "p",
+        text: "TPCODL has waived the 500 rupee net metering processing fee and removed the technical feasibility study requirement for systems up to 10kW. If you are installing rooftop solar in Bhubaneswar, Cuttack, or anywhere else TPCODL covers, this makes the process faster and cheaper than it used to be.",
+      },
+      {
+        type: "h2",
+        text: "What net metering actually does",
+      },
+      {
+        type: "p",
+        text: "When your rooftop solar system generates more electricity than you use during the day, the extra power is exported to the grid. Your DISCOM tracks how much you export and how much you import, and bills you only for the difference. This is what allows a well-sized system to bring your monthly bill down close to zero in many cases.",
+      },
+      {
+        type: "h2",
+        text: "A worked example",
+      },
+      {
+        type: "p",
+        text: "Say you have a 3kW system generating around 12 to 14 units of electricity on a sunny day. A typical home uses about 8 to 10 units a day, mostly in the morning and evening. During peak sun hours, when your panels are producing more than the house is using, the surplus flows out to the grid through your bidirectional meter. At night, when your panels produce nothing, you draw electricity back from the grid as usual. At the end of the billing cycle, TPCODL nets the two figures against each other. This is exactly why our customers typically see savings of 2,500 to 3,500 rupees a month on a 3kW system.",
+      },
+      {
+        type: "h2",
+        text: "How the bidirectional meter works",
+      },
+      {
+        type: "p",
+        text: "A regular electricity meter only counts one direction, the power coming into your home. A bidirectional meter, sometimes called a net meter, counts both directions separately. It records how many units you imported from the grid and how many units you exported to the grid. TPCODL bills you for the net import, meaning imported units minus exported units. If you exported more than you imported in a given month, the credit usually carries forward to the next billing cycle rather than being paid out in cash.",
+      },
+      {
+        type: "h2",
+        text: "What changed in 2026",
+      },
+      {
+        type: "p",
+        text: "TPCODL removed two things that used to slow this process down. First, the 500 rupee net metering processing fee is now waived, so there is no separate payment or demand note generation step. Second, for systems up to 10kW, the technical feasibility study is no longer required before installation, which used to add days to the timeline. TPCODL has also made the Section Manager the single point of contact for site inspection, agreement signing, and net meter installation, instead of routing these through separate departments.",
+      },
+      {
+        type: "highlight",
+        text: "No more 500 rupee processing fee. No feasibility study needed for systems up to 10kW. One point of contact for the entire process.",
+      },
+      {
+        type: "h2",
+        text: "What to prepare before the site inspection",
+      },
+      {
+        type: "p",
+        text: "Before TPCODL's site inspection, make sure your installation is fully wired and the inverter is set up correctly, since the inspection team checks the physical installation before approving the net metering agreement. Keep your electricity bill, the vendor's installation completion certificate, and your Aadhaar-linked bank details ready, since these are usually asked for during this stage. If you are applying through the PM Surya Ghar subsidy at the same time, this inspection also feeds into your subsidy disbursal timeline.",
+      },
+      {
+        type: "h2",
+        text: "What if you already have solar but no net meter",
+      },
+      {
+        type: "p",
+        text: "Some homes installed solar panels years ago without ever applying for net metering, either because the process felt complicated or because a feasibility study was required at the time. If that describes your situation, you can still apply for net metering on an existing system. The waived fee and removed feasibility study for systems up to 10kW apply to your case too, so this is a good time to complete that step if you skipped it earlier.",
+      },
+      {
+        type: "h2",
+        text: "Common reasons net metering gets delayed",
+      },
+      {
+        type: "p",
+        text: "Even with the simplified process, a few things still cause delays. An incomplete or incorrect installation completion certificate from your vendor is the most common one. A mismatch between the sanctioned load on your electricity connection and your solar system size is another, since TPCODL checks that your system does not exceed your sanctioned capacity. Missing or unclear photographs of the installed system during the inspection request can also push things back by a few days. We handle all of this documentation upfront for our customers to avoid these delays.",
+      },
+      {
+        type: "h2",
+        text: "The current step-by-step process",
+      },
+      {
+        type: "p",
+        text: "After your rooftop solar system is installed, your net metering application goes through registration, a site inspection by TPCODL, signing the net metering agreement, and installation of the bidirectional meter. With the feasibility study step removed for systems up to 10kW, most residential installations move through this faster than before.",
+      },
+      {
+        type: "h2",
+        text: "Which DISCOM covers you",
+      },
+      {
+        type: "p",
+        text: "TPCODL specifically covers Bhubaneswar, Cuttack, and the surrounding Central Odisha region, which is where we install most of our rooftop solar systems, including our [Bhubaneswar](/rooftop-solar-bhubaneswar) and [Cuttack](/rooftop-solar-cuttack) projects. Other parts of Odisha are covered by TPSODL, TPWODL, and TPNODL, each with their own regional processes.",
+      },
+      {
+        type: "h2",
+        text: "Source",
+      },
+      {
+        type: "p",
+        text: "The fee waiver and process changes described here were reported by [OdishaBytes](https://odishabytes.com/tpcodl-waives-processing-fees-for-installing-rooftop-solar-systems-in-central-odisha/) in June 2025, based on statements from TPCODL. For the general rooftop solar application process, you can also refer to [TPCODL's official rooftop solar page](https://www.tpcentralodisha.com/renewable-energy/SolarRooftops).",
+      },
+      {
+        type: "p",
+        text: "DISCOM processes, fees, and requirements can change over time. Green Filament does not guarantee the accuracy or current validity of the process details on this page. We recommend confirming current requirements directly with TPCODL before starting your application.",
+      },
+      {
+        type: "p",
+        text: "If you are considering rooftop solar and want to understand the complete subsidy and installation process together, our [PM Surya Ghar Odisha](/pm-surya-ghar-odisha) guide covers that in detail.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I still need to pay the net metering fee?",
+        a: "No, TPCODL has waived the 500 rupee processing fee.",
+      },
+      {
+        q: "Does the feasibility study waiver apply to all system sizes?",
+        a: "No, it applies to systems up to 10kW, which covers almost all residential rooftop installations.",
+      },
+      {
+        q: "Who do I contact for net metering now?",
+        a: "TPCODL has made the Section Manager the single point of contact for the entire process.",
+      },
+      {
+        q: "Does this apply if I am outside TPCODL's coverage area?",
+        a: "No, this specific update is from TPCODL. Other DISCOMs like TPSODL, TPWODL, and TPNODL may have different processes.",
+      },
+      {
+        q: "Does this change apply to existing installations, or only new ones?",
+        a: "This affects the net metering process for new installations going through TPCODL from 2025 onward.",
+      },
+    ],
+  },
+
+  /* --- end of blog-7 --- */
+
 ];
 
 /* --- Categories for filter --- */
