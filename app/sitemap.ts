@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/connect", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://greenfilament.com/projects", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: "https://greenfilament.com/schemes", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: "https://greenfilament.com/services", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
 
     // Product pages
     { url: "https://greenfilament.com/rooftop-solar", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
