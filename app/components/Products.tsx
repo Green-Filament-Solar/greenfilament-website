@@ -80,7 +80,7 @@ const secondaryProducts = [
     desc: "For ports, stadiums, highways, and industrial yards.",
     image: "/images/products/high-mast.jpg",
     category: "High Mast",
-    href: "/connect",
+    href: "/solar-high-mast-light",
   },
   {
   title: "Solar Drinking Water",

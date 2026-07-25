@@ -37,7 +37,7 @@ const productLinks = [
   { label: "Solar Street Lighting", href: "/solar-street-lighting" },
   { label: "Rooftop Solar", href: "/rooftop-solar" },
   { label: "Agriculture Pumps", href: "/solar-water-pump" },
-  { label: "High Mast Lighting", href: "/connect" },
+  { label: "High Mast Lighting", href: "/solar-high-mast-light" },
   { label: "Solar Drinking Water", href: "/connect" },
   { label: "Solar Cold Storage", href: "/connect" },
 ];
