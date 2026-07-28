@@ -24,7 +24,7 @@ const highMastFaqs = [
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-  title: "Solar High Mast Light | Green Filament",
+  title: "Solar High Mast Light in Odisha | Green Filament",
   description:
     "Solar high mast lighting for highways, ports, industrial sites, and large public spaces. 20-40m pole height, 100-500W wattage range, fully solar powered.",
   keywords: [

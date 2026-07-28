@@ -129,7 +129,7 @@ export default function HighMastClient() {
               What Is Solar High Mast Lighting
             </h2>
             <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, textAlign: "justify" }}>
-              A solar high mast light is a tall pole fitted with multiple LED fixtures at the top, designed to illuminate a large area from a single point. Unlike standard high mast systems that draw power from the grid, a solar high mast runs entirely on its own solar panel and battery, making it ideal for sites with no reliable grid connection.
+              A solar high mast light is a tall pole fitted with multiple LED fixtures at the top, designed to illuminate a large area from a single point. Unlike standard high mast systems that draw power from the grid, a solar high mast runs entirely on its own solar panel and battery, making it ideal for sites with no reliable grid connection. For smaller roads and village lanes, our <Link href="/solar-street-lighting" style={{ color: "#F5A000", fontWeight: 600 }}>solar street lights</Link> are a better fit — high mast is built for wide-area coverage like highways and large grounds.
             </p>
           </div>
         </div>
