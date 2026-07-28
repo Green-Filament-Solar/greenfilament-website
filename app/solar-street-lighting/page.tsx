@@ -18,17 +18,22 @@ const streetLightingFaqs = [
   { q: "Can solar street lights work during monsoon season?", a: "Yes. Panels are sized with backup days built in, so lights keep working through several consecutive cloudy or rainy days." },
   { q: "Do you provide solar street lights for government and gram panchayat projects?", a: "Yes. We have installed 10,000+ units across Odisha for village, gram panchayat and government schemes, with custom wattage and specifications per tender requirements." },
   { q: "What wattage options are available?", a: "30W, 45W, 60W and 90W, chosen based on road width, pole height and lighting requirement." },
+  { q: "What warranty do you provide on solar street lights?", a: "All Green Filament solar street lights come with a 12-month warranty covering the light, battery and pole." },
+  { q: "Where has Green Filament recently installed solar street lights?", a: "In July 2026, we completed a 5-site installation for a government project under Dharakot panchayat in Ganjam district, covering Bariguda, Khajuriapaitari, Sunapalli, Kaluku and Kusaraba." },
 ];
 
 /* ============================================================
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-    title: "Solar Street Lights — Non-Integrated & Semi-Integrated | Green Filament",
-    description: "10,000+ solar street lights installed across Odisha. Zero complaints on non-integrated units. Available in 30W to 90W. SMF and LiFePO4 battery options. Custom orders for villages, gram panchayats and govt schemes.",
+    title: "Solar Street Light Manufacturer in Bhubaneswar, Odisha | Green Filament",
+    description: "Solar street light manufacturer in Bhubaneswar, Odisha with 10,000+ units installed. Non-integrated and semi-integrated options, 30W to 90W, SMF and LiFePO4 batteries. Bulk orders for villages, gram panchayats and govt schemes.",
     keywords: [
         "solar street light Odisha",
         "solar street light manufacturer",
+        "solar street light manufacturer in Bhubaneswar",
+        "solar street light company in Bhubaneswar",
+        "solar street light supplier Odisha",
         "non integrated solar street light",
         "semi integrated solar street light",
         "solar street light gram panchayat",

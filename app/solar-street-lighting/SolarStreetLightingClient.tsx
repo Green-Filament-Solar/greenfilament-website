@@ -1,7 +1,7 @@
 /* ============================================================
    SOLAR STREET LIGHTING — CLIENT COMPONENT
    /products/solar-street-lighting/SolarStreetLightingClient.tsx
-   - Handles all interactivity: useCaseStep swiper
+   - Handles all interactivity: useCaseStep swiper, FAQ accordion
    - Desktop: grid layout for use cases
    - Mobile: arrow + dot swiper for use cases
    ============================================================ */
@@ -74,7 +74,7 @@ const useCases = [
    ============================================================ */
 export default function SolarStreetLightingClient() {
 
-    /* State for use cases mobile swiper */
+    /* State for use cases mobile swiper + FAQ accordion */
     const [useCaseStep, setUseCaseStep] = useState(0);
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -88,6 +88,8 @@ export default function SolarStreetLightingClient() {
                     .products-grid      { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
                     .product-specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
                     .why-grid           { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+                    .case-study-specs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+                    .case-study-photos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
                     /* Use cases — desktop grid / mobile swiper toggle */
                     .usecases-grid-desktop { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
@@ -110,6 +112,8 @@ export default function SolarStreetLightingClient() {
                         .usecases-slider-mobile { display: block; }
                         .custom-order-grid      { grid-template-columns: 1fr; gap: 28px; }
                         .cta-btn-wrapper        { justify-content: center; }
+                        .case-study-specs-grid  { grid-template-columns: repeat(2, 1fr); }
+                        .case-study-photos-grid { grid-template-columns: 1fr; }
                     }
                 `}</style>
 
@@ -146,10 +150,15 @@ export default function SolarStreetLightingClient() {
                             SOLAR STREET LIGHTING
                         </div>
 
-                        {/* H1 */}
-                        <h1 style={{ fontSize: "clamp(28px, 4.5vw, 52px)", fontWeight: 700, color: "#fff", marginBottom: "14px", lineHeight: 1.15 }}>
-                            Lighting Every Road.<br />Powering Every Village.
+                        {/* H1 — primary keyword */}
+                        <h1 style={{ fontSize: "clamp(28px, 4.5vw, 52px)", fontWeight: 700, color: "#fff", marginBottom: "10px", lineHeight: 1.15 }}>
+                            Solar Street Light Manufacturer in Bhubaneswar, Odisha
                         </h1>
+
+                        {/* Tagline */}
+                        <p style={{ fontSize: "16px", fontWeight: 600, color: "#fff", marginBottom: "14px" }}>
+                            Lighting Every Road. Powering Every Village.
+                        </p>
 
                         {/* Subtitle */}
                         <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.88)", maxWidth: "500px", margin: "0 auto 28px", lineHeight: 1.8 }}>
@@ -493,6 +502,51 @@ export default function SolarStreetLightingClient() {
                 </div>
 
                 {/* ============================================================
+                    RECENT PROJECT — Dharakot case study
+                    Real installation, July 2026 — Boudh district, Odisha
+                    ============================================================ */}
+                <div style={{ background: "#F7F2E9", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
+                    <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+
+                        {/* Section header */}
+                        <div style={{ textAlign: "center", marginBottom: "36px" }}>
+                            <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>Recent Project</div>
+                            <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>Solar Street Lighting for Dharakot Panchayat, Ganjam</h2>
+                            <p style={{ fontSize: "14px", color: "#777", maxWidth: "640px", margin: "0 auto", lineHeight: 1.7 }}>
+                                In July 2026, we completed a 5-site solar street light installation for a government project under Dharakot panchayat,Ganjam district, covering Bariguda, Khajuriapaitari, Sunapalli, Kaluku and Kusaraba.
+                            </p>
+                        </div>
+
+                        {/* Specs row */}
+                        <div style={{ background: "#fff", borderRadius: "14px", border: "0.5px solid #E8E2D8", borderTop: "3px solid #FDB92E", padding: "20px", marginBottom: "24px" }}>
+                            <div className="case-study-specs-grid">
+                                {[
+                                    { label: "Light", value: "30W Semi Integrated" },
+                                    { label: "Pole Height", value: "6 Metres" },
+                                    { label: "Coverage", value: "20-25 Metre Radius" },
+                                    { label: "Battery", value: "LiFePO4" },
+                                    { label: "Operation", value: "Dusk to Dawn Auto" },
+                                    { label: "Warranty", value: "12 Months" },
+                                ].map((spec) => (
+                                    <div key={spec.label} style={{ paddingBottom: "8px", borderBottom: "0.5px solid #F0EBE0" }}>
+                                        <div style={{ fontSize: "10px", color: "#aaa", marginBottom: "2px" }}>{spec.label}</div>
+                                        <div style={{ fontSize: "12px", fontWeight: 700, color: "#1a1a1a" }}>{spec.value}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Photos */}
+                        <div className="case-study-photos-grid">
+                            <img src="/images/projects/bariguda-day-install.jpg" alt="Solar street light installation team at Bariguda, Boudh district Odisha" style={{ width: "100%", borderRadius: "14px", border: "0.5px solid #E8E2D8", objectFit: "cover", aspectRatio: "4/5" }} />
+                            <img src="/images/projects/kusaraba-night-lit.jpg" alt="Solar street light lit at night in Kusaraba village Odisha" style={{ width: "100%", borderRadius: "14px", border: "0.5px solid #E8E2D8", objectFit: "cover", aspectRatio: "4/5" }} />
+                            <img src="/images/projects/sunapalli-install.jpg" alt="Solar street light pole installation in Sunapalli village Odisha" style={{ width: "100%", borderRadius: "14px", border: "0.5px solid #E8E2D8", objectFit: "cover", aspectRatio: "4/5" }} />
+                        </div>
+
+                    </div>
+                </div>
+
+                {/* ============================================================
                     FAQ
                     ============================================================ */}
                 <div style={{ background: "#ffffff", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
@@ -504,7 +558,7 @@ export default function SolarStreetLightingClient() {
                             <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>Frequently Asked Questions</h2>
                         </div>
 
-                        {/* ── Accordion list ── */}
+                        {/* ── Accordion list — must match streetLightingFaqs in page.tsx ── */}
                         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                             {[
                                 { q: "How long does a solar street light run on a single charge?", a: "Most units run 10 to 12 hours nightly, from dusk to dawn, even after 2-3 cloudy days, thanks to battery backup sized for autonomy." },
@@ -513,6 +567,8 @@ export default function SolarStreetLightingClient() {
                                 { q: "Can solar street lights work during monsoon season?", a: "Yes. Panels are sized with backup days built in, so lights keep working through several consecutive cloudy or rainy days." },
                                 { q: "Do you provide solar street lights for government and gram panchayat projects?", a: "Yes. We have installed 10,000+ units across Odisha for village, gram panchayat and government schemes, with custom wattage and specifications per tender requirements." },
                                 { q: "What wattage options are available?", a: "30W, 45W, 60W and 90W, chosen based on road width, pole height and lighting requirement." },
+                                { q: "What warranty do you provide on solar street lights?", a: "All Green Filament solar street lights come with a 12-month warranty covering the light, battery and pole." },
+                                { q: "Where has Green Filament recently installed solar street lights?", a: "In July 2026, we completed a 5-site installation for a government project under Dharakot panchayat in Boudh district, covering Bariguda, Khajuriapaitari, Sunapalli, Kaluku and Kusaraba." },
                             ].map((faq, i) => (
                                 <div key={i} style={{ background: "#FAFAFA", borderRadius: "10px", border: "0.5px solid #E8E2D8", overflow: "hidden" }}>
 
