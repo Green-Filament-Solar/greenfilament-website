@@ -3,8 +3,7 @@
 /* ============================================================
    SOLAR HIGH MAST LIGHT — CLIENT COMPONENT
    - All visual content + FAQ accordion
-   - Real project: Bagurai, Bhadrak — image filename reserved,
-     just drop the photo in once available, no code changes needed
+   - Real project: Kapileswar Temple, Bhubaneswar
    - Mobile responsive, matches site pattern
    ============================================================ */
 
@@ -52,6 +51,17 @@ export default function HighMastClient() {
             grid-template-columns: repeat(3, 1fr);
             gap: 14px;
           }
+          .hm-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: center;
+          }
+          .hm-benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
           .hm-faq-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -65,6 +75,8 @@ export default function HighMastClient() {
             .hm-stats-grid { grid-template-columns: 1fr; }
             .hm-specs-grid { grid-template-columns: 1fr; }
             .hm-uses-grid { grid-template-columns: 1fr; }
+            .hm-steps-grid { grid-template-columns: 1fr; }
+            .hm-benefits-grid { grid-template-columns: 1fr; }
             .hm-faq-grid { grid-template-columns: 1fr; }
           }
         `}</style>
@@ -81,7 +93,7 @@ export default function HighMastClient() {
               Solar High Mast Lighting
             </h1>
             <p style={{ fontSize: "clamp(14px, 1.6vw, 17px)", color: "#c9c9c9", lineHeight: 1.8, marginBottom: "28px" }}>
-              One tall pole, wide area coverage, powered entirely by the sun. Built for highways, ports, industrial sites, and large public spaces with no grid connection needed.
+              One tall pole, wide area coverage, powered entirely by the sun. Built for highways, temple grounds, ports, industrial sites, and large public spaces with no grid connection needed.
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/connect" style={{ display: "inline-flex", alignItems: "center", background: "#fff", borderRadius: "40px", padding: "6px 6px 6px 22px", textDecoration: "none", boxShadow: "0 4px 20px rgba(0,0,0,0.15)" }}>
@@ -104,7 +116,7 @@ export default function HighMastClient() {
           <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
             <div className="hm-stats-grid">
               {[
-                { value: "20-40m", label: "Pole Height" },
+                { value: "9-40m", label: "Pole Height" },
                 { value: "100-500W", label: "Wattage Range" },
                 { value: "8-12 Hrs", label: "Battery Backup" },
               ].map((stat, i, arr) => (
@@ -128,16 +140,65 @@ export default function HighMastClient() {
             <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a", marginBottom: "18px", lineHeight: 1.3 }}>
               What Is Solar High Mast Lighting
             </h2>
-            <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, textAlign: "justify" }}>
-              A solar high mast light is a tall pole fitted with multiple LED fixtures at the top, designed to illuminate a large area from a single point. Unlike standard high mast systems that draw power from the grid, a solar high mast runs entirely on its own solar panel and battery, making it ideal for sites with no reliable grid connection. For smaller roads and village lanes, our <Link href="/solar-street-lighting" style={{ color: "#F5A000", fontWeight: 600 }}>solar street lights</Link> are a better fit — high mast is built for wide-area coverage like highways and large grounds.
+            <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, textAlign: "justify", marginBottom: "16px" }}>
+              A solar high mast light is a tall pole fitted with multiple LED fixtures at the top, designed to illuminate a large area from a single point. Instead of putting up several small poles across a site, one high mast tower does the job of many. This is why highways, temple grounds, ports, and industrial yards rely on this design rather than standard street lighting.
             </p>
+            <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, textAlign: "justify" }}>
+              Unlike conventional high mast systems that draw power from the grid, a solar high mast runs entirely on its own solar panel and battery. There is no monthly electricity bill and no dependence on grid uptime, which makes it a practical choice for sites where a grid connection is unreliable, expensive to extend, or simply not available. For smaller roads and village lanes, our <Link href="/solar-street-lighting" style={{ color: "#F5A000", fontWeight: 600 }}>solar street lights</Link> are the better fit. High mast is built for wide area coverage, whether that is a highway stretch, a temple ground, or a large industrial yard.
+            </p>
+          </div>
+        </div>
+
+        {/* ============================================================
+            HOW IT WORKS
+            ============================================================ */}
+        <div style={{ background: "#FAFAFA", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
+          <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+            <div style={{ textAlign: "center", marginBottom: "36px" }}>
+              <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>
+                How It Works
+              </div>
+              <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a" }}>
+                Three Simple Steps
+              </h2>
+            </div>
+            <div className="hm-steps-grid">
+              {[
+                {
+                  step: "01",
+                  title: "Solar Panel Charges the Battery",
+                  desc: "During the day, the solar panel mounted near the pole charges the battery through an MPPT controller, which is our standard choice since it draws more usable power from the panel than a basic PWM controller.",
+                },
+                {
+                  step: "02",
+                  title: "Battery Stores the Energy",
+                  desc: "The charge is stored in a lithium-ion or LiFePO4 battery sized to run every LED fixture on the pole for a full night, even after a cloudy day.",
+                },
+                {
+                  step: "03",
+                  title: "LEDs Switch On Automatically",
+                  desc: "At dusk, the fixtures turn on automatically and stay lit through the night, then switch off at dawn. No manual operation, no wiring back to the grid.",
+                },
+              ].map((s, i) => (
+                <div key={s.step} style={{ background: "#fff", borderRadius: "14px", border: "0.5px solid #E8E2D8", borderTop: "3px solid #FDB92E", padding: "24px", position: "relative" }}>
+                  {i < 2 && (
+                    <div style={{ position: "absolute", right: "-18px", top: "50%", transform: "translateY(-50%)", zIndex: 2, background: "#FFF3D6", border: "0.5px solid #FAC775", borderRadius: "50%", width: "32px", height: "32px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </div>
+                  )}
+                  <div style={{ fontSize: "11px", fontWeight: 700, color: "#FDB92E", marginBottom: "8px", letterSpacing: "1px" }}>STEP {s.step}</div>
+                  <div style={{ fontSize: "16px", fontWeight: 700, color: "#1a1a1a", marginBottom: "10px" }}>{s.title}</div>
+                  <div style={{ fontSize: "13px", color: "#777", lineHeight: 1.75 }}>{s.desc}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* ============================================================
             SPECIFICATIONS
             ============================================================ */}
-        <div style={{ background: "#FAFAFA", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
+        <div style={{ background: "#ffffff", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
           <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "36px" }}>
               <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>
@@ -149,14 +210,59 @@ export default function HighMastClient() {
             </div>
             <div className="hm-specs-grid">
               {[
-                { label: "Pole Height", value: "20m to 40m" },
+                { label: "Pole Height", value: "9m to 40m" },
                 { label: "LED Wattage", value: "100W to 500W" },
-                { label: "Battery Type", value: "Lithium-ion or Gel VRLA" },
-                { label: "Controller", value: "MPPT or PWM" },
+                { label: "Battery Type", value: "Lithium-ion or LiFePO4" },
+                { label: "Controller", value: "MPPT" },
               ].map((spec) => (
                 <div key={spec.label} style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderTop: "3px solid #FDB92E", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
                   <div style={{ fontSize: "12px", color: "#777", marginBottom: "6px" }}>{spec.label}</div>
                   <div style={{ fontSize: "16px", fontWeight: 700, color: "#412402" }}>{spec.value}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ============================================================
+            WHY SOLAR HIGH MAST
+            ============================================================ */}
+        <div style={{ background: "#FAFAFA", padding: "clamp(48px, 7vw, 80px) clamp(24px, 5vw, 80px)" }}>
+          <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+            <div style={{ textAlign: "center", marginBottom: "36px" }}>
+              <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>
+                Why Solar
+              </div>
+              <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#1a1a1a" }}>
+                Why Choose Solar Over Grid-Powered High Mast
+              </h2>
+            </div>
+            <div className="hm-benefits-grid">
+              {[
+                {
+                  title: "No Monthly Electricity Bill",
+                  desc: "A grid-powered high mast runs on a meter connection that keeps adding to your electricity cost every single month for as long as the light operates. A solar high mast has zero running cost after installation, since the sun is doing all the work.",
+                },
+                {
+                  title: "No Grid Extension Cost",
+                  desc: "Extending grid infrastructure to a highway stretch, temple ground, or remote site is expensive and often takes months of approvals. A solar high mast skips this step entirely and can be installed wherever it is needed.",
+                },
+                {
+                  title: "Lower Long-Term Cost",
+                  desc: "The upfront cost of a solar high mast is offset within a few years through eliminated electricity bills. Over the 20 plus year lifespan of the panels, the total cost works out lower than a grid-connected equivalent.",
+                },
+                {
+                  title: "Works Where Grid Cannot Reach",
+                  desc: "linkVersion",
+                },
+              ].map((b) => (
+                <div key={b.title} style={{ background: "#fff", borderRadius: "14px", border: "0.5px solid #E8E2D8", borderTop: "3px solid #2d6a2d", padding: "24px" }}>
+                  <div style={{ fontSize: "15px", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>{b.title}</div>
+                  <div style={{ fontSize: "13px", color: "#777", lineHeight: 1.75, textAlign: "justify" }}>
+                    {b.desc === "linkVersion"
+                      ? <>For highways, ports, and rural sites with no nearby grid connection, solar is often the only realistic option. We install these across <Link href="/solar-company-odisha" style={{ color: "#F5A000", fontWeight: 600 }}>sites throughout Odisha</Link>, giving reliable lighting from day one without waiting on a grid connection.</>
+                      : b.desc}
+                  </div>
                 </div>
               ))}
             </div>
@@ -179,11 +285,11 @@ export default function HighMastClient() {
             <div className="hm-uses-grid">
               {[
                 { title: "Highways & Roads", desc: "Reliable lighting along stretches with no nearby grid infrastructure." },
+                { title: "Temple Grounds & Public Spaces", desc: "Wide area lighting for temple premises and community gathering spaces." },
                 { title: "Ports & Industrial Sites", desc: "Wide-area coverage for yards, loading zones, and operational areas." },
                 { title: "Stadiums & Public Grounds", desc: "Even illumination for large open spaces and event grounds." },
                 { title: "Parking Lots", desc: "Full coverage lighting for large vehicle parking areas." },
                 { title: "Mela Grounds & Exhibitions", desc: "Temporary or permanent lighting for large gathering spaces." },
-                { title: "Rural Areas", desc: "Reliable lighting for villages and sites with no grid access." },
               ].map((use) => (
                 <div key={use.title} style={{ background: "#FAFAFA", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "20px" }}>
                   <div style={{ fontSize: "14px", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>{use.title}</div>
@@ -209,7 +315,7 @@ export default function HighMastClient() {
               <div style={{ position: "relative", width: "100%", aspectRatio: "4/3" }}>
                 <NextImage
                   src="/images/projects/solar-high-mast-kapileswar-bhubaneswar.jpg"
-                  alt="Solar high mast light installation at Kapileswar, Bhubaneswar, Odisha"
+                  alt="Solar high mast light installation at Kapileswar Temple, Bhubaneswar, Odisha"
                   fill
                   sizes="(max-width: 768px) 100vw, 860px"
                   style={{ objectFit: "cover" }}
@@ -218,8 +324,11 @@ export default function HighMastClient() {
               <div style={{ padding: "20px 24px" }}>
                 <div style={{ fontSize: "12px", color: "#854F0B", fontWeight: 700, marginBottom: "6px" }}>GREEN FILAMENT PROJECT</div>
                 <div style={{ fontSize: "16px", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px" }}>Solar High Mast Light, Kapileswar Temple, Bhubaneswar</div>
+                <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.8, textAlign: "justify", marginBottom: "12px" }}>
+                  Kapileswar Temple in Bhubaneswar needed reliable lighting across its grounds without relying on a grid connection. Green Filament installed a 9-metre solar high mast pole fitted with four sets of 30W LED fixtures, giving wide, even coverage across the temple premises from a single point.
+                </p>
                 <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.8, textAlign: "justify" }}>
-                  A solar-powered high mast light installed at Kapileswar Temple in Bhubaneswar, bringing reliable wide-area lighting to a site with no dependence on grid electricity.
+                  The system runs on a 75W solar panel and a 30Ah LiFePO4 battery through an MPPT controller, our standard choice for efficient charging. The lights switch on automatically at dusk and run through the night, giving the temple dependable illumination with zero electricity bill.
                 </p>
               </div>
             </div>

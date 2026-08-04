@@ -86,7 +86,7 @@ export const metadata: Metadata = {
 const specs = [
   { label: "Solar Modules", value: "500Wp × 6" },
   { label: "Heating Technology", value: "1500W Coil" },
-  { label: "Cooking Capacity", value: "Up to 15 People" },
+  { label: "Cooking Capacity", value: "1 Family (8-10 Members)" },
   { label: "System Type", value: "3kW DC System" },
   { label: "Fuel Cost", value: "Zero" },
   { label: "Compatible With", value: "Standard Cooking Pots" },
@@ -154,8 +154,8 @@ export default function SolarCookingPage() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M7 7h10v10" /></svg>
                 </div>
               </Link>
-              
-             {/* <a href="/images/products/solar-cooking-brochure.pdf" download style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.15)", border: "0.5px solid rgba(255,255,255,0.35)", color: "#fff", fontSize: "14px", fontWeight: 600, padding: "12px 22px", borderRadius: "40px", textDecoration: "none" }}>
+
+              {/* <a href="/images/products/solar-cooking-brochure.pdf" download style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.15)", border: "0.5px solid rgba(255,255,255,0.35)", color: "#fff", fontSize: "14px", fontWeight: 600, padding: "12px 22px", borderRadius: "40px", textDecoration: "none" }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
                 Download Brochure
               </a> */}
@@ -179,7 +179,7 @@ export default function SolarCookingPage() {
                 <div style={{ display: "inline-block", background: "#FFF3D6", border: "0.5px solid #FAC775", color: "#854F0B", fontSize: "13px", fontWeight: 500, padding: "4px 14px", borderRadius: "20px", marginBottom: "12px" }}>Product Overview</div>
                 <h2 style={{ fontSize: "clamp(20px, 2.5vw, 28px)", fontWeight: 700, color: "#1a1a1a", marginBottom: "8px", lineHeight: 1.3 }}>Solar-Powered Clean Cooking Technology</h2>
                 <p style={{ fontSize: "13px", color: "#777", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
-                  A revolutionary cooking solution powered entirely by the sun. No LPG, no firewood, no smoke — just clean, efficient heat from an innovative coil-based heating system. Compatible with standard cooking pots and designed for daily use by up to 15 people.
+                  A revolutionary cooking solution powered entirely by the sun. No LPG, no firewood, no smoke, just clean, efficient heat from an innovative coil-based heating system. Compatible with standard cooking pots and designed for daily use by a family of up to 8 to 10 members. Curious how it works without a battery? We break it down in <Link href="/blogs/future-of-solar-cooking-battery-free" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>this article</Link>.
                 </p>
                 <div style={{ background: "#fff", borderRadius: "12px", border: "0.5px solid #E8E2D8", overflow: "hidden" }}>
                   <div style={{ background: "#FFF3D6", padding: "10px 16px", fontSize: "11px", fontWeight: 700, color: "#854F0B", letterSpacing: "0.5px", borderBottom: "0.5px solid #FAC775" }}>TECHNICAL SPECIFICATIONS</div>
@@ -298,7 +298,7 @@ export default function SolarCookingPage() {
             </div>
             <div className="usecases-grid">
               {[
-                { title: "Rural Households", desc: "Daily cooking for families of up to 15 people. Replaces LPG and firewood completely.", icon: (<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>) },
+                { title: "Rural Households", desc: "Daily cooking for a family of 8 to 10 members. Replaces LPG and firewood completely.", icon: (<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>) },
                 { title: "Anganwadis", desc: "Clean meal preparation for childcare centres. Safe for indoor use with no smoke.", icon: (<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>) },
                 { title: "Schools", desc: "Mid-day meal programs powered by the sun. Consistent cooking energy every school day.", icon: (<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg>) },
                 { title: "Tribal Communities", desc: "Remote area energy access where grid and LPG supply are unreliable or unavailable.", icon: (<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /></svg>) },

@@ -406,7 +406,7 @@ export const blogPosts: BlogPost[] = [
      ============================================================ */
   {
     slug: "future-of-solar-cooking-battery-free",
-    title: "The Future of Cooking Could Be Solar — And Battery-Free",
+    title: "The Future of Cooking Could Be Solar - And Battery-Free",
     date: "2026-02-18",
     category: "Solar Cooking",
     excerpt: "LPG prices keep rising. Firewood causes respiratory illness. Induction needs grid electricity. As the authorised manufacturer of a patent-granted solar cooking system, Green Filament offers a battery-free alternative powered entirely by sunlight.",
@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Green Filament is the authorised manufacturer of a patent-granted solar-powered cooking system that works fundamentally differently from traditional solar cookers. Instead of concentrating sunlight directly, it uses solar panels to generate DC electricity which powers a high-efficiency coil heater, similar to an induction stove, but running on direct solar power without any battery storage.",
+        text: "Green Filament is the authorised manufacturer of a [patent-granted solar-powered cooking system](/solar-cooking) that works fundamentally differently from traditional solar cookers. Instead of concentrating sunlight directly, it uses solar panels to generate DC electricity which powers a high-efficiency coil heater, similar to an induction stove, but running on direct solar power without any battery storage.",
       },
       {
         type: "highlight",
@@ -472,7 +472,7 @@ export const blogPosts: BlogPost[] = [
           "3kW system with 6 × 500Wp panels powers a 1500W coil heater",
           "Compatible with standard cooking pots — no special cookware needed",
           "Portable and easy to install — no complex infrastructure required",
-          "Designed for up to 15 people — suitable for homes, schools, anganwadis",
+          "Designed for a family of 8 to 10 members — suitable for homes, schools, anganwadis",
         ],
       },
       {
@@ -481,7 +481,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The communities that benefit most from solar cooking are those currently spending the highest proportion of their income on cooking fuel — rural households, tribal communities, anganwadi centres, and mid-day meal kitchens in schools. In these settings, the economics of solar cooking are compelling. The system pays for itself in fuel savings within a few years and then generates free cooking energy for decades.",
+        text: "The communities that benefit most from solar cooking are those currently spending the highest proportion of their income on cooking fuel — rural households, tribal communities, anganwadi centres, and mid-day meal kitchens in schools. These are often the same communities we serve through our [solar street lighting](/solar-street-lighting) and [solar water pump](/solar-water-pump) installations across Odisha. In these settings, the economics of solar cooking are compelling. The system pays for itself in fuel savings within a few years and then generates free cooking energy for decades.",
       },
       {
         type: "ul",
@@ -507,7 +507,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "With over 200 installations across India, this solar cooking system is not a concept. It is a proven, field-tested technology, and Green Filament is proud to be its authorised manufacturer. The future of clean cooking in rural India does not require waiting for better batteries or cheaper induction stoves. It is here today, powered by the most abundant and free energy source available, the sun.",
+        text: "With over 200 installations across India, this solar cooking system is not a concept. It is a proven, field-tested technology, and Green Filament is proud to be its authorised manufacturer. If you want to know more about how we work across Odisha, visit our [about page](/about) or [get in touch](/connect) to discuss a solar cooking installation for your home, school, or community kitchen. The future of clean cooking in rural India does not require waiting for better batteries or cheaper induction stoves. It is here today, powered by the most abundant and free energy source available, the sun.",
       },
     ],
     faqs: [
@@ -521,7 +521,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "How many people can the system cook for?",
-        a: "The standard 3kW system is designed to cook for up to 15 people. For larger requirements such as community kitchens or schools, the system can be scaled up.",
+        a: "The standard 3kW system is designed to cook for a family of up to 8 to 10 members. For larger requirements such as community kitchens or schools, the system can be scaled up.",
       },
       {
         q: "Is the solar cooking system available under any government scheme?",
