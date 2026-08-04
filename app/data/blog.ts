@@ -406,7 +406,7 @@ export const blogPosts: BlogPost[] = [
      ============================================================ */
   {
     slug: "future-of-solar-cooking-battery-free",
-    title: "The Future of Cooking Could Be Solar & Battery Free",
+    title: "Solar Cooking: A Clean, Zero Cost Way to Cook",
     date: "2026-02-18",
     category: "Solar Cooking",
     excerpt: "LPG prices keep rising. Firewood causes respiratory illness. Induction needs grid electricity. As the authorised manufacturer of a patent-granted solar cooking system, Green Filament offers a battery-free alternative powered entirely by sunlight.",
