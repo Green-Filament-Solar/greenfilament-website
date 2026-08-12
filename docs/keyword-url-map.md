@@ -9,6 +9,7 @@ Slug convention: short and readable, keywords in title/H1/content instead of the
 | ✅ Live | Solar Company Odisha | Solar Panel Company Odisha, Solar Energy Company Odisha | `/solar-company-odisha` | Company | Flagship page. Do not duplicate with city-level "Solar Company in X" pages. |
 | ✅ Live | Rooftop Solar Installation Bhubaneswar | Solar Rooftop Bhubaneswar, Solar Panel Installation Bhubaneswar | `/rooftop-solar-bhubaneswar` | Service + City | |
 | 🟡 Ready | Rooftop Solar Installation Cuttack | Rooftop Solar Cuttack | `/rooftop-solar-cuttack` | Service + City | Pending deployment |
+| 🟡 In Progress | Solar ROI Calculator Odisha | Odisha Electricity Tariff Solar Savings, Solar Payback Period Odisha | `/solar-roi-calculator` | Tool/Commercial | OERC common domestic tariff confirmed same across TPCODL, TPWODL, TPSODL, TPNODL. Rates verified from real TPCODL bills, valid state-wide. |
 | 🔴 Planned | Rooftop Solar Installation Puri | Rooftop Solar Puri | `/rooftop-solar-puri` | Service + City | Next up |
 | 🔴 Planned | Solar Street Light Installation | Street Light Installation | `/solar-street-light-installation` | Service | Check against existing `/solar-street-lighting` page content first — avoid duplication |
 | 🔴 Planned | Solar Street Light Supplier | Street Light Supplier India | `/solar-street-light-supplier` | Commercial | Must differentiate from Manufacturer positioning: bulk orders, dealer network, ready stock |

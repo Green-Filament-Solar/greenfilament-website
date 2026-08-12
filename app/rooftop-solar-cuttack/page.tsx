@@ -180,6 +180,9 @@ export default function RooftopSolarCuttackPage() {
             <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, marginBottom: "24px", textAlign: "justify" }}>
               A 3kW system costs between 2.2 lakh and 2.6 lakh rupees before subsidy. With the PM Surya Ghar central subsidy of 78,000 rupees and the Odisha state subsidy of 60,000 rupees under the current <Link href="/schemes" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>government schemes</Link>, most homes in Cuttack end up paying between 80,000 and 1.2 lakh rupees net. We calculate this exactly for your home based on your roof size and current bill, in a free site visit.
             </p>
+            <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, marginTop: "16px", textAlign: "justify" }}>
+              Want a quick number before booking a visit? Try our <Link href="/solar-roi-calculator" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>Solar ROI Calculator</Link> to see your estimated monthly savings and payback period based on your actual electricity bill.
+            </p>
 
             {/* Cost breakdown box */}
             <div style={{ background: "#fff", border: "0.5px solid #E8E2D8", borderRadius: "14px", padding: "20px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "12px" }}>

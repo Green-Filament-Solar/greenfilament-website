@@ -836,7 +836,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A 3kW system in Odisha generates around 12 to 14 units of electricity every day on average. At current TPCODL tariff rates, this brings down a typical monthly bill by 2,500 to 3,500 rupees. For most homes, the system pays for itself in 3 to 5 years through these savings alone. After that, the electricity is essentially free for the next 20 plus years, since panels come with a 25 year performance warranty.",
+        text: "A 3kW system in Odisha generates around 12 to 14 units of electricity every day on average. At current TPCODL tariff rates, this brings down a typical monthly bill by 2,500 to 3,500 rupees. For most homes, the system pays for itself in 3 to 5 years through these savings alone. After that, the electricity is essentially free for the next 20 plus years, since panels come with a 25 year performance warranty. If you want to check this against your own electricity bill, our [Solar ROI Calculator](/solar-roi-calculator) works out your exact monthly savings and payback period.",
       },
       {
         type: "highlight",

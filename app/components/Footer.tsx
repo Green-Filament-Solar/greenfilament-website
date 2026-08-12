@@ -40,6 +40,7 @@ const productLinks = [
   { label: "High Mast Lighting", href: "/solar-high-mast-light" },
   { label: "Solar Drinking Water", href: "/connect" },
   { label: "Solar Cold Storage", href: "/connect" },
+  { label: "Solar ROI Calculator", href: "/solar-roi-calculator" },
 ];
 
 /* ============================================================

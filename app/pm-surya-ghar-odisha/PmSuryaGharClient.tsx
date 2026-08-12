@@ -242,6 +242,18 @@ export default function PmSuryaGharClient() {
               Both the central and Odisha state subsidy are capped at their 3kW rate. Systems above 3kW still receive the same maximum combined subsidy of up to ₹1,38,000.
             </p>
           </div>
+
+          {/* ROI Calculator CTA box — centered within content column */}
+          <div style={{ maxWidth: "860px", margin: "24px auto 0" }}>
+            <div style={{ background: "#FFF3D6", borderLeft: "3px solid #F5A000", borderRadius: "0 10px 10px 0", padding: "18px 22px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
+              <p style={{ fontSize: "15px", color: "#412402", fontWeight: 500, lineHeight: 1.7, margin: 0, flex: 1, minWidth: "220px" }}>
+                Want to see your exact monthly savings after subsidy? Check your payback period based on your own electricity bill.
+              </p>
+              <Link href="/solar-roi-calculator" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#FDB92E", color: "#412402", fontSize: "13px", fontWeight: 700, padding: "10px 18px", borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}>
+                Try ROI Calculator →
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* ============================================================
