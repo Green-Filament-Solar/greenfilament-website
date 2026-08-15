@@ -1026,6 +1026,216 @@ export const blogPosts: BlogPost[] = [
 
   /* --- end of blog-7 --- */
 
+  /* ============================================================
+     POST 8 — ALMM Cell Mandate 2026
+     ============================================================ */
+  {
+    slug: "almm-cell-mandate-2026-odisha",
+    title: "ALMM Cell Mandate 2026: What Every Solar Buyer in Odisha Needs to Know",
+    date: "2026-08-15",
+    category: "Policy & Schemes",
+    excerpt: "From June 2026, Indian solar cells, not just panels, must be government-approved for subsidised rooftop solar. Here is what changed, who it affects, and how it protects your PM Surya Ghar subsidy in Odisha.",
+    image: "/images/policy-schemes/almm-compliance.jpg",
+    readTime: "10 min read",
+    keywords: ["ALMM solar cells 2026", "ALMM List-II Odisha", "PM Surya Ghar ALMM compliance", "solar panel approved list India", "ALMM meaning solar"],
+    sections: [
+      {
+        type: "p",
+        text: "If you have started researching rooftop solar for your home or business in Odisha this year, you may have come across the term ALMM in a vendor quote or a news article and wondered what it actually means for you. It sounds like technical fine print, but it directly affects whether your system qualifies for the PM Surya Ghar subsidy, whether your net metering gets approved by TPCODL or TPWODL, and how safe your 25 year investment really is.",
+      },
+      {
+        type: "p",
+        text: "We will walk through what ALMM is, what changed in 2026, and exactly what it means if you are installing solar in Bhubaneswar, Cuttack, or anywhere else in Odisha.",
+      },
+      {
+        type: "h2",
+        text: "What is ALMM",
+      },
+      {
+        type: "p",
+        text: "ALMM stands for Approved List of Models and Manufacturers. It comes from an order the Ministry of New and Renewable Energy issued in 2019, formally called the Approved Models and Manufacturers of Solar Photovoltaic Modules (Requirements for Compulsory Registration) Order.",
+      },
+      {
+        type: "p",
+        text: "The reasoning behind it is simple. A rooftop solar system is expected to run for 25 years and carries long term performance warranties. MNRE wanted a way to confirm that a manufacturer's product is genuinely made where they claim it is made, rather than relabelled or sourced from elsewhere. This protects the buyer, and it protects India's broader energy security by encouraging real domestic manufacturing rather than paper compliance.",
+      },
+      {
+        type: "p",
+        text: "ALMM works as two separate lists. List-I covers solar PV modules, meaning the panels themselves. This list has existed since March 2021. List-II covers solar PV cells, meaning the components that sit inside the panel and actually convert sunlight into electricity. This list only came into existence in July 2025.",
+      },
+      {
+        type: "p",
+        text: "Under the original order, only List-I mattered. As long as your panel brand and model appeared on the module list, you were compliant. The cells inside that panel could be imported.",
+      },
+      {
+        type: "p",
+        text: "ALMM applies to any project connected to a government scheme, government assistance, open access, or net metering. This is the important part for Odisha homeowners: because PM Surya Ghar is a central government scheme and because TPCODL, TPWODL, TPSODL, and TPNODL all require net metering approval for rooftop solar, ALMM compliance is not optional. It is a precondition for your subsidy and your grid connection.",
+      },
+      {
+        type: "highlight",
+        text: "You can check the current approved lists yourself on the [MNRE ALMM page](https://mnre.gov.in/en/approved-list-of-models-and-manufacturers-almm/) before signing with any installer.",
+      },
+      {
+        type: "h2",
+        text: "A short history of how we got here",
+      },
+      {
+        type: "p",
+        text: "ALMM did not appear overnight in 2026. It has been tightened in stages over several years, and understanding that progression makes the current mandate easier to follow.",
+      },
+      {
+        type: "p",
+        text: "The original 2019 order only covered modules, and the first List-I was published in March 2021. For the next few years, List-I itself went through repeated suspensions and reinstatements as the industry pushed back on supply constraints, which created genuine confusion among developers and installers about whether it was even in force at a given time.",
+      },
+      {
+        type: "p",
+        text: "Cells were the obvious next step, since a compliant panel assembled in India could still be built around imported cells. List-II for solar cells was first issued in July 2025, and MNRE has revised it repeatedly since then, with an [8th revision of ALMM List-II for Solar PV Cells](https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/07/202607221193790752.pdf) published on 22 July 2026 alone. In parallel, MNRE has also begun extending the ALMM framework further up the supply chain, with an [amendment dated 17 March 2026](https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/03/20260317408099354.pdf) confirming that ingots and wafers will eventually require their own approved list, effective from June 2028.",
+      },
+      {
+        type: "p",
+        text: "The pattern is consistent: MNRE moves one layer of the manufacturing chain onto a mandatory approved list, gives the industry a runway, then tightens enforcement once domestic capacity has had time to grow. Cells are the layer being enforced right now.",
+      },
+      {
+        type: "h2",
+        text: "What changed in June 2026",
+      },
+      {
+        type: "p",
+        text: "The real shift this year is that List-II stopped being optional. From 1 June 2026, projects that fall under ALMM are required to use not just an approved module, but a module built with approved, domestically manufactured solar cells.",
+      },
+      {
+        type: "p",
+        text: "Before this date, a panel could carry an Indian brand name and appear on List-I while the cells inside it were imported, often from China. From June 2026 onward, that gap closes for the categories ALMM applies to. MNRE confirmed there would be [no blanket extension of the List-II deadline beyond 1 June 2026](https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/05/202605251665091021.pdf), an order dated 25 May 2026, though it left room for protecting investments already committed before the cutoff.",
+      },
+      {
+        type: "p",
+        text: "The scale of this shift is significant for the industry. Indian module manufacturing capacity has grown to roughly 120 gigawatts, but domestic solar cell manufacturing capacity sits far lower, close to 30 gigawatts. That gap is exactly why this mandate matters. It is designed to pull cell manufacturing into India the same way the module mandate pulled panel assembly into India starting in 2021.",
+      },
+      {
+        type: "p",
+        text: "For a homeowner, the practical result is this: a genuinely ALMM-compliant system in 2026 is more traceable, back to the cell, than a system installed even a year earlier.",
+      },
+      {
+        type: "h2",
+        text: "Who this actually applies to, and where the exceptions sit",
+      },
+      {
+        type: "p",
+        text: "This is the part that trips up most vendor conversations, so it is worth being precise, because MNRE has issued several clarifications since June 2026 and the rules are not identical for every category of project.",
+      },
+      {
+        type: "p",
+        text: "Subsidised rooftop solar under PM Surya Ghar. If you are claiming the Central Financial Assistance, the subsidy of up to 78,000 rupees for a 3kW system, ALMM List-II compliance is mandatory from 1 June 2026. There is no extension for this category. Your installer's modules need to carry approved cells, full stop.",
+      },
+      {
+        type: "p",
+        text: "The Give It Up category. MNRE created an option under PM Surya Ghar for households who choose to install solar without claiming the central subsidy. [MNRE's clarification on the ALMM List-II exemption for RTS projects under the Give It Up category](https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/06/20260608658404634.pdf), an office memorandum dated 8 June 2026, confirms that residential consumers in this category are exempt from the List-II cell requirement, provided the application is still submitted through the official PM Surya Ghar National Portal. This exemption runs until 31 March 2027, the scheme's current end date, and it does not require a separate application on the NISE DCR Portal. It only applies to this specific residential category and does not extend to other project types.",
+      },
+      {
+        type: "p",
+        text: "Net metering and open access projects outside PM Surya Ghar. MNRE later extended a separate exemption for net metering and open access installations, [confirmed in its ALMM List-II order](https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/07/202607181895863474.pdf) dated 18 July 2026, pushing their List-II compliance deadline from 31 May 2026 to 31 December 2026, regardless of when the project began. This gives developers and manufacturers more time to convert their sourcing to approved cells. Importantly, this is a narrow, two category carve out. It does not cover subsidised PM Surya Ghar rooftop installations, utility scale tenders, or other government linked procurement, which all remain fully bound by the 1 June 2026 deadline.",
+      },
+      {
+        type: "p",
+        text: "In short: if you are taking the PM Surya Ghar subsidy, ALMM List-II applies to you right now, with no extension. If you are voluntarily skipping the subsidy, you have a defined exemption window through March 2027. Either way, ALMM List-I for the panel itself continues to apply across the board.",
+      },
+      {
+        type: "h2",
+        text: "Why this matters specifically if you are in Odisha",
+      },
+      {
+        type: "p",
+        text: "Most rooftop solar in Odisha, whether through TPCODL in Bhubaneswar and Cuttack or TPWODL in the western districts, is installed under the PM Surya Ghar framework because that is where the subsidy sits. TPWODL alone has crossed over 111 megawatts of rooftop capacity across more than 38,000 installations, and thousands of households across the state are recording zero unit electricity bills every month. That scale only works if the underlying compliance holds up.",
+      },
+      {
+        type: "p",
+        text: "Here is what ALMM non-compliance can actually cost you as a homeowner, beyond the abstract policy language. If your installer uses a module that is not properly List-II compliant while you are claiming the CFA subsidy, your application can be rejected at the DISCOM inspection stage, well after you have paid your vendor. Net metering approval can stall indefinitely because the DISCOM will not commission a non-compliant system. And if a problem surfaces after commissioning, you lose the leverage of a government backed compliance trail if you ever need to make a warranty claim against a manufacturer who cut corners.",
+      },
+      {
+        type: "p",
+        text: "This is also why the OREDA net metering framework in Odisha, which already allows no feasibility study for systems up to 10kW and has permitted hybrid inverters since November 2025, still keeps the underlying ALMM requirement untouched. The state has made the process faster, not looser.",
+      },
+      {
+        type: "h2",
+        text: "ALMM is not the same thing as DCR",
+      },
+      {
+        type: "p",
+        text: "One more distinction worth clearing up, because installers sometimes use these terms loosely in conversation. DCR stands for Domestic Content Requirement, and it is a separate classification that determines whether a solar cell counts as genuinely Indian made in the first place, based on whether it was produced from undiffused silicon wafers within India. DCR rules were tightened further in March 2025.",
+      },
+      {
+        type: "p",
+        text: "ALMM is the approved list itself, the register of specific manufacturers and models cleared for use in government linked projects. DCR is one of the technical tests a manufacturer has to pass to get onto that list in the first place. When your installer says a panel is DCR compliant, that is a meaningful claim, but it is not the same as confirming the exact model is currently sitting on the ALMM List-I or List-II. Ask for both, not just one.",
+      },
+      {
+        type: "h2",
+        text: "What to check before you sign with any installer",
+      },
+      {
+        type: "p",
+        text: "Before you commit to a vendor for a PM Surya Ghar rooftop system in Odisha, these are the specific things worth asking for in writing, not just verbally.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask for the ALMM List-I registration certificate for the exact module model being proposed, not just the manufacturer's general listing",
+          "Ask whether the cells inside that module are separately listed under ALMM List-II, and ask for documentation, since this is the part that changed in 2026",
+          "Confirm which category your installation falls under: subsidised PM Surya Ghar, Give It Up, or a non-PMSG net metering project, since the compliance deadline depends on this",
+          "Check the [MNRE ALMM page](https://mnre.gov.in/en/approved-list-of-models-and-manufacturers-almm/) directly for the current List-I and List-II PDFs before signing, since both lists are revised regularly",
+          "Ask your installer how they would handle a DISCOM rejection at the inspection stage, and get that answer before installation, not after",
+        ],
+      },
+      {
+        type: "p",
+        text: "A vendor who can answer these clearly, with paperwork, is telling you something real about how seriously they take compliance on your behalf.",
+      },
+      {
+        type: "h2",
+        text: "Where Green Filament stands on this",
+      },
+      {
+        type: "p",
+        text: "We work exclusively with ALMM List-I and List-II compliant components for every PM Surya Ghar installation we handle across our 12-plus districts in Odisha, and we verify the current list before every project, not just once. Compliance is not a paperwork exercise for us. It is what protects your subsidy, your net metering approval, and the 25 year warranty you are actually paying for. If you are planning a [rooftop solar](/rooftop-solar-bhubaneswar) installation in Bhubaneswar, Cuttack, or anywhere else we serve and want your compliance checked before you sign with anyone, [get in touch](/connect) and we will walk through it with you.",
+      },
+      {
+        type: "h2",
+        text: "The bottom line",
+      },
+      {
+        type: "p",
+        text: "None of this is meant to make rooftop solar sound more complicated than it needs to be. The core idea is straightforward: the government wants the panel on your roof, and the cell inside that panel, to be traceable to a real, approved Indian manufacturer, because you are relying on that manufacturer's warranty for the next 25 years. For most homeowners in Odisha going through PM Surya Ghar, the practical takeaway is simple. Ask for the List-I and List-II paperwork before you sign, confirm it against the current MNRE list rather than an old printout, and choose an installer who treats that step as routine rather than an inconvenience.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Does ALMM apply to a solar system I am paying for entirely on my own, without any subsidy?",
+        a: "If your installation still uses net metering, which almost every grid connected rooftop system does, it generally falls under ALMM. The specific deadline depends on whether you are inside or outside the PM Surya Ghar Give It Up category, but very few Odisha rooftop installations sit entirely outside ALMM's reach.",
+      },
+      {
+        q: "Can my installer show me an ALMM certificate that turns out to be outdated?",
+        a: "Yes, and this happens more than most homeowners realise. Both List-I and List-II are revised frequently, sometimes monthly. A model that was compliant a few months ago can be removed. Always cross check the specific model against the current list on the MNRE website rather than relying on a printed certificate alone.",
+      },
+      {
+        q: "What happens if my system was installed before June 2026 without List-II compliant cells?",
+        a: "MNRE's framework includes provisions for protecting investments already made before the relevant cutoff dates. If your system was commissioned earlier under the rules that applied at the time, it is generally not retroactively penalised. This protection does not extend to new applications going forward.",
+      },
+      {
+        q: "Is ALMM the same as BIS certification?",
+        a: "No. ALMM is about which specific manufacturer and model are approved for use in government linked and subsidised projects. BIS certification is a separate product safety and quality standard. A module can carry BIS certification and still not be on the ALMM list, so the two checks are not interchangeable.",
+      },
+      {
+        q: "Does this mean solar panel prices in Odisha will go up?",
+        a: "Industry sources have flagged a real supply gap between India's module manufacturing capacity and its solar cell manufacturing capacity, which could put some upward pressure on component costs in the short term as manufacturers convert their sourcing. It is not a certainty, and MNRE's phased exemptions are partly designed to give the industry time to adjust without a price shock.",
+      },
+      {
+        q: "I run a small business considering open access solar instead of rooftop net metering. Does ALMM still apply?",
+        a: "Yes. Open access projects are explicitly named in MNRE's ALMM framework, and they fall under the same December 2026 exemption window that applies to non-PMSG net metering projects, rather than the tighter June 2026 deadline that governs subsidised residential rooftop.",
+      },
+    ],
+  },
+  /* --- end of blog-8 --- */
+
+
 ];
 
 /* --- Categories for filter --- */
@@ -1035,4 +1245,5 @@ export const blogCategories = [
   "Rooftop Solar",
   "Solar Water",
   "Solar Cooking",
+  "Policy & Schemes",
 ];
