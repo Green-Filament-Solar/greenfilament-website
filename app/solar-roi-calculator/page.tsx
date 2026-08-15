@@ -94,7 +94,10 @@ export default function SolarRoiCalculatorPage() {
               We built this calculator using the same telescopic slab system that OERC uses to bill every household in Odisha. When you enter your monthly units, we run them through the four tariff slabs exactly the way TPCODL, TPWODL, TPSODL and TPNODL would on your actual bill. That means the savings numbers you see here are not a rough estimate pulled from a generic formula, they follow the real math behind your electricity bill.
             </p>
             <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.9, textAlign: "justify" }}>
-              For each system size, we calculate how many units your rooftop panels would generate in an average Odisha month, then work out how much of your grid bill that generation would offset. The result is your monthly savings, how many years it takes for the system to pay for itself, and how much carbon dioxide you would keep out of the atmosphere every year.
+              For each system size, we calculate how many units your rooftop panels would generate in an average Odisha month, then work out how much of your grid bill that generation would offset. The result is your monthly savings, how many years it takes for the system to pay for itself, and how much carbon dioxide you would keep out of the atmosphere every year. Curious why we use an average instead of a single month's figure? We break down real monsoon versus dry season generation data in{" "}
+              <Link href="/blogs/monsoon-solar-generation-odisha" style={{ color: "#F5A000", fontWeight: 600, textDecoration: "underline" }}>
+                this article
+              </Link>.
             </p>
           </div>
         </div>

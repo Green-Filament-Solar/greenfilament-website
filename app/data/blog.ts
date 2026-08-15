@@ -1233,7 +1233,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  
   /* --- end of blog-8 --- */
+
+  /* ============================================================
+     POST 9 — Monsoon Solar Generation Odisha
+     ============================================================ */
+  {
+    slug: "monsoon-solar-generation-odisha",
+    title: "What Monsoon Really Does to Your Solar Generation: Real Odisha Data",
+    date: "2026-08-16",
+    category: "Rooftop Solar",
+    excerpt: "Two consecutive electricity bills from a real rooftop solar home in Cuttack show a 30 percent swing in daily generation between June and August 2026. Here is why, using real IMD weather data.",
+    image: "/images/policy-schemes/monsoon-effect.jpg",
+    readTime: "8 min read",
+    keywords: ["solar generation monsoon Odisha", "solar panel rainy season Odisha", "does rain affect solar panels", "solar ROI calculator Odisha", "TPCODL net metering generation"],
+    sections: [
+      {
+        type: "p",
+        text: "Every solar customer eventually asks us some version of the same question: why did my system generate less power this month than last month. It usually comes up during monsoon, and it usually comes with a note of worry that something is wrong with the panels.",
+      },
+      {
+        type: "p",
+        text: "Nothing is wrong. What is happening is monsoon, and we can actually show you the real numbers rather than just reassure you in the abstract. We are using two consecutive TPCODL bills from an actual rooftop solar home in Cuttack, with all personal details removed, alongside real weather data from the India Meteorological Department for the exact same weeks. This is not a hypothetical example. It is what genuinely happened to one 3.24 kW system over two back to back billing cycles in 2026.",
+      },
+      {
+        type: "h2",
+        text: "The two bills, side by side",
+      },
+      {
+        type: "p",
+        text: "Both bills are from the same household, same system, same meters, back to back billing periods. The first bill covered a partial cycle from 17 June to 1 July, 14 days, right at the point the system had just gone live. It generated 197.68 units in that window. The second bill covered a full, clean 30 day cycle from 2 July to 1 August. It generated 294.71 units.",
+      },
+      {
+        type: "p",
+        text: "At first glance the second month looks better, more total units generated. But billing cycles are not the same length, so raw totals are misleading. What actually matters is generation per day, because that is what tells you whether the system's daily output improved or worsened.",
+      },
+      {
+        type: "p",
+        text: "Working it out precisely, the first period generated 197.68 units over 14 days, which is 14.12 units a day, or 4.36 units per kW of installed capacity per day. The second period generated 294.71 units over 30 days, which is 9.82 units a day, or 3.03 units per kW per day.",
+      },
+      {
+        type: "highlight",
+        text: "Daily generation per kW dropped about 30 percent between the two periods. The second month only looked bigger because it was twice as long.",
+      },
+      {
+        type: "h2",
+        text: "What the weather was actually doing",
+      },
+      {
+        type: "p",
+        text: "This is where it gets useful, because we do not have to guess why generation dropped. The India Meteorological Department's own records for these exact weeks tell the story clearly.",
+      },
+      {
+        type: "p",
+        text: "During the first period, mid to late June, the southwest monsoon was still advancing into Odisha. Rainfall was present but relatively moderate for that stretch.",
+      },
+      {
+        type: "p",
+        text: "The second period, covering all of July into early August, saw considerably more disruptive weather. [A low pressure area formed over the Bay of Bengal in the first days of July](https://internal.imd.gov.in/press_release/20260709_pr_5139.pdf), and IMD's own week two forecast noted isolated extremely heavy rainfall over Odisha on 3rd, 5th and 6th July, with heavy to very heavy rainfall on 2nd and 4th July as well. That is four separate days of serious rain concentration within the first week of the second billing cycle alone.",
+      },
+      {
+        type: "p",
+        text: "Later in the same billing period, [a well marked pressure area intensified into a deep depression over the northwest Bay of Bengal](https://www.outlookindia.com/national/deep-depression-to-hit-odisha-west-bengal-coast-why-extreme-rainfall-is-expected-across-eastern-india) around 26 and 27 July, prompting IMD to forecast heavy to very heavy rainfall with isolated extremely heavy rainfall across Odisha, along with squally winds reaching 60 kmph. This system triggered a red alert for parts of the state.",
+      },
+      {
+        type: "p",
+        text: "Interestingly, IMD also noted that July 2026 saw an unusual national pattern, with the monsoon actually weakening over large parts of India even as Odisha specifically kept getting hit by these Bay of Bengal low pressure systems. The state recorded rain, and heavy rain at that, even while the wider monsoon trend elsewhere was described as one of only three significantly weak monsoon Julys in the past 11 years.",
+      },
+      {
+        type: "p",
+        text: "Put simply, this particular household's second billing month sat directly inside two separate heavy rainfall events driven by Bay of Bengal low pressure systems. That is a fully sufficient explanation for a 30 percent drop in daily generation. Solar panels do not stop working in the rain, but sustained heavy cloud cover cuts the amount of usable sunlight reaching them significantly, and Odisha's monsoon delivers exactly that kind of cover in bursts through July and August.",
+      },
+      {
+        type: "h2",
+        text: "Why your solar calculator does not use a single month's number",
+      },
+      {
+        type: "p",
+        text: "If you have used our [Solar ROI Calculator](/solar-roi-calculator), you have seen a figure of 120 units generated per kW installed, per month. Someone looking at this real household's second bill might reasonably ask why the calculator says 120 when this actual system only managed 91 units per kW that month once corrected to a 30 day basis.",
+      },
+      {
+        type: "p",
+        text: "The answer is that 120 units per kW per month is meant to be an annual average, not a fixed number for every single month. Odisha gets roughly 4.5 to 5 peak sun hours a year on average, but that average is made up of very different months. Dry season months, roughly November through February, comfortably outperform 120 units per kW per month because the sky stays largely clear. Monsoon months, particularly July and August, can fall meaningfully below it, exactly as this real household's numbers show.",
+      },
+      {
+        type: "p",
+        text: "A well designed annual estimate accounts for this swing on purpose. If we designed the calculator around a strong dry season month, projected annual savings would be too optimistic. If we designed it around a weak monsoon month, it would understate what the system does the rest of the year. 120 units per kW per month, averaged across twelve months, is the number that reflects reality across a full year rather than any single snapshot.",
+      },
+      {
+        type: "p",
+        text: "This household's first period, at 4.36 units per kW per day, works out to about 131 units per kW on a 30 day basis, comfortably above the 120 assumption. Their second period, at 3.03 units per kW per day, works out to about 91 units per kW on a 30 day basis, below the assumption. The calculator's number sits almost exactly between the two, which is exactly what a proper annual average should do.",
+      },
+      {
+        type: "h2",
+        text: "What this means if you are considering solar in Odisha",
+      },
+      {
+        type: "p",
+        text: "The practical takeaway is simple. If your bill during July or August shows lower generation than you expected, that is normal, not a fault. Check whether your billing period overlapped with a heavy rainfall spell, which you can usually confirm against IMD's public weather archives for your district. What matters for your actual return on investment is not any single month, it is the average across a full year, including the strong months that come after monsoon ends.",
+      },
+      {
+        type: "p",
+        text: "This is also why we encourage anyone comparing quotes or estimates to ask what generation assumption is behind the numbers they are being shown. A number that only reflects a sunny month will always look better than reality. A number that only reflects a monsoon month will always look worse. An honest annual average, grounded in real billing data like the household above, is the only number worth trusting for a 25 year decision.",
+      },
+      {
+        type: "h2",
+        text: "The bottom line",
+      },
+      {
+        type: "p",
+        text: "Two real, back to back electricity bills from one Cuttack household show exactly what Odisha's monsoon does to solar generation, a real and measurable dip during heavy rainfall weeks, fully explained by documented IMD weather events during those same weeks. Nothing was wrong with the system. This is simply what a rooftop solar installation in Odisha experiences every year during July and August, and it is already accounted for in how we calculate savings estimates for our customers.",
+      },
+      {
+        type: "p",
+        text: "If you want to see what solar could save you based on a full year's realistic average rather than a single month, our [Solar ROI Calculator](/solar-roi-calculator) uses exactly the methodology described here.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Does heavy rain damage solar panels?",
+        a: "No. Solar panels are built to withstand monsoon conditions, including heavy rainfall and wind. What reduces output during rain is the cloud cover that comes with it, not the rain itself. In fact, rain helps keep panels clean of dust, which slightly improves performance once the sky clears.",
+      },
+      {
+        q: "Should I be worried if my generation drops significantly during monsoon?",
+        a: "A drop during July and August is expected and normal, particularly during weeks with heavy rainfall warnings from IMD for your district. What matters is whether your generation recovers in the following dry season months. If it does not recover by November or December, that is worth having your system checked.",
+      },
+      {
+        q: "How much should I expect generation to vary between monsoon and dry season?",
+        a: "Based on real billing data, we have seen daily generation per kW vary by roughly 30 percent or more between a wetter month and a drier one for the same system. This is why annual, not monthly, figures are the right way to judge a solar investment.",
+      },
+      {
+        q: "Does this mean the 120 units per kW per month figure in your calculator is wrong?",
+        a: "No. It is designed as an annual average specifically so that it reflects both strong and weak months fairly, rather than describing any single month perfectly. The real data in this article shows the assumption sitting almost exactly between a strong period and a weak period from the same actual system.",
+      },
+      {
+        q: "Is Odisha's monsoon this heavy every year?",
+        a: "Rainfall intensity varies year to year. 2026 specifically saw multiple Bay of Bengal low pressure systems affect Odisha in July even while the wider Indian monsoon was reported as unusually weak that month. Some years see fewer such systems, others see more. This is exactly why long term averages, not any single year or month, are the right basis for a 25 year investment decision.",
+      },
+    ],
+  },
+  /* --- end of blog-9 --- */
+
 
 
 ];
