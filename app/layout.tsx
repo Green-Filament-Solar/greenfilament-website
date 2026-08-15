@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SchemaOrg from "./components/SchemaOrg";
+import AnalyticsEvents from "./components/AnalyticsEvents";
 
 export const metadata: Metadata = {
 
@@ -101,7 +102,10 @@ export default function RootLayout({
         `
       }} />
     </head>
-    <body>{children}</body>
+    <body>
+  <AnalyticsEvents />
+  {children}
+</body>
   </html>
 );
 }
