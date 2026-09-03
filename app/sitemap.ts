@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/solar-cooking", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://greenfilament.com/solar-high-mast-light", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://greenfilament.com/solar-roi-calculator", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://greenfilament.com/solar-sizing-calculator", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
 
     // Blog listing + posts
     { url: "https://greenfilament.com/blogs", lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },

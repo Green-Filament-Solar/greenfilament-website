@@ -41,6 +41,7 @@ const productLinks = [
   { label: "Solar Drinking Water", href: "/connect" },
   { label: "Solar Cold Storage", href: "/connect" },
   { label: "Solar ROI Calculator", href: "/solar-roi-calculator" },
+  { label: "Solar Sizing Calculator", href: "/solar-sizing-calculator" },
 ];
 
 /* ============================================================
