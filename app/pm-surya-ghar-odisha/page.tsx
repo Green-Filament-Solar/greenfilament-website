@@ -28,9 +28,9 @@ const pmSuryaGharFaqs = [
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-  title: "PM Surya Ghar Yojana in Odisha | Subsidy, Eligibility & How to Apply | Green Filament",
-  description:
-    "PM Surya Ghar subsidy in Odisha explained. Central plus state subsidy up to ₹1,38,000 for a 3kW system. Eligibility, documents, application steps, and deadline.",
+  title: "PM Surya Ghar Yojana Odisha 2026: Subsidy Up to ₹1,38,000",
+description:
+    "PM Surya Ghar Yojana in Odisha, 2026 update: get up to ₹1,38,000 combined central and state subsidy on a 3kW rooftop solar system. Eligibility, documents, and how to apply, explained simply.",
   keywords: [
     "PM Surya Ghar Odisha",
     "PM Surya Ghar subsidy Odisha",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     canonical: "https://greenfilament.com/pm-surya-ghar-odisha",
   },
   openGraph: {
-    title: "PM Surya Ghar Yojana in Odisha | Green Filament",
+    title: "PM Surya Ghar Yojana in Odisha 2026 | Green Filament",
     description:
       "Central plus state subsidy up to ₹1,38,000 for a 3kW rooftop solar system in Odisha. Eligibility, documents, and how to apply.",
     url: "https://greenfilament.com/pm-surya-ghar-odisha",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PM Surya Ghar Yojana in Odisha | Green Filament",
+    title: "PM Surya Ghar Yojana in Odisha 2026 | Green Filament",
     description: "Central plus state subsidy up to ₹1,38,000 for a 3kW rooftop solar system in Odisha.",
     images: ["/images/og-image.jpg"],
   },

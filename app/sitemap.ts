@@ -30,6 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/blogs/tpcodl-net-metering-process-2026", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/almm-cell-mandate-2026-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/monsoon-solar-generation-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/solar-didi-programme-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/solar-cooking-anganwadis-schools-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+
+
 
     // Location pages
     { url: "https://greenfilament.com/solar-company-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },

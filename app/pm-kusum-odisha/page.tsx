@@ -26,11 +26,12 @@ const pmKusumFaqs = [
    SEO METADATA
    ============================================================ */
 export const metadata: Metadata = {
-  title: "PM Kusum Solar Pump Subsidy in Odisha | Green Filament",
+  title: "PM Kusum Yojana Odisha 2026: Solar Pump Subsidy Up to 90%",
   description:
-    "PM Kusum solar water pump subsidy in Odisha explained. Up to 90% subsidy under Soura Jalanidhi Yojana. Eligibility, documents, application steps.",
+    "PM Kusum Yojana Odisha, 2026 update: solar water pump subsidy up to 90% under Soura Jalanidhi Yojana. Eligibility, documents, and application steps, explained simply.",
   keywords: [
     "PM Kusum Odisha",
+    "PM Kusum Yojana Odisha",
     "PM Kusum solar pump subsidy",
     "Soura Jalanidhi Yojana",
     "solar water pump subsidy Odisha",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "https://greenfilament.com/pm-kusum-odisha",
   },
   openGraph: {
-    title: "PM Kusum Solar Pump Subsidy in Odisha | Green Filament",
+    title: "PM Kusum Yojana Odisha 2026 | Green Filament",
     description:
       "Up to 90% subsidy under Soura Jalanidhi Yojana for solar water pumps in Odisha. Eligibility, documents, and how to apply.",
     url: "https://greenfilament.com/pm-kusum-odisha",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PM Kusum Solar Pump Subsidy in Odisha | Green Filament",
+    title: "PM Kusum Yojana Odisha 2026 | Green Filament",
     description: "Up to 90% subsidy under Soura Jalanidhi Yojana for solar water pumps in Odisha.",
     images: ["/images/og-image.jpg"],
   },

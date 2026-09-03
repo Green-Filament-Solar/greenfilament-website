@@ -781,17 +781,17 @@ export const blogPosts: BlogPost[] = [
   /* --- end of blog-5 --- */
 
   /* ============================================================
-     POST 6 — 3kW Solar Price Odisha After Subsidy 2026
+     POST 6 — 3kW Solar Panel Price Odisha After Subsidy 2026
      ============================================================ */
   {
     slug: "3kw-solar-price-odisha-after-subsidy-2026",
-    title: "3kW Solar Price in Odisha After Subsidy: What You Actually Pay in 2026",
+    title: "3kW Solar Panel Price in Odisha After Subsidy: What You Actually Pay in 2026",
     date: "2026-07-21",
     category: "Rooftop Solar",
     excerpt: "People ask us this every week. How much does a 3kW solar system really cost in Odisha, after subsidy. Here is the simple answer, with real numbers.",
     image: "/images/projects/rooftop-dhanbad.jpg",
     readTime: "6 min read",
-    keywords: ["3kW solar price Odisha", "solar subsidy 2026", "PM Surya Ghar Odisha", "solar cost after subsidy", "rooftop solar Bhubaneswar price"],
+    keywords: ["3kW solar price Odisha", "3kW solar panel price Odisha", "solar subsidy 2026", "PM Surya Ghar Odisha", "solar cost after subsidy", "rooftop solar Bhubaneswar price"],
     sections: [
       {
         type: "p",
@@ -1375,7 +1375,257 @@ export const blogPosts: BlogPost[] = [
   },
   /* --- end of blog-9 --- */
 
+  /* ============================================================
+     POST 10 — Solar Didi Programme Odisha
+     ============================================================ */
 
+     {
+    slug: "solar-didi-programme-odisha",
+    title: "Meet the Solar Didis: The Women Bringing Rooftop Solar to Every Odisha Doorstep",
+    date: "2026-09-03",
+    category: "Community Impact",
+    excerpt: "In Cuttack and Sambalpur, dozens of women from local self help groups have trained as Solar Didis, going door to door to explain rooftop solar in a language their neighbours actually trust.",
+    image: "/images/policy-schemes/solar-didi-scheme.jpg",
+    readTime: "8 min read",
+    keywords: ["Solar Didi Odisha", "women solar training Odisha", "PM Surya Ghar women empowerment", "TPCODL Solar Didi programme", "solar didi Cuttack Sambalpur"],
+    sections: [
+      {
+        type: "p",
+        text: "Most people do not learn about solar from a website or an advertisement. They learn about it from someone they already trust, a neighbour, a relative, someone from their own community who has actually seen it work. Odisha's Solar Didi programme is built entirely around that simple truth, and it is quietly becoming one of the most effective parts of the state's rooftop solar push.",
+      },
+      {
+        type: "h2",
+        text: "Who the Solar Didis Are",
+      },
+      {
+        type: "p",
+        text: "In June 2026, 29 women from Self Help Groups under the Deendayal Antyodaya Yojana, identified through Cuttack Municipal Corporation, completed a specialised training programme at the Tata Power Skill Development Institute in Cuttack. They were not solar engineers or technical professionals before this. They were women already active in their local SHGs, chosen and trained to become the first link between a household and the idea of going solar.",
+      },
+      {
+        type: "p",
+        text: "The Deendayal Antyodaya Yojana National Urban Livelihoods Mission, or DAY-NULM, already works through thousands of Self Help Groups across Indian cities to build sustainable livelihoods for urban women, mostly through savings groups, small enterprise support, and skill training. Solar Didi is essentially a new skill layered onto that existing network, rather than something built from scratch. That matters, because it means the women chosen for this role already had standing in their communities before they ever mentioned solar to anyone.",
+      },
+      {
+        type: "p",
+        text: "The training itself covered the basics of rooftop solar installation, operation and maintenance, along with something equally important, how to explain all of this clearly to a family who has never considered solar before. The Solar Didi Initiative is a joint programme run by the Ministry of New and Renewable Energy and the Ministry of Housing and Urban Affairs, delivered locally through TPCODL in Central Odisha.",
+      },
+      {
+        type: "h2",
+        text: "What They Actually Do",
+      },
+      {
+        type: "p",
+        text: "Once trained, Solar Didis do not install panels themselves. Their role is outreach, going door to door across their own wards, answering questions, clearing up confusion about subsidies, and helping families understand the Utility Led Aggregation model that many DISCOMs now use to make PM Surya Ghar applications simpler. For a lot of families, this is the first time someone has explained solar to them in their own language, in their own neighbourhood, without any sales pressure behind it.",
+      },
+      {
+        type: "p",
+        text: "This is a genuinely different kind of outreach than what most solar companies rely on. A typical sales visit assumes the homeowner already has some interest and just needs the details filled in. A Solar Didi visit often starts from zero, a family that has never seriously thought about solar, does not know what PM Surya Ghar even is, and may be wary of anyone showing up unannounced to talk about their electricity bill. Having that first conversation happen with someone from the same SHG network, someone whose face is already familiar in the ward, removes a layer of suspicion that a stranger simply cannot get past as quickly.",
+      },
+      {
+        type: "h2",
+        text: "Not Just Cuttack",
+      },
+      {
+        type: "p",
+        text: "A month later, in July 2026, TPWODL launched its own batch in Sambalpur, training 24 women from Self Help Groups identified by Sambalpur Municipal Corporation. After a nine day training programme at TPSDI Gosala, this batch began door to door awareness campaigns across all 41 wards of Sambalpur city. The model is clearly built to spread, city by city, following the same pattern that worked in Cuttack, recruit locally, train intensively over roughly a week to ten days, then deploy the same women into the neighbourhoods they already know.",
+      },
+      {
+        type: "p",
+        text: "It is worth noting how quickly this expanded. Cuttack's first batch finished training in mid-June. Sambalpur's batch was already underway by mid-July. If this pace continues, it is reasonable to expect other TPCODL and TPWODL coverage areas, and eventually TPNODL and TPSODL territory as well, to see their own Solar Didi batches within the next year or two.",
+      },
+      {
+        type: "h2",
+        text: "Why This Matters Beyond the Numbers",
+      },
+      {
+        type: "p",
+        text: "It would be easy to read this as a small training programme, a few dozen women, a couple of cities. But the value here is not really about scale yet. It is about trust. Rooftop solar can feel complicated and unfamiliar to a family that has never dealt with subsidies, net metering, or DISCOM paperwork before. A stranger in a sales uniform explaining all of this rarely lands the same way as a woman from your own community, someone you already know, walking you through it patiently and honestly.",
+      },
+      {
+        type: "p",
+        text: "We see a version of this same trust gap in our own work at Green Filament. Families often understand, in the abstract, that solar could lower their electricity bill. What actually holds them back is not the concept, it is the practical questions nobody has clearly answered for them. How much paperwork is involved. What happens if the subsidy application gets delayed. Whether the installer will actually show up when promised. A programme built specifically to answer those questions, delivered by someone with no sales incentive attached, closes that gap faster than any advertisement could.",
+      },
+      {
+        type: "p",
+        text: "There is also a quieter benefit here that is easy to miss. This programme gives women in these SHGs a genuine skill and a role in their community's clean energy transition, not as a side project, but as the actual frontline of how solar reaches ordinary households. For a woman who has spent years building savings and livelihood skills through her SHG, becoming a recognised local expert on something as significant as her neighbourhood's clean energy transition is a meaningful step, both for her income potential and her standing in the community.",
+      },
+      {
+        type: "h2",
+        text: "The Bigger Push Behind It",
+      },
+      {
+        type: "p",
+        text: "The Solar Didi programme is one part of a larger shift happening in Odisha right now. The state climbed from 13th to 7th nationally in rooftop solar installations, with the four Odisha DISCOMs together facilitating close to 1.74 lakh installations. TPCODL alone has facilitated 56,842 installations, followed by TPWODL with 48,905, TPNODL with 44,785, and TPSODL with 23,881. Baleshwar, Ganjam, Khordha and Cuttack have each crossed 10,000 installations on their own, together accounting for roughly 143 MWp of the state's 410 MWp total rooftop solar capacity.",
+      },
+      {
+        type: "p",
+        text: "Alongside Solar Didi, TPCODL also runs a mobile outreach vehicle called Solar Rath and holds Surya Ghar Gram Sabhas at the panchayat level, all aimed at the same goal, making solar feel less like a technical decision and more like something your own community is already doing. Taken together, these efforts describe a deliberate strategy, rather than one where subsidies alone are expected to drive adoption, Odisha's DISCOMs are actively investing in the human side of the transition, the part where someone has to walk a family through their first conversation about going solar.",
+      },
+      {
+        type: "highlight",
+        text: "Odisha has crossed 1.5 lakh rooftop solar installations statewide, with grassroots efforts like Solar Didi playing a direct role in that growth.",
+      },
+      {
+        type: "h2",
+        text: "What This Means If You Are Considering Solar",
+      },
+      {
+        type: "p",
+        text: "If a Solar Didi ever knocks on your door in Cuttack or Sambalpur, it is worth actually hearing her out. She has been trained specifically to answer the questions families usually have, subsidy amounts, how rooftop solar actually works, and what the process looks like from application to installation. And if you are outside these two cities and want that same clarity, our team at Green Filament walks every family through the same information, honestly and without pressure, whether you reach out to us in Bhubaneswar, Cuttack, or anywhere else we serve across Odisha.",
+      },
+      {
+        type: "p",
+        text: "Programmes like Solar Didi are a reminder that the biggest barrier to solar adoption in India was rarely the technology itself. It was trust, and clear information delivered by someone people actually believe. Odisha is slowly closing that gap, one household conversation at a time, and it is worth watching how far this particular model spreads over the next few years.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What exactly is the Solar Didi programme?",
+        a: "It is a joint initiative of the Ministry of New and Renewable Energy and the Ministry of Housing and Urban Affairs, under which women from local Self Help Groups are trained to spread awareness about rooftop solar and PM Surya Ghar in their own communities.",
+      },
+      {
+        q: "Do Solar Didis install solar panels themselves?",
+        a: "No. Their role is outreach and awareness, explaining subsidies, the application process, and how rooftop solar works. Installation is still carried out by registered vendors like Green Filament.",
+      },
+      {
+        q: "Which cities in Odisha currently have Solar Didis?",
+        a: "The first batch trained in Cuttack in June 2026 under TPCODL. A second batch trained in Sambalpur in July 2026 under TPWODL, covering all 41 wards of the city.",
+      },
+      {
+        q: "How are the women selected for this programme?",
+        a: "They are chosen from existing Self Help Groups under the Deendayal Antyodaya Yojana National Urban Livelihoods Mission, identified by the local municipal corporation, and then trained at Tata Power Skill Development Institute centres.",
+      },
+      {
+        q: "Is this programme connected to PM Surya Ghar?",
+        a: "Yes. Solar Didis specifically promote awareness and adoption of the PM Surya Ghar Muft Bijli Yojana and the Utility Led Aggregation model used by DISCOMs to simplify the subsidy application process.",
+      },
+      {
+        q: "Will the Solar Didi programme expand to other parts of Odisha?",
+        a: "Given how quickly it moved from Cuttack to Sambalpur within about a month, it is reasonable to expect other TPCODL and TPWODL areas, and eventually TPNODL and TPSODL coverage, to see their own batches over time, though no official expansion schedule has been announced yet.",
+      },
+    ],
+  },
+  /* --- end of blog-10 --- */
+
+  /* ============================================================
+     POST 11 — Solar Cooking In Anganwadis & Schools odisha
+     ============================================================ */
+
+    {
+    slug: "solar-cooking-anganwadis-schools-odisha",
+    title: "Odisha Cooks for 45 Lakh Children Every Day. Solar Could Power a Lot of That.",
+    date: "2026-09-04",
+    category: "Community Impact",
+    excerpt: "More than 50,000 schools and anganwadis across Odisha cook fresh meals every single day, mostly on LPG or firewood. It is one of the largest untapped opportunities for solar cooking in the state.",
+    image: "/images/policy-schemes/school-anganwadi-cooking.jpg",
+    readTime: "8 min read",
+    keywords: ["solar cooking anganwadi Odisha", "solar cooking schools Odisha", "mid day meal solar", "clean cooking anganwadi", "solar kitchen Odisha"],
+    sections: [
+      {
+        type: "p",
+        text: "Every school day, roughly 45 lakh children across Odisha sit down to a hot meal cooked at their school, through the PM POSHAN mid-day meal programme, reaching more than 50,000 government and government-aided schools statewide. Add the state's network of anganwadi centres, where younger children are fed daily as well, and the true number of daily meals being cooked at public institutions across Odisha runs into the tens of millions every single day. Almost none of that cooking happens on solar power. That gap is exactly where we think solar cooking has its biggest opportunity in the state, and it is why Green Filament has already started reaching out to anganwadi centres directly.",
+      },
+      {
+        type: "h2",
+        text: "The Scale Most People Do Not Think About",
+      },
+      {
+        type: "p",
+        text: "It is easy to think of cooking fuel as a household problem. In Odisha, it is also a massive institutional one. The state recently expanded free mid-day meals to Class 9 and Class 10 students as well, on top of the existing programme for younger children, backed by a five year outlay of over 4,224 crore rupees expected to benefit close to 57 lakh students in total. Every one of those meals still has to be cooked, and most kitchens attached to schools and anganwadis run on LPG cylinders or, in more remote areas, firewood.",
+      },
+      {
+        type: "highlight",
+        text: "Odisha's mid-day meal programme alone reaches roughly 45 lakh children across more than 50,000 schools, every single school day.",
+      },
+      {
+        type: "h2",
+        text: "What Actually Goes Into a Mid-Day Meal Kitchen",
+      },
+      {
+        type: "p",
+        text: "The mid-day meal scheme is not loosely defined. Every meal served has to clear minimum nutrition standards set at the national level, at least 450 calories and 12 grams of protein for primary school children, rising to 700 calories and 20 grams of protein for upper primary students. Meeting that standard, every single school day, for tens of thousands of institutions, requires a kitchen that can cook reliably and consistently, not one that depends on whichever fuel happens to be available that week.",
+      },
+      {
+        type: "p",
+        text: "The cost structure behind this gives a sense of how thin the margins already are. Rice is supplied free through the Food Corporation of India, but the cooking cost itself, covering pulses, vegetables, oil and fuel together, is a fixed per-child amount shared between the central and state governments. As of recent rates, that works out to a few rupees per child per day for the cooking cost alone. Fuel is only one part of that small allocation, which means any recurring cost pressure from LPG price increases eats directly into an already tight budget meant to stretch across pulses, vegetables and oil as well.",
+      },
+      {
+        type: "h2",
+        text: "Why This Is a Cooking Fuel Problem, Not Just a Nutrition One",
+      },
+      {
+        type: "p",
+        text: "A school or anganwadi kitchen that cooks daily meals for 20 to 100 children needs a steady, dependable heat source, every day, without fail. LPG cylinders have to be transported, tracked, and refilled constantly, which is a genuine logistical burden for a small anganwadi in a remote block, particularly where road access is poor or the nearest LPG dealer is a significant distance away. Firewood, where it is still used, brings the same problems we have written about before, smoke exposure for the women cooking, and health risks for children sitting nearby during meal preparation. Neither option is free, and neither is particularly reliable at this scale.",
+      },
+      {
+        type: "p",
+        text: "There is also a seasonal dimension to this that is easy to overlook. During monsoon months, when roads in remote parts of Odisha can become difficult to navigate, LPG cylinder delivery to isolated anganwadis can be delayed, sometimes for days. A kitchen that depends entirely on a single cylinder with no backup has very little room to absorb that kind of disruption without missing meals or falling back on firewood as a stopgap.",
+      },
+      {
+        type: "h2",
+        text: "Where Solar Cooking Actually Fits",
+      },
+      {
+        type: "p",
+        text: "This is precisely the setting our solar cooking system was designed for. It is a patent-granted, battery-free system, and Green Filament is its authorised manufacturer. It uses solar panels to power a coil heater directly, with no LPG, no firewood, and no battery to maintain or replace. Cooking happens during daylight hours, which lines up naturally with when schools and anganwadis actually prepare their meals, breakfast and lunch, right through the hours when the sun is strongest. A single 3kW system, built around six 500Wp panels and a 1500W coil heater, is already sized for a family of 8 to 10 people, and the same underlying design scales up for larger kitchens serving a full classroom or anganwadi centre.",
+      },
+      {
+        type: "p",
+        text: "The absence of a battery matters more here than it might in a household setting. Institutional kitchens run on a fixed daily schedule, meals prepared at roughly the same time every day, which is exactly the pattern a battery-free system is built around. There is no need to store energy for evening or night use, since an anganwadi or school kitchen has no reason to cook after the children have gone home. That predictability is what makes the economics of a battery-free system particularly strong for this specific use case, compared to a household that might want flexibility to cook at any hour.",
+      },
+      {
+        type: "h2",
+        text: "We Are Already Reaching Out",
+      },
+      {
+        type: "p",
+        text: "Green Filament has begun approaching anganwadi centres directly about bringing solar cooking into their daily routine. This is still early, and we do not yet have a completed anganwadi installation to point to, but the case for it is strong enough that we are actively pursuing it rather than waiting for someone else to prove the model first. A kitchen that cooks the same meals at the same time every day, for a fixed number of children, is close to the ideal use case for a battery-free solar cooking system, and Odisha's mid-day meal infrastructure gives that use case genuine scale.",
+      },
+      {
+        type: "h2",
+        text: "The Bigger Opportunity Ahead",
+      },
+      {
+        type: "p",
+        text: "Government cooking cost support for mid-day meals is calculated per child, per day, and covers pulses, vegetables, oil and fuel together. A solar cooking system does not remove the need for that budget, but it removes the ongoing fuel cost from it entirely once installed, freeing up whatever was being spent on LPG cylinders for other kitchen needs, potentially better quality vegetables, more consistent supply, or simply a buffer against future price increases. For a state running one of the largest school meal programmes in the country, even a modest shift toward solar cooking at scale, one anganwadi, one school kitchen at a time, adds up to a meaningful reduction in LPG dependence and smoke exposure across tens of thousands of institutions.",
+      },
+      {
+        type: "p",
+        text: "CSR funding is often the most realistic route for this kind of institutional rollout, since government cooking cost allocations are not designed to cover one-time equipment purchases. We have seen similar models work elsewhere in India, where corporate CSR budgets fund solar installations at anganwadis in partnership with local implementing organisations. Odisha's industrial base, spanning steel, mining, and manufacturing, includes exactly the kind of companies that already run CSR programmes focused on health, nutrition and rural development, all of which overlap naturally with clean cooking at anganwadis and schools.",
+      },
+      {
+        type: "p",
+        text: "If you are involved in running an anganwadi centre, a school kitchen, or a community feeding programme anywhere in Odisha and want to understand whether solar cooking could work for your setup, reach out to us. If you represent a company exploring CSR options in health, nutrition or rural development, this is also worth a conversation, since institutional solar cooking is exactly the kind of project that combines measurable impact with a straightforward, provable outcome. We are actively working through exactly this conversation right now, and we would rather have it with you directly than wait for someone else to make the case first.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Has Green Filament installed solar cooking at any anganwadi in Odisha yet?",
+        a: "Not yet. We have begun approaching anganwadi centres directly and are working through early conversations. This article explains the opportunity we see, based on the real scale of Odisha's mid-day meal programme.",
+      },
+      {
+        q: "How many people can the solar cooking system serve?",
+        a: "The standard 3kW system is designed for a family of 8 to 10 people. For larger institutional kitchens such as schools or anganwadis serving more children, the system can be scaled up accordingly.",
+      },
+      {
+        q: "Does the solar cooking system need a battery to work in a school kitchen?",
+        a: "No. The system is battery-free by design and runs directly on solar power during daylight hours, which aligns naturally with when most school and anganwadi meals are prepared.",
+      },
+      {
+        q: "Is there a government scheme that funds solar cooking for anganwadis?",
+        a: "Currently, solar cooking systems are not covered under PM Surya Ghar or KUSUM. Funding for institutional kitchens typically comes through CSR programmes or state welfare budgets. Contact Green Filament to discuss funding routes for your specific institution.",
+      },
+      {
+        q: "How is solar cooking different from LPG for a mid-day meal kitchen?",
+        a: "LPG requires ongoing cylinder purchases and transport, which is a recurring cost and logistical burden, especially during monsoon when delivery to remote areas can be delayed. A solar cooking system has no ongoing fuel cost once installed, since it runs entirely on sunlight.",
+      },
+      {
+        q: "Can companies fund solar cooking installations at anganwadis through CSR?",
+        a: "Yes. CSR budgets focused on health, nutrition or rural development are a natural fit for institutional solar cooking projects. Green Filament can work with companies exploring this route to identify suitable anganwadi or school partners.",
+      },
+    ],
+  },
+  /* --- end of blog-11 --- */
 
 ];
 
@@ -1387,4 +1637,5 @@ export const blogCategories = [
   "Solar Water",
   "Solar Cooking",
   "Policy & Schemes",
+  "Community Impact",
 ];

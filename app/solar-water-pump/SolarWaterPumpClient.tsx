@@ -1,6 +1,6 @@
 /* ============================================================
    SOLAR WATER PUMP — CLIENT COMPONENT
-   /products/solar-water-pump/SolarWaterPumpClient.tsx
+   /solar-water-pump/SolarWaterPumpClient.tsx
    - Matches solar-street-lighting design exactly
    - useState for: applicationStep, processStep, faqOpen
    - Desktop: grid layouts
@@ -164,7 +164,7 @@ const faqs = [
     },
     {
         q: "Is subsidy available for solar pumps?",
-        a: "Government subsidy availability depends on scheme eligibility and state policies. Our team can guide you on current applicable schemes in Odisha.",
+        a: "Yes. In Odisha, solar water pumps qualify for subsidy under PM Kusum Yojana, with up to 90% support under Soura Jalanidhi. See our PM Kusum Odisha page for full eligibility and how to apply.",
     },
     {
         q: "How do I choose the right solar pump?",
@@ -522,6 +522,22 @@ export default function SolarWaterPumpClient() {
                                 <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5A000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M7 7h10v10" /></svg>
                                 </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* ============================================================
+                    PM KUSUM SUBSIDY CALLOUT
+                    ============================================================ */}
+                <div style={{ background: "#ffffff", padding: "0 clamp(24px, 5vw, 80px) clamp(48px, 7vw, 80px)" }}>
+                    <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+                        <div style={{ background: "#FFF3D6", borderLeft: "3px solid #F5A000", borderRadius: "0 10px 10px 0", padding: "18px 22px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
+                            <p style={{ fontSize: "15px", color: "#412402", fontWeight: 500, lineHeight: 1.7, margin: 0, flex: 1, minWidth: "220px" }}>
+                                Looking for subsidy details on solar water pumps in Odisha? Check eligibility and savings under PM Kusum Yojana.
+                            </p>
+                            <Link href="/pm-kusum-odisha" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#FDB92E", color: "#412402", fontSize: "13px", fontWeight: 700, padding: "10px 18px", borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}>
+                                Check PM Kusum Subsidy →
                             </Link>
                         </div>
                     </div>
