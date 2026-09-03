@@ -17,7 +17,7 @@ const sizingFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Solar Sizing Calculator India | Calculate Panel, Inverter & Battery Size",
+  title: "Solar Sizing Calculator India | Calculate Panel, Inverter & Battery Size | Green Filament",
   description:
     "Free solar sizing calculator for India. Select your state, choose on-grid, off-grid or hybrid solar, and calculate the required solar panels, inverter and battery size.",
   keywords: [

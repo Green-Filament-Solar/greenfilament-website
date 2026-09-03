@@ -6,10 +6,7 @@ import AnalyticsEvents from "./components/AnalyticsEvents";
 export const metadata: Metadata = {
 
   /* ── Basic ── */
-  title: {
-    default: "Green Filament | Solar Energy Company in Bhubaneswar, Odisha",
-    template: "%s | Green Filament Solar",
-  },
+  title: "Green Filament | Solar Energy Company in Bhubaneswar, Odisha",
   description: "Green Filament is Odisha's trusted solar energy company. We deliver rooftop solar, solar pumps, street lights, solar cooking systems and more across Bhubaneswar and 12+ districts. NSIC Registered, Start-up India recognized.",
 
   /* ── Keywords ── */
