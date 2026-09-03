@@ -38,7 +38,7 @@ const productLinks = [
   { label: "Rooftop Solar", href: "/rooftop-solar" },
   { label: "Agriculture Pumps", href: "/solar-water-pump" },
   { label: "High Mast Lighting", href: "/solar-high-mast-light" },
-  { label: "Solar Drinking Water", href: "/connect" },
+  { label: "Solar Water Pump", href: "/solar-water-pump" },
   { label: "Solar Cold Storage", href: "/connect" },
   { label: "Solar ROI Calculator", href: "/solar-roi-calculator" },
   { label: "Solar Sizing Calculator", href: "/solar-sizing-calculator" },
