@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://greenfilament.com/blogs/monsoon-solar-generation-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/solar-didi-programme-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: "https://greenfilament.com/blogs/solar-cooking-anganwadis-schools-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: "https://greenfilament.com/blogs/solar-power-schools-colleges-odisha", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
 
 
 
