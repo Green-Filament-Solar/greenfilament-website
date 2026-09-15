@@ -450,7 +450,7 @@ export default function ProjectsClients() {
 
                         {/* Project grid */}
                         <div className="proj-grid">
-                            {filtered.map((project) => (
+                            {filtered.map((project, index) => (
                                 <div key={project.id} className="proj-card">
 
                                     {/* Photo */}
@@ -461,6 +461,7 @@ export default function ProjectsClients() {
                                             fill
                                             sizes="(max-width: 768px) 100vw, 33vw"
                                             style={{ objectFit: "cover" }}
+                                            priority={index < 3}
                                         />
                                         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%)" }} />
                                         <div style={{ position: "absolute", top: "10px", left: "10px", display: "flex", gap: "6px" }}>

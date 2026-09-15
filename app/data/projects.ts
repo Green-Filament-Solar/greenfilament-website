@@ -202,6 +202,33 @@ export const projects: Project[] = [
       { label: "Control", value: "Auto Timer Panel" },
     ],
   },
+
+/* ---- 8. Solar Street Light — Private Park, Puri ---- */
+{
+  id: "street-light-puri-park",
+  category: "Street Lighting",
+  title: "Solar Street Light — Children Park",
+  location: "Puri, Odisha",
+  year: "2026",
+  image: "/images/projects/street-light-puri-park.jpg",
+  featured: false,
+  stats: [
+    { value: "30W", label: "LED Power" },
+    { value: "6m", label: "Pole Height" },
+    { value: "Full Night", label: "Backup" },
+  ],
+  storyTitle: "Lighting a private park with reliable solar power",
+  challenge: "A private park in Puri had no lighting after dark, leaving the space unusable and unsafe for evening visitors, with no grid connection planned for the area.",
+  solution: "Installed a semi-integrated 30W solar street light on a 6 metre GI tubular pole (76mm OD, 1.2mm thickness), powered by a 75Wp panel and a 12.8V 24Ah LiFePO4 battery for dependable night-long backup.",
+  result: "The park now stays lit through the night with zero electricity cost. A durable, low-maintenance lighting solution built for long-term outdoor use.",
+  specs: [
+    { label: "Model", value: "Semi-Integrated 30W" },
+    { label: "Panel", value: "75Wp" },
+    { label: "Battery", value: "12.8V 24Ah LiFePO4" },
+    { label: "Pole", value: "6m GI Tubular, 76mm OD" },
+  ],
+},
+  
 ];
 
 /* --- Homepage featured projects (3 best) --- */
